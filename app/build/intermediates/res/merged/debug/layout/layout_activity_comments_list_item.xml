@@ -1,0 +1,30 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp" >
+
+    <TextView
+        android:id="@+id/tv_score"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/corners_green_bg"
+        android:gravity="center"
+        android:text="@string/com_score"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="normal|bold" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/tv_score"
+        android:text="@string/com_remark"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        tools:ignore="RtlHardcoded" />
+
+</RelativeLayout>

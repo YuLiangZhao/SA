@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "E:\\Android\\SA_QR2\\SAS\\app\\build\\intermediates\\res\\merged\\release\\anim\\push_bottom_in.xml",
+        "source": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\anim\\push_bottom_in.xml"
+    },
+    {
+        "merged": "E:\\Android\\SA_QR2\\SAS\\app\\build\\intermediates\\res\\merged\\release\\anim\\push_bottom_out.xml",
+        "source": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\anim\\push_bottom_out.xml"
+    },
+    {
+        "merged": "E:\\Android\\SA_QR2\\SAS\\app\\build\\intermediates\\res\\merged\\release\\anim\\slide_out_bottom.xml",
+        "source": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\anim\\slide_out_bottom.xml"
+    },
+    {
+        "merged": "E:\\Android\\SA_QR2\\SAS\\app\\build\\intermediates\\res\\merged\\release\\anim\\slide_in_bottom.xml",
+        "source": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\anim\\slide_in_bottom.xml"
+    },
+    {
+        "merged": "E:\\Android\\SA_QR2\\SAS\\app\\build\\intermediates\\res\\merged\\release\\anim\\top_bar_fade_out.xml",
+        "source": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\anim\\top_bar_fade_out.xml"
+    },
+    {
+        "merged": "E:\\Android\\SA_QR2\\SAS\\app\\build\\intermediates\\res\\merged\\release\\anim\\top_bar_fade_in.xml",
+        "source": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\anim\\top_bar_fade_in.xml"
+    }
+]

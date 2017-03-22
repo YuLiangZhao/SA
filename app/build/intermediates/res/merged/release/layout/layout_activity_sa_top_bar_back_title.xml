@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:background="@color/app_top_bar_bg" >
+
+    <ImageButton
+        android:id="@+id/ib_top_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/sa_top_bar_left_arrow"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        tools:ignore="ContentDescription,RtlHardcoded"
+        android:adjustViewBounds="false"
+        android:cropToPadding="false"
+        android:layout_marginLeft="10dp" />
+
+    <ImageButton
+        android:id="@+id/ib_top_vline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/sa_top_bar_left_vline"
+        android:layout_centerVertical="true"
+        tools:ignore="ContentDescription,RtlHardcoded"
+        android:adjustViewBounds="false"
+        android:layout_toRightOf="@+id/ib_top_back"
+        android:cropToPadding="false" />
+
+    <TextView
+        android:id="@+id/tv_top_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:layout_centerVertical="true"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        android:maxEms="14"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:layout_toRightOf="@+id/ib_top_vline"
+        tools:ignore="RelativeOverlap,RtlHardcoded"
+        android:textStyle="normal|bold"
+        android:layout_marginLeft="10dp" />
+
+</RelativeLayout>

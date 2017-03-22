@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <attr name="borderRadius" format="dimension" />
+    <attr name="type">
+        <enum name="circle" value="0" />
+        <enum name="round" value="1" />
+    </attr>
+
+    <!--RoundImageView-->
+    <declare-styleable name="RoundImageView">
+        <attr name="borderRadius" />
+        <attr name="type" />
+    </declare-styleable>
+
+    <!--CircleImageView-->
+    <declare-styleable name="CircleImageView">
+        <attr name="borderSize" format="dimension" />
+        <attr name="borderColor" format="color" />
+    </declare-styleable>
+
+    <!--CircleRoundImageView-->
+    <declare-styleable name="CircleRoundImageView">
+        <attr name="borderThickness" format="dimension" />
+        <attr name="borderInColor" format="color" />
+        <attr name="borderOutColor" format="color" />
+    </declare-styleable>
+    <!--RoundAngleImageView-->
+    <declare-styleable name="RoundAngleImage">
+        <!-- 原始图片资源 -->
+        <attr name="roundImageSrc" format="reference"/>
+        <!-- 圆角图片的圆角弧度 -->
+        <attr name="roundRadius" format="integer"/>
+        <!-- ImageView的宽度 -->
+        <!-- <attr name="roundWidth" format="dimension"/> -->
+        <!-- ImageView的高度 -->
+        <!-- <attr name="roundHeight" format="dimension"/> -->
+        <!-- 边框的颜色 -->
+        <attr name="roundBorderColor" format="color|reference"/>
+        <!-- 边框的宽度 -->
+        <attr name="roundBorderWidth" format="integer"/>
+    </declare-styleable>
+    <!--123-->
+    <declare-styleable name="pickerview">
+        <attr name="pickerview_gravity">
+            <enum name="center" value="17"/>
+            <enum name="left" value="3"/>
+            <enum name="right" value="5"/>
+        </attr>
+        <attr name="pickerview_textSize" format="dimension"/>
+        <attr name="pickerview_textColorOut" format="color"/>
+        <attr name="pickerview_textColorCenter" format="color"/>
+        <attr name="pickerview_dividerColor" format="color"/>
+        <attr name="pickerview_lineSpacingMultiplier" format="float"/>
+    </declare-styleable>
+</resources>

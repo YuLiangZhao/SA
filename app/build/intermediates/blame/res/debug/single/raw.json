@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "E:\\Android\\SA_QR2\\SAS\\app\\build\\intermediates\\res\\merged\\debug\\raw\\zx_beep.ogg",
+        "source": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\raw\\zx_beep.ogg"
+    },
+    {
+        "merged": "E:\\Android\\SA_QR2\\SAS\\app\\build\\intermediates\\res\\merged\\debug\\raw\\baidu_beep.ogg",
+        "source": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\raw\\baidu_beep.ogg"
+    },
+    {
+        "merged": "E:\\Android\\SA_QR2\\SAS\\app\\build\\intermediates\\res\\merged\\debug\\raw\\shake_match.mp3",
+        "source": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\raw\\shake_match.mp3"
+    },
+    {
+        "merged": "E:\\Android\\SA_QR2\\SAS\\app\\build\\intermediates\\res\\merged\\debug\\raw\\weixin_beep.ogg",
+        "source": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\raw\\weixin_beep.ogg"
+    },
+    {
+        "merged": "E:\\Android\\SA_QR2\\SAS\\app\\build\\intermediates\\res\\merged\\debug\\raw\\beep.ogg",
+        "source": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\raw\\beep.ogg"
+    },
+    {
+        "merged": "E:\\Android\\SA_QR2\\SAS\\app\\build\\intermediates\\res\\merged\\debug\\raw\\shake_sound_male.mp3",
+        "source": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\raw\\shake_sound_male.mp3"
+    }
+]

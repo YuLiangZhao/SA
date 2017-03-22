@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="E:\Android\SA_QR2\SAS\app\libs\nohttp1.1.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="131ba28165334cd7b63ec6b569446f3b289a3010">
+        <dex dex="E:\Android\SA_QR2\SAS\app\build\intermediates\pre-dexed\debug\nohttp1.1.1_ae6d14d17fa185beccc98df4a2ddaa38a9703a71.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Administrator\.android\build-cache\8f9284ae112de74969f7fc9df84cf86a0a6ff720\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="ada9b797c97e7ac14321f45b28a047f5db3e744f">
+        <dex dex="E:\Android\SA_QR2\SAS\app\build\intermediates\pre-dexed\debug\classes_76165b20f666d38e1fb3022a75a182fbcd173561.jar" />
+    </item>
+
+</items>

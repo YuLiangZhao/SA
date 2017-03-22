@@ -1,0 +1,216 @@
+-- Merging decision tree log ---
+manifest
+ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:1:1-111:12
+	package
+		ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:3:5-27
+		INJECTED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml
+		INJECTED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml
+	android:versionName
+		ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:5:5-30
+		INJECTED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml
+		INJECTED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml
+	xmlns:tools
+		ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:2:5-51
+	android:versionCode
+		ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:4:5-28
+		INJECTED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml
+		INJECTED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:1:11-69
+uses-sdk
+ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:7:5-10:120
+MERGED from [com.google.android.gms:play-services-appindexing:8.4.0] C:\Users\Administrator\.android\build-cache\4db5c475b706d2cfb4ca2485ec38dd1884cdfe1c\output\AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-base:8.4.0] C:\Users\Administrator\.android\build-cache\b9453f8d35720a7e841de7ded4a24a63715d5330\output\AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] C:\Users\Administrator\.android\build-cache\67b12fbd82e47259739523ca06c4be31d1b029ca\output\AndroidManifest.xml:18:5-42
+MERGED from [com.android.support:support-v4:23.0.0] C:\Users\Administrator\.android\build-cache\eb55a73cc5cc64888f58a656f569b175525e986a\output\AndroidManifest.xml:20:5-43
+MERGED from [com.contrarywind:Android-PickerView:3.1.1] C:\Users\Administrator\.android\build-cache\8f9284ae112de74969f7fc9df84cf86a0a6ff720\output\AndroidManifest.xml:7:5-9:41
+	tools:overrideLibrary
+		ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:10:9-118
+	android:targetSdkVersion
+		ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:9:9-38
+		INJECTED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml
+		INJECTED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:8:9-34
+		INJECTED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml
+		INJECTED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml
+uses-permission#android.permission.INTERNET
+ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:12:5-66
+	android:name
+		ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:12:22-64
+uses-permission#android.permission.CAMERA
+ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:13:5-65
+	android:name
+		ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:13:22-62
+uses-permission#android.permission.FLASHLIGHT
+ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:14:5-69
+	android:name
+		ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:14:22-66
+uses-permission#android.permission.VIBRATE
+ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:15:5-66
+	android:name
+		ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:15:22-63
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:16:5-80
+	android:name
+		ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:16:22-77
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:17:5-81
+	android:name
+		ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:17:22-78
+uses-permission#android.permission.MOUNT_UNMOUNT_FILESYSTEMS
+ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:18:5-84
+	android:name
+		ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:18:22-81
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:19:5-79
+	android:name
+		ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:19:22-76
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:20:5-76
+	android:name
+		ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:20:22-73
+uses-feature#android.hardware.camera
+ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:22:5-60
+	android:name
+		ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:22:19-57
+uses-feature#android.hardware.camera.autofocus
+ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:23:5-70
+	android:name
+		ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:23:19-67
+uses-permission#android.hardware.sensor.accelerometer
+ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:24:5-76
+	android:name
+		ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:24:22-74
+application
+ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:26:5-109:19
+MERGED from [com.google.android.gms:play-services-appindexing:8.4.0] C:\Users\Administrator\.android\build-cache\4db5c475b706d2cfb4ca2485ec38dd1884cdfe1c\output\AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] C:\Users\Administrator\.android\build-cache\67b12fbd82e47259739523ca06c4be31d1b029ca\output\AndroidManifest.xml:20:5-24:19
+MERGED from [com.android.support:support-v4:23.0.0] C:\Users\Administrator\.android\build-cache\eb55a73cc5cc64888f58a656f569b175525e986a\output\AndroidManifest.xml:22:5-20
+	android:label
+		ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:30:9-41
+	android:allowBackup
+		ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:28:9-35
+	android:icon
+		ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:29:9-45
+	android:theme
+		ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:31:9-40
+	android:name
+		ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:27:9-40
+activity#com.zbar.lib.guide.GuideMainActivity
+ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:32:9-41:20
+	android:screenOrientation
+		ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:35:13-49
+	android:label
+		ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:34:13-45
+	android:theme
+		ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:36:13-71
+	android:name
+		ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:33:13-52
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:37:13-40:29
+action#android.intent.action.MAIN
+ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:38:17-69
+	android:name
+		ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:38:25-66
+category#android.intent.category.LAUNCHER
+ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:39:17-77
+	android:name
+		ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:39:27-74
+activity#com.zbar.lib.guide.WelcomeActivity
+ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:42:9-47:20
+	android:screenOrientation
+		ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:45:13-49
+	android:label
+		ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:44:13-45
+	android:theme
+		ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:46:13-71
+	android:name
+		ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:43:13-50
+activity#com.zbar.lib.app_web.LoginActivity
+ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:48:9-51:20
+	android:screenOrientation
+		ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:50:13-49
+	android:name
+		ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:49:13-50
+activity#com.zbar.lib.camera_scan.QRScanActivity
+ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:52:9-56:20
+	android:screenOrientation
+		ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:54:13-49
+	android:theme
+		ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:55:13-66
+	android:name
+		ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:53:13-55
+activity#com.zbar.lib.app_web.WebViewActivity
+ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:57:9-61:20
+	android:theme
+		ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:59:13-60
+	android:name
+		ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:58:13-52
+activity#com.zbar.lib.app_web.UploadTeacherFacePic
+ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:63:9-65:20
+	android:name
+		ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:63:19-63
+activity#com.zbar.lib.app_web.ShowStudentClassWorkPic
+ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:66:9-69:20
+	android:name
+		ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:67:13-60
+activity#com.zbar.lib.camera_upload_pic.EditStudentClassWorkPicActivity
+ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:70:9-74:20
+	android:theme
+		ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:72:13-71
+	android:name
+		ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:71:13-78
+activity#com.zbar.lib.app_main.SA_MainActivity
+ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:75:9-79:20
+	android:theme
+		ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:77:13-60
+	android:name
+		ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:76:13-53
+activity#com.zbar.lib.app_web.ShakeActivity
+ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:80:9-84:20
+	android:theme
+		ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:82:13-60
+	android:name
+		ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:81:13-50
+activity#com.zbar.lib.test.swipemenu_test.SwipeMenuTestMainActivity
+ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:85:9-87:20
+	android:name
+		ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:85:19-80
+activity#com.zbar.lib.test.swipemenu_test.SwipeMenuAppManagerActivity
+ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:88:9-89:20
+	android:name
+		ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:88:19-82
+activity#com.zbar.lib.test.swipemenu_test.SwipeMenuDifferentItemActivity
+ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:90:9-91:20
+	android:name
+		ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:90:19-85
+activity#com.zbar.lib.app_web.CommentActivity
+ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:92:9-93:20
+	android:name
+		ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:92:19-58
+activity#com.zbar.lib.app_web.CommentEditActivity
+ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:94:9-95:20
+	android:name
+		ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:94:19-62
+activity#com.zbar.lib.test.pickerview_test.PickerTestActivity
+ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:96:9-97:20
+	android:name
+		ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:96:19-74
+activity#com.zbar.lib.app_web.WeatherActivity
+ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:98:9-99:20
+	android:name
+		ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:98:19-58
+activity#com.zbar.lib.app_web.CheckHomeWorkActivity
+ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:100:9-103:20
+	android:theme
+		ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:102:13-60
+	android:name
+		ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:101:13-58
+meta-data#com.google.android.gms.version
+ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:106:9-108:69
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] C:\Users\Administrator\.android\build-cache\67b12fbd82e47259739523ca06c4be31d1b029ca\output\AndroidManifest.xml:21:9-23:69
+	android:value
+		ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:108:13-66
+	android:name
+		ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:107:13-58
