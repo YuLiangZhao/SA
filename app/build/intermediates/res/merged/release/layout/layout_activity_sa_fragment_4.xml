@@ -67,7 +67,7 @@
             </LinearLayout>
 
             <Button
-                android:id="@+id/ll_tc_line1"
+                android:id="@+id/bt_tc_line1"
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
                 android:layout_below="@+id/ll_tc_name"
@@ -78,7 +78,7 @@
                 android:id="@+id/ll_tc_sex"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/ll_tc_line1"
+                android:layout_below="@+id/bt_tc_line1"
                 android:orientation="horizontal"
                 android:padding="10dp">
                 <TextView
@@ -102,7 +102,7 @@
                     android:typeface="serif" />
             </LinearLayout>
             <Button
-                android:id="@+id/ll_tc_line2"
+                android:id="@+id/bt_tc_line2"
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
                 android:layout_below="@+id/ll_tc_sex"
@@ -112,7 +112,7 @@
                 android:id="@+id/ll_tc_xueli"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/ll_tc_line2"
+                android:layout_below="@+id/bt_tc_line2"
                 android:orientation="horizontal"
                 android:padding="10dp">
                 <TextView
@@ -136,7 +136,7 @@
                     android:typeface="serif" />
             </LinearLayout>
             <Button
-                android:id="@+id/ll_tc_line3"
+                android:id="@+id/bt_tc_line3"
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
                 android:layout_below="@+id/ll_tc_xueli"
@@ -146,7 +146,7 @@
                 android:id="@+id/ll_tc_zhicheng"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/ll_tc_line3"
+                android:layout_below="@+id/bt_tc_line3"
                 android:orientation="horizontal"
                 android:padding="10dp">
                 <TextView
@@ -170,7 +170,7 @@
                     android:typeface="serif" />
             </LinearLayout>
             <Button
-                android:id="@+id/ll_tc_line4"
+                android:id="@+id/bt_tc_line4"
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
                 android:layout_below="@+id/ll_tc_zhicheng"
@@ -180,7 +180,7 @@
                 android:id="@+id/ll_tc_mood"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/ll_tc_line4"
+                android:layout_below="@+id/bt_tc_line4"
                 android:orientation="horizontal"
                 android:padding="10dp">
                 <TextView
@@ -204,7 +204,7 @@
                     android:typeface="serif" />
             </LinearLayout>
             <Button
-                android:id="@+id/ll_tc_line5"
+                android:id="@+id/bt_tc_line5"
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
                 android:layout_below="@+id/ll_tc_mood"
@@ -215,24 +215,38 @@
                 android:id="@+id/ll_tc_about"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/ll_tc_line5"
-                android:orientation="vertical"
-                tools:ignore="UselessLeaf"
-                android:padding="10dp">
+                android:layout_below="@+id/bt_tc_line5"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                tools:ignore="UselessLeaf">
 
                 <TextView
                     android:id="@+id/tv_app_about"
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/app_about"
-                    android:textSize="14sp"
+                    android:layout_weight="1"
                     android:textColor="@color/black"
+                    android:textSize="14sp"
                     android:typeface="serif" />
+
+                <TextView
+                    android:id="@+id/tv_app_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:focusable="false"
+                    android:gravity="right"
+                    android:text="@string/app_go"
+                    android:textStyle="bold"
+                    android:textColor="@color/gray"
+                    android:typeface="serif"
+                    tools:ignore="RtlHardcoded" />
 
             </LinearLayout>
 
             <Button
-                android:id="@+id/ll_tc_line6"
+                android:id="@+id/bt_tc_line6"
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
                 android:layout_below="@+id/ll_tc_about"
@@ -243,7 +257,7 @@
                 android:id="@+id/ll_tc_quit"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/ll_tc_line6"
+                android:layout_below="@+id/bt_tc_line6"
                 android:orientation="vertical"
                 tools:ignore="UselessLeaf"
                 android:padding="10dp">

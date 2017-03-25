@@ -93,6 +93,10 @@
             android:name="com.zbar.lib.app_web.CheckHomeWorkActivity"
             android:theme="@android:style/Theme.NoTitleBar" >
         </activity>
+        <activity
+            android:name="com.zbar.lib.app_tools.AppAboutActivity"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
         <!--
         ATTENTION: This was auto-generated to add Google Play services to your project for
         App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.

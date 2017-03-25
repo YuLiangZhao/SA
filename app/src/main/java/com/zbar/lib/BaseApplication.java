@@ -40,7 +40,4 @@ public class BaseApplication extends Application {
         Logger.setTag("NoHttp"); // 设置NoHttp打印Log的TAG。
         WebQueue = NoHttp.newRequestQueue();
     }
-    public void getAppVer(){
-        //int verCode = Application.VER;
-    }
 }

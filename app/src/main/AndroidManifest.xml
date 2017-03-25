@@ -6,7 +6,7 @@
 
     <uses-sdk
         android:minSdkVersion="8"
-        android:targetSdkVersion="19"
+        android:targetSdkVersion="16"
         tools:overrideLibrary="com.google.android.gms.appindexing,com.google.android.gms.base,com.google.android.gms"/>
 
     <uses-permission android:name="android.permission.INTERNET"/>
@@ -99,6 +99,10 @@
         </activity>
         <activity
             android:name=".app_web.CheckHomeWorkActivity"
+            android:theme="@android:style/Theme.NoTitleBar">
+        </activity>
+        <activity
+            android:name=".app_tools.AppAboutActivity"
             android:theme="@android:style/Theme.NoTitleBar">
         </activity>
         <!-- ATTENTION: This was auto-generated to add Google Play services to your project for

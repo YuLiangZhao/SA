@@ -80,7 +80,7 @@ public class LoginActivity extends BaseActivity {
                 auto_login.setChecked(true);
                 //跳转界面
                 //System.out.println("自动登录中...");
-                login();
+                GoToLogin();//自动登录
             }
         }
         //元件 单击事件 监听
@@ -142,29 +142,24 @@ public class LoginActivity extends BaseActivity {
         // TODO Auto-generated method stub
         switch (v.getId()) {
             case R.id.login:  //正常 登陆 验证
-                //检查网络环境，联网则登录
-                if(NetworkUtil.isOnLine(getApplicationContext())) {
-                    login();
-                }else{
-                    showMessage("手机没网络，请检查WIFI或数据网络环境！");
-                }
+                GoToLogin();
                 break;
             case R.id.cb_mima:
                 if (rem_pw.isChecked()) {
                     //System.out.println("记住密码已选中");
-                    sp.edit().putBoolean("ISCHECK", true).commit();
+                    sp.edit().putBoolean("ISCHECK", true).apply();
                 }else {
                     //System.out.println("记住密码没有选中");
-                    sp.edit().putBoolean("ISCHECK", false).commit();
+                    sp.edit().putBoolean("ISCHECK", false).apply();
                 }
                 break;
             case R.id.cb_auto:
                 if (auto_login.isChecked()) {
                     //System.out.println("自动登录已选中");
-                    sp.edit().putBoolean("AUTO_ISCHECK", true).commit();
+                    sp.edit().putBoolean("AUTO_ISCHECK", true).apply();
                 } else {
                     //System.out.println("自动登录没有选中");
-                    sp.edit().putBoolean("AUTO_ISCHECK", false).commit();
+                    sp.edit().putBoolean("AUTO_ISCHECK", false).apply();
                 }
                 break;
             case R.id.login_error: //无法登陆(忘记密码了吧)
@@ -190,7 +185,7 @@ public class LoginActivity extends BaseActivity {
             case R.id.bt_pwd_eye:
                 if(et_pass.getInputType() == (InputType.TYPE_CLASS_TEXT|InputType.TYPE_TEXT_VARIATION_PASSWORD)){
                     bt_pwd_eye.setBackgroundResource(R.drawable.button_eye_s);
-                    et_pass.setInputType(InputType.TYPE_CLASS_TEXT|InputType.TYPE_TEXT_VARIATION_NORMAL);
+                    et_pass.setInputType(InputType.TYPE_CLASS_TEXT);
                 }else{
                     bt_pwd_eye.setBackgroundResource(R.drawable.button_eye_n);
                     et_pass.setInputType(InputType.TYPE_CLASS_TEXT|InputType.TYPE_TEXT_VARIATION_PASSWORD);
@@ -202,6 +197,14 @@ public class LoginActivity extends BaseActivity {
     /**
      * 登陆
      */
+    private void GoToLogin() {
+        //检查网络环境，联网则登录
+        if(NetworkUtil.isOnLine(getApplicationContext())) {
+            login();
+        }else{
+            showMessage("手机没网络，请检查WIFI或数据网络环境！");
+        }
+    }
     private void login() {
         tel = et_name.getText().toString();
         pwd = et_pass.getText().toString();

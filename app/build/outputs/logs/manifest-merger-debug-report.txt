@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:1:1-111:12
+ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:1:1-115:12
 	package
 		ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:3:5-27
 		INJECTED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml
@@ -22,7 +22,8 @@ ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:7:5-10:120
 MERGED from [com.google.android.gms:play-services-appindexing:8.4.0] C:\Users\Administrator\.android\build-cache\4db5c475b706d2cfb4ca2485ec38dd1884cdfe1c\output\AndroidManifest.xml:18:5-42
 MERGED from [com.google.android.gms:play-services-base:8.4.0] C:\Users\Administrator\.android\build-cache\b9453f8d35720a7e841de7ded4a24a63715d5330\output\AndroidManifest.xml:18:5-42
 MERGED from [com.google.android.gms:play-services-basement:8.4.0] C:\Users\Administrator\.android\build-cache\67b12fbd82e47259739523ca06c4be31d1b029ca\output\AndroidManifest.xml:18:5-42
-MERGED from [com.android.support:support-v4:23.0.0] C:\Users\Administrator\.android\build-cache\eb55a73cc5cc64888f58a656f569b175525e986a\output\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:23.0.0] C:\Users\Administrator\.android\build-cache\a6dee4f95e44b07502c631dfb6cf4cffc9a475c1\output\AndroidManifest.xml:20:5-43
+MERGED from [com.yanzhenjie.nohttp:nohttp:1.1.1] C:\Users\Administrator\.android\build-cache\b3872ba299da20bf3285b25cbe3718bc4d38c354\output\AndroidManifest.xml:20:5-22:41
 MERGED from [com.contrarywind:Android-PickerView:3.1.1] C:\Users\Administrator\.android\build-cache\8f9284ae112de74969f7fc9df84cf86a0a6ff720\output\AndroidManifest.xml:7:5-9:41
 	tools:overrideLibrary
 		ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:10:9-118
@@ -36,6 +37,7 @@ MERGED from [com.contrarywind:Android-PickerView:3.1.1] C:\Users\Administrator\.
 		INJECTED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml
 uses-permission#android.permission.INTERNET
 ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:12:5-66
+MERGED from [com.yanzhenjie.nohttp:nohttp:1.1.1] C:\Users\Administrator\.android\build-cache\b3872ba299da20bf3285b25cbe3718bc4d38c354\output\AndroidManifest.xml:26:5-67
 	android:name
 		ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:12:22-64
 uses-permission#android.permission.CAMERA
@@ -52,10 +54,12 @@ ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:15:5-66
 		ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:15:22-63
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
 ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:16:5-80
+MERGED from [com.yanzhenjie.nohttp:nohttp:1.1.1] C:\Users\Administrator\.android\build-cache\b3872ba299da20bf3285b25cbe3718bc4d38c354\output\AndroidManifest.xml:24:5-80
 	android:name
 		ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:16:22-77
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
 ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:17:5-81
+MERGED from [com.yanzhenjie.nohttp:nohttp:1.1.1] C:\Users\Administrator\.android\build-cache\b3872ba299da20bf3285b25cbe3718bc4d38c354\output\AndroidManifest.xml:25:5-81
 	android:name
 		ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:17:22-78
 uses-permission#android.permission.MOUNT_UNMOUNT_FILESYSTEMS
@@ -64,10 +68,12 @@ ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:18:5-84
 		ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:18:22-81
 uses-permission#android.permission.ACCESS_NETWORK_STATE
 ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:19:5-79
+MERGED from [com.yanzhenjie.nohttp:nohttp:1.1.1] C:\Users\Administrator\.android\build-cache\b3872ba299da20bf3285b25cbe3718bc4d38c354\output\AndroidManifest.xml:27:5-79
 	android:name
 		ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:19:22-76
 uses-permission#android.permission.ACCESS_WIFI_STATE
 ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:20:5-76
+MERGED from [com.yanzhenjie.nohttp:nohttp:1.1.1] C:\Users\Administrator\.android\build-cache\b3872ba299da20bf3285b25cbe3718bc4d38c354\output\AndroidManifest.xml:28:5-76
 	android:name
 		ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:20:22-73
 uses-feature#android.hardware.camera
@@ -83,10 +89,10 @@ ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:24:5-76
 	android:name
 		ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:24:22-74
 application
-ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:26:5-109:19
+ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:26:5-113:19
 MERGED from [com.google.android.gms:play-services-appindexing:8.4.0] C:\Users\Administrator\.android\build-cache\4db5c475b706d2cfb4ca2485ec38dd1884cdfe1c\output\AndroidManifest.xml:19:5-20
 MERGED from [com.google.android.gms:play-services-basement:8.4.0] C:\Users\Administrator\.android\build-cache\67b12fbd82e47259739523ca06c4be31d1b029ca\output\AndroidManifest.xml:20:5-24:19
-MERGED from [com.android.support:support-v4:23.0.0] C:\Users\Administrator\.android\build-cache\eb55a73cc5cc64888f58a656f569b175525e986a\output\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.0.0] C:\Users\Administrator\.android\build-cache\a6dee4f95e44b07502c631dfb6cf4cffc9a475c1\output\AndroidManifest.xml:22:5-20
 	android:label
 		ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:30:9-41
 	android:allowBackup
@@ -207,10 +213,16 @@ ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:100:9-103:20
 		ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:102:13-60
 	android:name
 		ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:101:13-58
+activity#com.zbar.lib.app_tools.AppAboutActivity
+ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:104:9-107:20
+	android:theme
+		ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:106:13-60
+	android:name
+		ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:105:13-55
 meta-data#com.google.android.gms.version
-ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:106:9-108:69
+ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:110:9-112:69
 MERGED from [com.google.android.gms:play-services-basement:8.4.0] C:\Users\Administrator\.android\build-cache\67b12fbd82e47259739523ca06c4be31d1b029ca\output\AndroidManifest.xml:21:9-23:69
 	android:value
-		ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:108:13-66
+		ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:112:13-66
 	android:name
-		ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:107:13-58
+		ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:111:13-58

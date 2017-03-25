@@ -1,5 +1,7 @@
 package com.zbar.lib.app_web;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Bitmap;
@@ -15,6 +17,7 @@ import com.yanzhenjie.nohttp.NoHttp;
 import com.yanzhenjie.nohttp.rest.Request;
 import com.yanzhenjie.nohttp.rest.Response;
 import com.zbar.lib.R;
+import com.zbar.lib.app_tools.AppAboutActivity;
 import com.zbar.lib.custom_views.imgview.UserFaceImageView;
 import com.zbar.lib.nohttp.CallServer;
 import com.zbar.lib.nohttp.HttpListener;
@@ -30,8 +33,8 @@ public class MeFragment extends Fragment  implements View.OnClickListener {
     private SharedPreferences sp;
     private UserFaceImageView TcImg;
     private String imgUrl;
-    private TextView TcName,TcSex,TcXueLi,TcZhiCheng,TcMood;
-    private LinearLayout llTcMood;
+    private TextView TcName,TcSex,TcXueLi,TcZhiCheng,TcMood,TcExit;
+    private LinearLayout llTcMood,llAbout;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,Bundle savedInstanceState) {
@@ -46,7 +49,9 @@ public class MeFragment extends Fragment  implements View.OnClickListener {
         TcXueLi = (TextView) view.findViewById(R.id.tv_tc_xueli);//教师学历
         TcZhiCheng = (TextView) view.findViewById(R.id.tv_tc_zhicheng);//教师职称
         llTcMood = (LinearLayout) view.findViewById(R.id.ll_tc_mood);//教师个性签名 行
+        llAbout = (LinearLayout) view.findViewById(R.id.ll_tc_about);//关于 行
         TcMood = (TextView) view.findViewById(R.id.tv_tc_mood);//教师个性签名
+        TcExit = (TextView) view.findViewById(R.id.tv_app_exit);//退出
 
         //TcImg;
         //imageLoader = new ImageLoader(,new LruImageCache());
@@ -62,6 +67,8 @@ public class MeFragment extends Fragment  implements View.OnClickListener {
         TcImg.setOnClickListener(this);
         TcName.setOnClickListener(this);
         llTcMood.setOnClickListener(this);
+        llAbout.setOnClickListener(this);
+        TcExit.setOnClickListener(this);
         return view;
     }
     @Override
@@ -80,6 +87,16 @@ public class MeFragment extends Fragment  implements View.OnClickListener {
                 //System.out.println("实现教师个性签名修改编辑上传！！");
                 ToastUtil.showToast(getContext(),"实现教师个性签名修改编辑上传！！");
                 break;
+            case R.id.ll_tc_about:
+                //System.out.println("实现APP检查更新功能！！");
+                //ToastUtil.showToast(getContext(),"实现APP检查更新功能！！");
+                startActivity(new Intent(getActivity(), AppAboutActivity.class));
+                break;
+            case R.id.tv_app_exit:
+                //getActivity().finish();//结束程序
+                exitTips();
+                break;
+            default:
         }
     }
     /**
@@ -98,5 +115,26 @@ public class MeFragment extends Fragment  implements View.OnClickListener {
                 TcImg.setImageResource(R.drawable.default_userhead);
             }
         }, true, false);
+    }
+    //退出提示
+    private void exitTips(){
+        AlertDialog alertDialog = new AlertDialog.Builder(getActivity())
+                .setTitle("退出程序")
+                .setMessage("是否退出程序")
+                .setPositiveButton("确定", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int i) {
+                        dialog.dismiss();// 关闭对话框
+                        getActivity().finish();// 结束程序
+                    }
+                })
+                .setNegativeButton("取消",
+                        new DialogInterface.OnClickListener() {
+                            public void onClick(DialogInterface dialog, int which){
+                                dialog.dismiss();// 关闭对话框
+                            }
+                        })
+                .create(); //创建对话框
+        alertDialog.show(); // 显示对话框
     }
 }

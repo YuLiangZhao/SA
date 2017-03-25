@@ -88,6 +88,7 @@ public class ChatFragment extends Fragment {
                 ToastUtil.showToast(getContext(),"该功能尚未完成开发..."+ position);
         }
     }
+    //APP内 打开指定网址
     private void IE(String url){
         Intent intent = new Intent(getActivity(),WebViewActivity.class);
         intent.putExtra("url", url);

@@ -5,9 +5,14 @@
     <string name="app_author">中心小学课题组</string>
     <string name="app_run">立即体验</string>
     <string name="app_about">关于微课堂</string>
+    <string name="app_go"> > </string>
     <string name="app_exit">退出</string>
     <string name="app_settings">设置</string>
     <string name="app_img_alt">这是一张图片</string>
+    <string name="app_info">功能介绍</string>
+    <string name="app_notice">系统通知</string>
+    <string name="app_idea">意见建议</string>
+    <string name="app_update">检查新版本</string>
 
     <string name="scan_tips">将二维码图片对准扫描框即可自动扫描</string>
     <string name="qr_checkbox_text">开启连续扫描</string>

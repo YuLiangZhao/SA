@@ -116,10 +116,15 @@
     <string name="app_about">关于微课堂</string>
     <string name="app_author">中心小学课题组</string>
     <string name="app_exit">退出</string>
+    <string name="app_go"> > </string>
+    <string name="app_idea">意见建议</string>
     <string name="app_img_alt">这是一张图片</string>
+    <string name="app_info">功能介绍</string>
     <string name="app_name">微课堂</string>
+    <string name="app_notice">系统通知</string>
     <string name="app_run">立即体验</string>
     <string name="app_settings">设置</string>
+    <string name="app_update">检查新版本</string>
     <string name="app_version">v1.0</string>
     <string name="auth_google_play_services_client_facebook_display_name">Facebook</string>
     <string name="auth_google_play_services_client_google_display_name">Google</string>
