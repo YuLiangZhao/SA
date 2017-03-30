@@ -24,12 +24,12 @@
         "source": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\mipmap-xxhdpi\\nav_btn2_press.png"
     },
     {
-        "merged": "E:\\Android\\SA_QR2\\SAS\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi\\sa_pop_qrcode.png",
-        "source": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\mipmap-xxhdpi\\sa_pop_qrcode.png"
-    },
-    {
         "merged": "E:\\Android\\SA_QR2\\SAS\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi\\nav_btn1_normal.png",
         "source": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\mipmap-xxhdpi\\nav_btn1_normal.png"
+    },
+    {
+        "merged": "E:\\Android\\SA_QR2\\SAS\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi\\sa_pop_qrcode.png",
+        "source": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\mipmap-xxhdpi\\sa_pop_qrcode.png"
     },
     {
         "merged": "E:\\Android\\SA_QR2\\SAS\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi\\sa_top_bar_left_vline.png",

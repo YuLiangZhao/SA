@@ -1,4 +1,4 @@
-#Sun Mar 26 02:39:34 CST 2017
+#Fri Mar 31 02:05:11 CST 2017
 base.0=E\:\\Android\\SA_QR2\\SAS\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main
 renamed.0=classes.dex
 file.0=E\:\\Android\\SA_QR2\\SAS\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main\\classes.dex

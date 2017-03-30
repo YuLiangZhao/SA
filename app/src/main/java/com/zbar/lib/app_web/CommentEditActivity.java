@@ -29,6 +29,7 @@ import com.zbar.lib.app_root.BaseActivity;
 import com.zbar.lib.dialog.TipsDialog;
 import com.zbar.lib.nohttp.CallServer;
 import com.zbar.lib.nohttp.HttpListener;
+import com.zbar.lib.util.Constants;
 import com.zbar.lib.util.StringUtil;
 
 import org.json.JSONArray;
@@ -72,23 +73,23 @@ public class CommentEditActivity extends BaseActivity {
         //获得实例对象
         sp = this.getSharedPreferences("TcInfo",MODE_PRIVATE);//教师登录信息存储器
         TID = sp.getString("TcID","");
+        tvTopTitle = (TextView)  findViewById(R.id.tv_top_title);
         Bundle bundle = getIntent().getExtras();
         if(bundle != null) {
             map = (SerializableMap) bundle.get("map");
             sMsg = map.getMap().get("Reason").toString();
             RID = map.getMap().get("RID").toString();
             sNum = map.getMap().get("Num").toString();
+            tvTopTitle.setText("修改评语");
         }else{
             sMsg = "";
             RID = "";
             sNum = "0";
+            tvTopTitle.setText("添加评语");
         }
 
         ibTopBack = (ImageButton)  findViewById(R.id.ib_top_back);
         ibTopBack.setOnClickListener(this);
-
-        tvTopTitle = (TextView)  findViewById(R.id.tv_top_title);
-        tvTopTitle.setText("添加或修改评语");
 
         TipsDialog tipsDialog = new TipsDialog(getActivity());
         etMsg = (EditText) findViewById(R.id.et_com_msg);
@@ -272,7 +273,6 @@ public class CommentEditActivity extends BaseActivity {
     public void SaveCom(){
         String msg = etMsg.getText().toString();
         String num = tvScore.getText().toString();
-        String SaveCommentUrl = "http://lzedu.sinaapp.com/SA/SA_SaveComment.php";
         if (StringUtil.isEmpty(msg) ) {
             this.showMessage("请输入评语！");
             return;
@@ -287,7 +287,7 @@ public class CommentEditActivity extends BaseActivity {
         String en_tid = StringUtil.Base64Encode(TID);
         String en_rid = StringUtil.Base64Encode(RID);
         //this.showMessage(RID + "||" + en_rid);
-        Request<JSONObject> request = NoHttp.createJsonObjectRequest(SaveCommentUrl, RequestMethod.POST);
+        Request<JSONObject> request = NoHttp.createJsonObjectRequest(Constants.SAE_SaveCommentUrl, RequestMethod.POST);
         request.add("Reason", en_msg);
         request.add("Num", en_num);
         request.add("TID", en_tid);

@@ -3,12 +3,30 @@
 
     <item
         is-multidex="false"
-        jar="E:\Android\SA_QR2\SAS\app\libs\nohttp1.1.1.jar"
+        jar="C:\Users\Administrator\.android\build-cache\b3872ba299da20bf3285b25cbe3718bc4d38c354\output\jars\classes.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.0"
         sha1="131ba28165334cd7b63ec6b569446f3b289a3010">
-        <dex dex="E:\Android\SA_QR2\SAS\app\build\intermediates\pre-dexed\debug\nohttp1.1.1_ae6d14d17fa185beccc98df4a2ddaa38a9703a71.jar" />
+        <dex dex="E:\Android\SA_QR2\SAS\app\build\intermediates\pre-dexed\debug\classes_1723237aa09d3c4dffab4c5b09ffcb97ea20d5c7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Administrator\.android\build-cache\81e91c94eab32d8c4161eaeb5ea53db5910b6011\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="8413c27b45b7fe61dca4a98159f65e2cee215f5a">
+        <dex dex="E:\Android\SA_QR2\SAS\app\build\intermediates\pre-dexed\debug\classes_f86d6afa4c5ee78d0b6cb0d68d49c9cb2a087d16.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Administrator\.android\build-cache\81e91c94eab32d8c4161eaeb5ea53db5910b6011\output\jars\libs\internal_impl-23.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="8bd336eeae661e8311330284897ee07f8ebaa297">
+        <dex dex="E:\Android\SA_QR2\SAS\app\build\intermediates\pre-dexed\debug\internal_impl-23.0.0_59d7378eba12a19a2dfcf008bfac9563f906e3c0.jar" />
     </item>
     <item
         is-multidex="false"

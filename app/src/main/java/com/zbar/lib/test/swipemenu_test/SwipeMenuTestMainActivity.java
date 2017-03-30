@@ -29,7 +29,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.zbar.lib.R;
-import com.zbar.lib.app_web.CommentActivity;
+import com.zbar.lib.app_web.CommentListActivity;
 
 /**
  * SwipeMenuListView
@@ -53,7 +53,7 @@ public class SwipeMenuTestMainActivity extends Activity {
                 startActivity(new Intent(this, SwipeMenuDifferentItemActivity.class));
                 break;
             case R.id.button3:
-                startActivity(new Intent(this, CommentActivity.class));
+                startActivity(new Intent(this, CommentListActivity.class));
                 break;
         }
     }

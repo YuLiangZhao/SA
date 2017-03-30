@@ -94,8 +94,8 @@
                     "startLine": 34,
                     "startColumn": 4,
                     "startOffset": 1145,
-                    "endColumn": 51,
-                    "endOffset": 1192
+                    "endColumn": 49,
+                    "endOffset": 1190
                 },
                 "from": {
                     "file": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\values\\colors.xml"
@@ -105,9 +105,9 @@
                 "to": {
                     "startLine": 35,
                     "startColumn": 4,
-                    "startOffset": 1197,
+                    "startOffset": 1195,
                     "endColumn": 51,
-                    "endOffset": 1244
+                    "endOffset": 1242
                 },
                 "from": {
                     "file": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\values\\colors.xml"
@@ -117,9 +117,9 @@
                 "to": {
                     "startLine": 36,
                     "startColumn": 4,
-                    "startOffset": 1249,
+                    "startOffset": 1247,
                     "endColumn": 39,
-                    "endOffset": 1284
+                    "endOffset": 1282
                 },
                 "from": {
                     "file": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\values\\colors.xml"
@@ -129,9 +129,9 @@
                 "to": {
                     "startLine": 37,
                     "startColumn": 4,
-                    "startOffset": 1289,
+                    "startOffset": 1287,
                     "endColumn": 44,
-                    "endOffset": 1329
+                    "endOffset": 1327
                 },
                 "from": {
                     "file": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\values\\colors.xml"
@@ -141,9 +141,9 @@
                 "to": {
                     "startLine": 38,
                     "startColumn": 4,
-                    "startOffset": 1334,
+                    "startOffset": 1332,
                     "endColumn": 40,
-                    "endOffset": 1370
+                    "endOffset": 1368
                 },
                 "from": {
                     "file": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\values\\colors.xml"
@@ -153,9 +153,9 @@
                 "to": {
                     "startLine": 39,
                     "startColumn": 4,
-                    "startOffset": 1375,
+                    "startOffset": 1373,
                     "endColumn": 52,
-                    "endOffset": 1423
+                    "endOffset": 1421
                 },
                 "from": {
                     "file": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\values\\colors.xml"
@@ -165,9 +165,9 @@
                 "to": {
                     "startLine": 40,
                     "startColumn": 4,
-                    "startOffset": 1428,
+                    "startOffset": 1426,
                     "endColumn": 60,
-                    "endOffset": 1484
+                    "endOffset": 1482
                 },
                 "from": {
                     "file": "C:\\Users\\Administrator\\.android\\build-cache\\b9453f8d35720a7e841de7ded4a24a63715d5330\\output\\res\\values\\base_colors.xml"
@@ -177,9 +177,9 @@
                 "to": {
                     "startLine": 41,
                     "startColumn": 4,
-                    "startOffset": 1489,
+                    "startOffset": 1487,
                     "endColumn": 89,
-                    "endOffset": 1574
+                    "endOffset": 1572
                 },
                 "from": {
                     "file": "C:\\Users\\Administrator\\.android\\build-cache\\b9453f8d35720a7e841de7ded4a24a63715d5330\\output\\res\\values\\base_colors.xml"
@@ -189,9 +189,9 @@
                 "to": {
                     "startLine": 42,
                     "startColumn": 4,
-                    "startOffset": 1579,
+                    "startOffset": 1577,
                     "endColumn": 79,
-                    "endOffset": 1654
+                    "endOffset": 1652
                 },
                 "from": {
                     "file": "C:\\Users\\Administrator\\.android\\build-cache\\b9453f8d35720a7e841de7ded4a24a63715d5330\\output\\res\\values\\base_colors.xml"
@@ -201,9 +201,9 @@
                 "to": {
                     "startLine": 43,
                     "startColumn": 4,
-                    "startOffset": 1659,
+                    "startOffset": 1657,
                     "endColumn": 89,
-                    "endOffset": 1744
+                    "endOffset": 1742
                 },
                 "from": {
                     "file": "C:\\Users\\Administrator\\.android\\build-cache\\b9453f8d35720a7e841de7ded4a24a63715d5330\\output\\res\\values\\base_colors.xml"
@@ -213,9 +213,9 @@
                 "to": {
                     "startLine": 44,
                     "startColumn": 4,
-                    "startOffset": 1749,
+                    "startOffset": 1747,
                     "endColumn": 89,
-                    "endOffset": 1834
+                    "endOffset": 1832
                 },
                 "from": {
                     "file": "C:\\Users\\Administrator\\.android\\build-cache\\b9453f8d35720a7e841de7ded4a24a63715d5330\\output\\res\\values\\base_colors.xml"
@@ -225,9 +225,9 @@
                 "to": {
                     "startLine": 45,
                     "startColumn": 4,
-                    "startOffset": 1839,
+                    "startOffset": 1837,
                     "endColumn": 79,
-                    "endOffset": 1914
+                    "endOffset": 1912
                 },
                 "from": {
                     "file": "C:\\Users\\Administrator\\.android\\build-cache\\b9453f8d35720a7e841de7ded4a24a63715d5330\\output\\res\\values\\base_colors.xml"
@@ -237,9 +237,9 @@
                 "to": {
                     "startLine": 46,
                     "startColumn": 4,
-                    "startOffset": 1919,
+                    "startOffset": 1917,
                     "endColumn": 80,
-                    "endOffset": 1995
+                    "endOffset": 1993
                 },
                 "from": {
                     "file": "C:\\Users\\Administrator\\.android\\build-cache\\b9453f8d35720a7e841de7ded4a24a63715d5330\\output\\res\\values\\base_colors.xml"
@@ -249,9 +249,9 @@
                 "to": {
                     "startLine": 47,
                     "startColumn": 4,
-                    "startOffset": 2000,
+                    "startOffset": 1998,
                     "endColumn": 79,
-                    "endOffset": 2075
+                    "endOffset": 2073
                 },
                 "from": {
                     "file": "C:\\Users\\Administrator\\.android\\build-cache\\b9453f8d35720a7e841de7ded4a24a63715d5330\\output\\res\\values\\base_colors.xml"
@@ -261,9 +261,9 @@
                 "to": {
                     "startLine": 48,
                     "startColumn": 4,
-                    "startOffset": 2080,
+                    "startOffset": 2078,
                     "endColumn": 79,
-                    "endOffset": 2155
+                    "endOffset": 2153
                 },
                 "from": {
                     "file": "C:\\Users\\Administrator\\.android\\build-cache\\b9453f8d35720a7e841de7ded4a24a63715d5330\\output\\res\\values\\base_colors.xml"
@@ -273,9 +273,9 @@
                 "to": {
                     "startLine": 49,
                     "startColumn": 4,
-                    "startOffset": 2160,
+                    "startOffset": 2158,
                     "endColumn": 87,
-                    "endOffset": 2243
+                    "endOffset": 2241
                 },
                 "from": {
                     "file": "C:\\Users\\Administrator\\.android\\build-cache\\b9453f8d35720a7e841de7ded4a24a63715d5330\\output\\res\\values\\base_colors.xml"
@@ -285,9 +285,9 @@
                 "to": {
                     "startLine": 50,
                     "startColumn": 4,
-                    "startOffset": 2248,
+                    "startOffset": 2246,
                     "endColumn": 77,
-                    "endOffset": 2321
+                    "endOffset": 2319
                 },
                 "from": {
                     "file": "C:\\Users\\Administrator\\.android\\build-cache\\b9453f8d35720a7e841de7ded4a24a63715d5330\\output\\res\\values\\base_colors.xml"
@@ -297,9 +297,9 @@
                 "to": {
                     "startLine": 51,
                     "startColumn": 4,
-                    "startOffset": 2326,
+                    "startOffset": 2324,
                     "endColumn": 87,
-                    "endOffset": 2409
+                    "endOffset": 2407
                 },
                 "from": {
                     "file": "C:\\Users\\Administrator\\.android\\build-cache\\b9453f8d35720a7e841de7ded4a24a63715d5330\\output\\res\\values\\base_colors.xml"
@@ -309,9 +309,9 @@
                 "to": {
                     "startLine": 52,
                     "startColumn": 4,
-                    "startOffset": 2414,
+                    "startOffset": 2412,
                     "endColumn": 87,
-                    "endOffset": 2497
+                    "endOffset": 2495
                 },
                 "from": {
                     "file": "C:\\Users\\Administrator\\.android\\build-cache\\b9453f8d35720a7e841de7ded4a24a63715d5330\\output\\res\\values\\base_colors.xml"
@@ -321,9 +321,9 @@
                 "to": {
                     "startLine": 53,
                     "startColumn": 4,
-                    "startOffset": 2502,
+                    "startOffset": 2500,
                     "endColumn": 77,
-                    "endOffset": 2575
+                    "endOffset": 2573
                 },
                 "from": {
                     "file": "C:\\Users\\Administrator\\.android\\build-cache\\b9453f8d35720a7e841de7ded4a24a63715d5330\\output\\res\\values\\base_colors.xml"
@@ -333,9 +333,9 @@
                 "to": {
                     "startLine": 54,
                     "startColumn": 4,
-                    "startOffset": 2580,
+                    "startOffset": 2578,
                     "endColumn": 78,
-                    "endOffset": 2654
+                    "endOffset": 2652
                 },
                 "from": {
                     "file": "C:\\Users\\Administrator\\.android\\build-cache\\b9453f8d35720a7e841de7ded4a24a63715d5330\\output\\res\\values\\base_colors.xml"
@@ -345,9 +345,9 @@
                 "to": {
                     "startLine": 55,
                     "startColumn": 4,
-                    "startOffset": 2659,
+                    "startOffset": 2657,
                     "endColumn": 77,
-                    "endOffset": 2732
+                    "endOffset": 2730
                 },
                 "from": {
                     "file": "C:\\Users\\Administrator\\.android\\build-cache\\b9453f8d35720a7e841de7ded4a24a63715d5330\\output\\res\\values\\base_colors.xml"
@@ -357,9 +357,9 @@
                 "to": {
                     "startLine": 56,
                     "startColumn": 4,
-                    "startOffset": 2737,
+                    "startOffset": 2735,
                     "endColumn": 77,
-                    "endOffset": 2810
+                    "endOffset": 2808
                 },
                 "from": {
                     "file": "C:\\Users\\Administrator\\.android\\build-cache\\b9453f8d35720a7e841de7ded4a24a63715d5330\\output\\res\\values\\base_colors.xml"
@@ -369,9 +369,9 @@
                 "to": {
                     "startLine": 57,
                     "startColumn": 4,
-                    "startOffset": 2815,
+                    "startOffset": 2813,
                     "endColumn": 43,
-                    "endOffset": 2854
+                    "endOffset": 2852
                 },
                 "from": {
                     "file": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\values\\colors.xml"
@@ -381,9 +381,9 @@
                 "to": {
                     "startLine": 58,
                     "startColumn": 4,
-                    "startOffset": 2859,
+                    "startOffset": 2857,
                     "endColumn": 38,
-                    "endOffset": 2893
+                    "endOffset": 2891
                 },
                 "from": {
                     "file": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\values\\colors.xml"
@@ -393,9 +393,9 @@
                 "to": {
                     "startLine": 59,
                     "startColumn": 4,
-                    "startOffset": 2898,
+                    "startOffset": 2896,
                     "endColumn": 39,
-                    "endOffset": 2933
+                    "endOffset": 2931
                 },
                 "from": {
                     "file": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\values\\colors.xml"
@@ -405,9 +405,9 @@
                 "to": {
                     "startLine": 60,
                     "startColumn": 4,
-                    "startOffset": 2938,
+                    "startOffset": 2936,
                     "endColumn": 48,
-                    "endOffset": 2982
+                    "endOffset": 2980
                 },
                 "from": {
                     "file": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\values\\colors.xml"
@@ -417,9 +417,9 @@
                 "to": {
                     "startLine": 61,
                     "startColumn": 4,
-                    "startOffset": 2987,
+                    "startOffset": 2985,
                     "endColumn": 40,
-                    "endOffset": 3023
+                    "endOffset": 3021
                 },
                 "from": {
                     "file": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\values\\colors.xml"
@@ -429,9 +429,9 @@
                 "to": {
                     "startLine": 62,
                     "startColumn": 4,
-                    "startOffset": 3028,
+                    "startOffset": 3026,
                     "endColumn": 54,
-                    "endOffset": 3078
+                    "endOffset": 3076
                 },
                 "from": {
                     "file": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\values\\colors.xml"
@@ -441,9 +441,9 @@
                 "to": {
                     "startLine": 63,
                     "startColumn": 4,
-                    "startOffset": 3083,
+                    "startOffset": 3081,
                     "endColumn": 56,
-                    "endOffset": 3135
+                    "endOffset": 3133
                 },
                 "from": {
                     "file": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\values\\colors.xml"
@@ -453,9 +453,9 @@
                 "to": {
                     "startLine": 64,
                     "startColumn": 4,
-                    "startOffset": 3140,
+                    "startOffset": 3138,
                     "endColumn": 56,
-                    "endOffset": 3192
+                    "endOffset": 3190
                 },
                 "from": {
                     "file": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\values\\colors.xml"
@@ -465,9 +465,9 @@
                 "to": {
                     "startLine": 65,
                     "startColumn": 4,
-                    "startOffset": 3197,
+                    "startOffset": 3195,
                     "endColumn": 57,
-                    "endOffset": 3250
+                    "endOffset": 3248
                 },
                 "from": {
                     "file": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\values\\colors.xml"
@@ -477,9 +477,9 @@
                 "to": {
                     "startLine": 66,
                     "startColumn": 4,
-                    "startOffset": 3255,
+                    "startOffset": 3253,
                     "endColumn": 71,
-                    "endOffset": 3322
+                    "endOffset": 3320
                 },
                 "from": {
                     "file": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\values\\colors.xml"
@@ -489,9 +489,9 @@
                 "to": {
                     "startLine": 67,
                     "startColumn": 4,
-                    "startOffset": 3327,
+                    "startOffset": 3325,
                     "endColumn": 72,
-                    "endOffset": 3395
+                    "endOffset": 3393
                 },
                 "from": {
                     "file": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\values\\colors.xml"
@@ -501,9 +501,9 @@
                 "to": {
                     "startLine": 68,
                     "startColumn": 4,
-                    "startOffset": 3400,
+                    "startOffset": 3398,
                     "endColumn": 68,
-                    "endOffset": 3464
+                    "endOffset": 3462
                 },
                 "from": {
                     "file": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\values\\colors.xml"
@@ -513,9 +513,9 @@
                 "to": {
                     "startLine": 69,
                     "startColumn": 4,
-                    "startOffset": 3469,
+                    "startOffset": 3467,
                     "endColumn": 37,
-                    "endOffset": 3502
+                    "endOffset": 3500
                 },
                 "from": {
                     "file": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\values\\colors.xml"
@@ -525,9 +525,9 @@
                 "to": {
                     "startLine": 70,
                     "startColumn": 4,
-                    "startOffset": 3507,
+                    "startOffset": 3505,
                     "endColumn": 51,
-                    "endOffset": 3554
+                    "endOffset": 3552
                 },
                 "from": {
                     "file": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\values\\colors.xml"
@@ -537,9 +537,9 @@
                 "to": {
                     "startLine": 71,
                     "startColumn": 4,
-                    "startOffset": 3559,
+                    "startOffset": 3557,
                     "endColumn": 47,
-                    "endOffset": 3602
+                    "endOffset": 3600
                 },
                 "from": {
                     "file": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\values\\colors.xml"
@@ -549,9 +549,9 @@
                 "to": {
                     "startLine": 72,
                     "startColumn": 4,
-                    "startOffset": 3607,
+                    "startOffset": 3605,
                     "endColumn": 39,
-                    "endOffset": 3642
+                    "endOffset": 3640
                 },
                 "from": {
                     "file": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\values\\colors.xml"
@@ -561,9 +561,9 @@
                 "to": {
                     "startLine": 73,
                     "startColumn": 4,
-                    "startOffset": 3647,
+                    "startOffset": 3645,
                     "endColumn": 44,
-                    "endOffset": 3687
+                    "endOffset": 3685
                 },
                 "from": {
                     "file": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\values\\colors.xml"
@@ -573,9 +573,9 @@
                 "to": {
                     "startLine": 98,
                     "startColumn": 4,
-                    "startOffset": 5969,
+                    "startOffset": 5967,
                     "endColumn": 57,
-                    "endOffset": 6022
+                    "endOffset": 6020
                 },
                 "from": {
                     "file": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\values\\dimens.xml"
@@ -585,9 +585,9 @@
                 "to": {
                     "startLine": 99,
                     "startColumn": 4,
-                    "startOffset": 6027,
+                    "startOffset": 6025,
                     "endColumn": 55,
-                    "endOffset": 6078
+                    "endOffset": 6076
                 },
                 "from": {
                     "file": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\values\\dimens.xml"
@@ -597,9 +597,9 @@
                 "to": {
                     "startLine": 100,
                     "startColumn": 4,
-                    "startOffset": 6083,
+                    "startOffset": 6081,
                     "endColumn": 52,
-                    "endOffset": 6131
+                    "endOffset": 6129
                 },
                 "from": {
                     "file": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\values\\dimens.xml"
@@ -609,9 +609,9 @@
                 "to": {
                     "startLine": 101,
                     "startColumn": 4,
-                    "startOffset": 6136,
+                    "startOffset": 6134,
                     "endColumn": 54,
-                    "endOffset": 6186
+                    "endOffset": 6184
                 },
                 "from": {
                     "file": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\values\\dimens.xml"
@@ -621,9 +621,9 @@
                 "to": {
                     "startLine": 102,
                     "startColumn": 4,
-                    "startOffset": 6191,
+                    "startOffset": 6189,
                     "endColumn": 50,
-                    "endOffset": 6237
+                    "endOffset": 6235
                 },
                 "from": {
                     "file": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\values\\dimens.xml"
@@ -633,9 +633,9 @@
                 "to": {
                     "startLine": 103,
                     "startColumn": 4,
-                    "startOffset": 6242,
+                    "startOffset": 6240,
                     "endColumn": 61,
-                    "endOffset": 6299
+                    "endOffset": 6297
                 },
                 "from": {
                     "file": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\values\\dimens.xml"
@@ -645,9 +645,9 @@
                 "to": {
                     "startLine": 104,
                     "startColumn": 4,
-                    "startOffset": 6304,
+                    "startOffset": 6302,
                     "endColumn": 55,
-                    "endOffset": 6355
+                    "endOffset": 6353
                 },
                 "from": {
                     "file": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\values\\dimens.xml"
@@ -657,9 +657,9 @@
                 "to": {
                     "startLine": 105,
                     "startColumn": 4,
-                    "startOffset": 6360,
+                    "startOffset": 6358,
                     "endColumn": 56,
-                    "endOffset": 6412
+                    "endOffset": 6410
                 },
                 "from": {
                     "file": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\values\\dimens.xml"
@@ -669,9 +669,9 @@
                 "to": {
                     "startLine": 106,
                     "startColumn": 4,
-                    "startOffset": 6417,
+                    "startOffset": 6415,
                     "endColumn": 63,
-                    "endOffset": 6476
+                    "endOffset": 6474
                 },
                 "from": {
                     "file": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\values\\dimens.xml"
@@ -681,9 +681,9 @@
                 "to": {
                     "startLine": 107,
                     "startColumn": 4,
-                    "startOffset": 6481,
+                    "startOffset": 6479,
                     "endColumn": 39,
-                    "endOffset": 6516
+                    "endOffset": 6514
                 },
                 "from": {
                     "file": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\values\\ids.xml"
@@ -693,9 +693,9 @@
                 "to": {
                     "startLine": 108,
                     "startColumn": 4,
-                    "startOffset": 6521,
+                    "startOffset": 6519,
                     "endColumn": 35,
-                    "endOffset": 6552
+                    "endOffset": 6550
                 },
                 "from": {
                     "file": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\values\\ids.xml"
@@ -705,9 +705,9 @@
                 "to": {
                     "startLine": 109,
                     "startColumn": 4,
-                    "startOffset": 6557,
+                    "startOffset": 6555,
                     "endColumn": 42,
-                    "endOffset": 6595
+                    "endOffset": 6593
                 },
                 "from": {
                     "file": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\values\\ids.xml"
@@ -717,9 +717,9 @@
                 "to": {
                     "startLine": 110,
                     "startColumn": 4,
-                    "startOffset": 6600,
+                    "startOffset": 6598,
                     "endColumn": 45,
-                    "endOffset": 6641
+                    "endOffset": 6639
                 },
                 "from": {
                     "file": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\values\\ids.xml"
@@ -729,9 +729,9 @@
                 "to": {
                     "startLine": 111,
                     "startColumn": 4,
-                    "startOffset": 6646,
+                    "startOffset": 6644,
                     "endColumn": 33,
-                    "endOffset": 6675
+                    "endOffset": 6673
                 },
                 "from": {
                     "file": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\values\\ids.xml"
@@ -741,9 +741,9 @@
                 "to": {
                     "startLine": 112,
                     "startColumn": 4,
-                    "startOffset": 6680,
+                    "startOffset": 6678,
                     "endColumn": 44,
-                    "endOffset": 6720
+                    "endOffset": 6718
                 },
                 "from": {
                     "file": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\values\\ids.xml"
@@ -753,9 +753,9 @@
                 "to": {
                     "startLine": 113,
                     "startColumn": 4,
-                    "startOffset": 6725,
+                    "startOffset": 6723,
                     "endColumn": 60,
-                    "endOffset": 6781
+                    "endOffset": 6779
                 },
                 "from": {
                     "file": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\values\\integers.xml"
@@ -765,9 +765,9 @@
                 "to": {
                     "startLine": 114,
                     "startColumn": 4,
-                    "startOffset": 6786,
+                    "startOffset": 6784,
                     "endColumn": 66,
-                    "endOffset": 6848
+                    "endOffset": 6846
                 },
                 "from": {
                     "file": "C:\\Users\\Administrator\\.android\\build-cache\\67b12fbd82e47259739523ca06c4be31d1b029ca\\output\\res\\values\\version.xml"
@@ -777,9 +777,9 @@
                 "to": {
                     "startLine": 115,
                     "startColumn": 4,
-                    "startOffset": 6853,
+                    "startOffset": 6851,
                     "endColumn": 43,
-                    "endOffset": 6892
+                    "endOffset": 6890
                 },
                 "from": {
                     "file": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\values\\strings.xml"
@@ -789,9 +789,9 @@
                 "to": {
                     "startLine": 116,
                     "startColumn": 4,
-                    "startOffset": 6897,
+                    "startOffset": 6895,
                     "endColumn": 46,
-                    "endOffset": 6939
+                    "endOffset": 6937
                 },
                 "from": {
                     "file": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\values\\strings.xml"
@@ -801,9 +801,9 @@
                 "to": {
                     "startLine": 117,
                     "startColumn": 4,
-                    "startOffset": 6944,
+                    "startOffset": 6942,
                     "endColumn": 39,
-                    "endOffset": 6979
+                    "endOffset": 6977
                 },
                 "from": {
                     "file": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\values\\strings.xml"
@@ -813,9 +813,9 @@
                 "to": {
                     "startLine": 118,
                     "startColumn": 4,
-                    "startOffset": 6984,
+                    "startOffset": 6982,
                     "endColumn": 38,
-                    "endOffset": 7018
+                    "endOffset": 7016
                 },
                 "from": {
                     "file": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\values\\strings.xml"
@@ -825,28 +825,21 @@
                 "to": {
                     "startLine": 119,
                     "startColumn": 4,
-                    "startOffset": 7023,
+                    "startOffset": 7021,
                     "endColumn": 41,
-                    "endOffset": 7060
+                    "endOffset": 7058
                 },
                 "from": {
-                    "file": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\values\\strings.xml",
-                    "position": {
-                        "startLine": 13,
-                        "startColumn": 4,
-                        "startOffset": 491,
-                        "endColumn": 41,
-                        "endOffset": 528
-                    }
+                    "file": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\values\\strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 120,
                     "startColumn": 4,
-                    "startOffset": 7065,
+                    "startOffset": 7063,
                     "endColumn": 46,
-                    "endOffset": 7107
+                    "endOffset": 7105
                 },
                 "from": {
                     "file": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\values\\strings.xml"
@@ -856,28 +849,21 @@
                 "to": {
                     "startLine": 121,
                     "startColumn": 4,
-                    "startOffset": 7112,
+                    "startOffset": 7110,
                     "endColumn": 41,
-                    "endOffset": 7149
+                    "endOffset": 7147
                 },
                 "from": {
-                    "file": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\values\\strings.xml",
-                    "position": {
-                        "startLine": 11,
-                        "startColumn": 4,
-                        "startOffset": 405,
-                        "endColumn": 41,
-                        "endOffset": 442
-                    }
+                    "file": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\values\\strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 122,
                     "startColumn": 4,
-                    "startOffset": 7154,
+                    "startOffset": 7152,
                     "endColumn": 40,
-                    "endOffset": 7190
+                    "endOffset": 7188
                 },
                 "from": {
                     "file": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\values\\strings.xml"
@@ -887,28 +873,21 @@
                 "to": {
                     "startLine": 123,
                     "startColumn": 4,
-                    "startOffset": 7195,
+                    "startOffset": 7193,
                     "endColumn": 43,
-                    "endOffset": 7234
+                    "endOffset": 7232
                 },
                 "from": {
-                    "file": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\values\\strings.xml",
-                    "position": {
-                        "startLine": 12,
-                        "startColumn": 4,
-                        "startOffset": 447,
-                        "endColumn": 43,
-                        "endOffset": 486
-                    }
+                    "file": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\values\\strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 124,
                     "startColumn": 4,
-                    "startOffset": 7239,
+                    "startOffset": 7237,
                     "endColumn": 40,
-                    "endOffset": 7275
+                    "endOffset": 7273
                 },
                 "from": {
                     "file": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\values\\strings.xml"
@@ -918,9 +897,9 @@
                 "to": {
                     "startLine": 125,
                     "startColumn": 4,
-                    "startOffset": 7280,
+                    "startOffset": 7278,
                     "endColumn": 43,
-                    "endOffset": 7319
+                    "endOffset": 7317
                 },
                 "from": {
                     "file": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\values\\strings.xml"
@@ -930,28 +909,21 @@
                 "to": {
                     "startLine": 126,
                     "startColumn": 4,
-                    "startOffset": 7324,
+                    "startOffset": 7322,
                     "endColumn": 44,
-                    "endOffset": 7364
+                    "endOffset": 7362
                 },
                 "from": {
-                    "file": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\values\\strings.xml",
-                    "position": {
-                        "startLine": 14,
-                        "startColumn": 4,
-                        "startOffset": 533,
-                        "endColumn": 44,
-                        "endOffset": 573
-                    }
+                    "file": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\values\\strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 127,
                     "startColumn": 4,
-                    "startOffset": 7369,
+                    "startOffset": 7367,
                     "endColumn": 44,
-                    "endOffset": 7409
+                    "endOffset": 7407
                 },
                 "from": {
                     "file": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\values\\strings.xml"
@@ -961,9 +933,9 @@
                 "to": {
                     "startLine": 128,
                     "startColumn": 4,
-                    "startOffset": 7414,
+                    "startOffset": 7412,
                     "endColumn": 91,
-                    "endOffset": 7501
+                    "endOffset": 7499
                 },
                 "from": {
                     "file": "C:\\Users\\Administrator\\.android\\build-cache\\67b12fbd82e47259739523ca06c4be31d1b029ca\\output\\res\\values\\auth_strings.xml"
@@ -973,9 +945,9 @@
                 "to": {
                     "startLine": 129,
                     "startColumn": 4,
-                    "startOffset": 7506,
+                    "startOffset": 7504,
                     "endColumn": 87,
-                    "endOffset": 7589
+                    "endOffset": 7587
                 },
                 "from": {
                     "file": "C:\\Users\\Administrator\\.android\\build-cache\\67b12fbd82e47259739523ca06c4be31d1b029ca\\output\\res\\values\\auth_strings.xml"
@@ -985,9 +957,9 @@
                 "to": {
                     "startLine": 130,
                     "startColumn": 4,
-                    "startOffset": 7594,
+                    "startOffset": 7592,
                     "endColumn": 35,
-                    "endOffset": 7625
+                    "endOffset": 7623
                 },
                 "from": {
                     "file": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\values\\strings.xml"
@@ -997,9 +969,9 @@
                 "to": {
                     "startLine": 131,
                     "startColumn": 4,
-                    "startOffset": 7630,
+                    "startOffset": 7628,
                     "endColumn": 42,
-                    "endOffset": 7668
+                    "endOffset": 7666
                 },
                 "from": {
                     "file": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\values\\strings.xml"
@@ -1009,9 +981,9 @@
                 "to": {
                     "startLine": 132,
                     "startColumn": 4,
-                    "startOffset": 7673,
+                    "startOffset": 7671,
                     "endColumn": 42,
-                    "endOffset": 7711
+                    "endOffset": 7709
                 },
                 "from": {
                     "file": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\values\\strings.xml"
@@ -1021,9 +993,9 @@
                 "to": {
                     "startLine": 133,
                     "startColumn": 4,
-                    "startOffset": 7716,
+                    "startOffset": 7714,
                     "endColumn": 42,
-                    "endOffset": 7754
+                    "endOffset": 7752
                 },
                 "from": {
                     "file": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\values\\strings.xml"
@@ -1033,9 +1005,9 @@
                 "to": {
                     "startLine": 134,
                     "startColumn": 4,
-                    "startOffset": 7759,
+                    "startOffset": 7757,
                     "endColumn": 39,
-                    "endOffset": 7794
+                    "endOffset": 7792
                 },
                 "from": {
                     "file": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\values\\strings.xml"
@@ -1045,9 +1017,9 @@
                 "to": {
                     "startLine": 135,
                     "startColumn": 4,
-                    "startOffset": 7799,
+                    "startOffset": 7797,
                     "endColumn": 37,
-                    "endOffset": 7832
+                    "endOffset": 7830
                 },
                 "from": {
                     "file": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\values\\strings.xml"
@@ -1057,9 +1029,9 @@
                 "to": {
                     "startLine": 136,
                     "startColumn": 4,
-                    "startOffset": 7837,
+                    "startOffset": 7835,
                     "endColumn": 50,
-                    "endOffset": 7883
+                    "endOffset": 7881
                 },
                 "from": {
                     "file": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\values\\strings.xml"
@@ -1069,9 +1041,9 @@
                 "to": {
                     "startLine": 137,
                     "startColumn": 4,
-                    "startOffset": 7888,
+                    "startOffset": 7886,
                     "endColumn": 44,
-                    "endOffset": 7928
+                    "endOffset": 7926
                 },
                 "from": {
                     "file": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\values\\strings.xml"
@@ -1081,9 +1053,9 @@
                 "to": {
                     "startLine": 138,
                     "startColumn": 4,
-                    "startOffset": 7933,
+                    "startOffset": 7931,
                     "endColumn": 56,
-                    "endOffset": 7985
+                    "endOffset": 7983
                 },
                 "from": {
                     "file": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\values\\strings.xml"
@@ -1093,9 +1065,9 @@
                 "to": {
                     "startLine": 139,
                     "startColumn": 4,
-                    "startOffset": 7990,
+                    "startOffset": 7988,
                     "endColumn": 50,
-                    "endOffset": 8036
+                    "endOffset": 8034
                 },
                 "from": {
                     "file": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\values\\strings.xml"
@@ -1105,9 +1077,9 @@
                 "to": {
                     "startLine": 140,
                     "startColumn": 4,
-                    "startOffset": 8041,
+                    "startOffset": 8039,
                     "endColumn": 76,
-                    "endOffset": 8113
+                    "endOffset": 8111
                 },
                 "from": {
                     "file": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\values\\strings.xml"
@@ -1117,9 +1089,9 @@
                 "to": {
                     "startLine": 141,
                     "startColumn": 4,
-                    "startOffset": 8118,
+                    "startOffset": 8116,
                     "endColumn": 46,
-                    "endOffset": 8160
+                    "endOffset": 8158
                 },
                 "from": {
                     "file": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\values\\strings.xml"
@@ -1129,9 +1101,9 @@
                 "to": {
                     "startLine": 142,
                     "startColumn": 4,
-                    "startOffset": 8165,
+                    "startOffset": 8163,
                     "endColumn": 46,
-                    "endOffset": 8207
+                    "endOffset": 8205
                 },
                 "from": {
                     "file": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\values\\strings.xml"
@@ -1141,9 +1113,9 @@
                 "to": {
                     "startLine": 143,
                     "startColumn": 4,
-                    "startOffset": 8212,
+                    "startOffset": 8210,
                     "endColumn": 42,
-                    "endOffset": 8250
+                    "endOffset": 8248
                 },
                 "from": {
                     "file": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\values\\strings.xml"
@@ -1153,9 +1125,9 @@
                 "to": {
                     "startLine": 144,
                     "startColumn": 4,
-                    "startOffset": 8255,
+                    "startOffset": 8253,
                     "endColumn": 50,
-                    "endOffset": 8301
+                    "endOffset": 8299
                 },
                 "from": {
                     "file": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\values\\strings.xml"
@@ -1165,9 +1137,9 @@
                 "to": {
                     "startLine": 145,
                     "startColumn": 4,
-                    "startOffset": 8306,
+                    "startOffset": 8304,
                     "endColumn": 231,
-                    "endOffset": 8533
+                    "endOffset": 8531
                 },
                 "from": {
                     "file": "C:\\Users\\Administrator\\.android\\build-cache\\b9453f8d35720a7e841de7ded4a24a63715d5330\\output\\res\\values\\base_strings.xml"
@@ -1177,9 +1149,9 @@
                 "to": {
                     "startLine": 146,
                     "startColumn": 4,
-                    "startOffset": 8538,
+                    "startOffset": 8536,
                     "endColumn": 125,
-                    "endOffset": 8659
+                    "endOffset": 8657
                 },
                 "from": {
                     "file": "C:\\Users\\Administrator\\.android\\build-cache\\b9453f8d35720a7e841de7ded4a24a63715d5330\\output\\res\\values\\base_strings.xml"
@@ -1189,9 +1161,9 @@
                 "to": {
                     "startLine": 147,
                     "startColumn": 4,
-                    "startOffset": 8664,
+                    "startOffset": 8662,
                     "endColumn": 180,
-                    "endOffset": 8840
+                    "endOffset": 8838
                 },
                 "from": {
                     "file": "C:\\Users\\Administrator\\.android\\build-cache\\b9453f8d35720a7e841de7ded4a24a63715d5330\\output\\res\\values\\base_strings.xml"
@@ -1201,9 +1173,9 @@
                 "to": {
                     "startLine": 148,
                     "startColumn": 4,
-                    "startOffset": 8845,
+                    "startOffset": 8843,
                     "endColumn": 124,
-                    "endOffset": 8965
+                    "endOffset": 8963
                 },
                 "from": {
                     "file": "C:\\Users\\Administrator\\.android\\build-cache\\b9453f8d35720a7e841de7ded4a24a63715d5330\\output\\res\\values\\base_strings.xml"
@@ -1213,9 +1185,9 @@
                 "to": {
                     "startLine": 149,
                     "startColumn": 4,
-                    "startOffset": 8970,
+                    "startOffset": 8968,
                     "endColumn": 123,
-                    "endOffset": 9089
+                    "endOffset": 9087
                 },
                 "from": {
                     "file": "C:\\Users\\Administrator\\.android\\build-cache\\b9453f8d35720a7e841de7ded4a24a63715d5330\\output\\res\\values\\base_strings.xml"
@@ -1225,9 +1197,9 @@
                 "to": {
                     "startLine": 150,
                     "startColumn": 4,
-                    "startOffset": 9094,
+                    "startOffset": 9092,
                     "endColumn": 212,
-                    "endOffset": 9302
+                    "endOffset": 9300
                 },
                 "from": {
                     "file": "C:\\Users\\Administrator\\.android\\build-cache\\b9453f8d35720a7e841de7ded4a24a63715d5330\\output\\res\\values\\base_strings.xml"
@@ -1237,9 +1209,9 @@
                 "to": {
                     "startLine": 151,
                     "startColumn": 4,
-                    "startOffset": 9307,
+                    "startOffset": 9305,
                     "endColumn": 214,
-                    "endOffset": 9517
+                    "endOffset": 9515
                 },
                 "from": {
                     "file": "C:\\Users\\Administrator\\.android\\build-cache\\b9453f8d35720a7e841de7ded4a24a63715d5330\\output\\res\\values\\base_strings.xml"
@@ -1249,9 +1221,9 @@
                 "to": {
                     "startLine": 152,
                     "startColumn": 4,
-                    "startOffset": 9522,
+                    "startOffset": 9520,
                     "endColumn": 122,
-                    "endOffset": 9640
+                    "endOffset": 9638
                 },
                 "from": {
                     "file": "C:\\Users\\Administrator\\.android\\build-cache\\b9453f8d35720a7e841de7ded4a24a63715d5330\\output\\res\\values\\base_strings.xml"
@@ -1261,9 +1233,9 @@
                 "to": {
                     "startLine": 153,
                     "startColumn": 4,
-                    "startOffset": 9645,
+                    "startOffset": 9643,
                     "endColumn": 164,
-                    "endOffset": 9805
+                    "endOffset": 9803
                 },
                 "from": {
                     "file": "C:\\Users\\Administrator\\.android\\build-cache\\b9453f8d35720a7e841de7ded4a24a63715d5330\\output\\res\\values\\base_strings.xml"
@@ -1273,9 +1245,9 @@
                 "to": {
                     "startLine": 154,
                     "startColumn": 4,
-                    "startOffset": 9810,
+                    "startOffset": 9808,
                     "endColumn": 93,
-                    "endOffset": 9899
+                    "endOffset": 9897
                 },
                 "from": {
                     "file": "C:\\Users\\Administrator\\.android\\build-cache\\b9453f8d35720a7e841de7ded4a24a63715d5330\\output\\res\\values\\base_strings.xml"
@@ -1285,9 +1257,9 @@
                 "to": {
                     "startLine": 155,
                     "startColumn": 4,
-                    "startOffset": 9904,
+                    "startOffset": 9902,
                     "endColumn": 140,
-                    "endOffset": 10040
+                    "endOffset": 10038
                 },
                 "from": {
                     "file": "C:\\Users\\Administrator\\.android\\build-cache\\b9453f8d35720a7e841de7ded4a24a63715d5330\\output\\res\\values\\base_strings.xml"
@@ -1297,9 +1269,9 @@
                 "to": {
                     "startLine": 156,
                     "startColumn": 4,
-                    "startOffset": 10045,
+                    "startOffset": 10043,
                     "endColumn": 89,
-                    "endOffset": 10130
+                    "endOffset": 10128
                 },
                 "from": {
                     "file": "C:\\Users\\Administrator\\.android\\build-cache\\b9453f8d35720a7e841de7ded4a24a63715d5330\\output\\res\\values\\base_strings.xml"
@@ -1309,9 +1281,9 @@
                 "to": {
                     "startLine": 157,
                     "startColumn": 4,
-                    "startOffset": 10135,
+                    "startOffset": 10133,
                     "endColumn": 102,
-                    "endOffset": 10233
+                    "endOffset": 10231
                 },
                 "from": {
                     "file": "C:\\Users\\Administrator\\.android\\build-cache\\b9453f8d35720a7e841de7ded4a24a63715d5330\\output\\res\\values\\base_strings.xml"
@@ -1321,9 +1293,9 @@
                 "to": {
                     "startLine": 158,
                     "startColumn": 4,
-                    "startOffset": 10238,
+                    "startOffset": 10236,
                     "endColumn": 142,
-                    "endOffset": 10376
+                    "endOffset": 10374
                 },
                 "from": {
                     "file": "C:\\Users\\Administrator\\.android\\build-cache\\b9453f8d35720a7e841de7ded4a24a63715d5330\\output\\res\\values\\base_strings.xml"
@@ -1333,9 +1305,9 @@
                 "to": {
                     "startLine": 159,
                     "startColumn": 4,
-                    "startOffset": 10381,
+                    "startOffset": 10379,
                     "endColumn": 99,
-                    "endOffset": 10476
+                    "endOffset": 10474
                 },
                 "from": {
                     "file": "C:\\Users\\Administrator\\.android\\build-cache\\b9453f8d35720a7e841de7ded4a24a63715d5330\\output\\res\\values\\base_strings.xml"
@@ -1345,9 +1317,9 @@
                 "to": {
                     "startLine": 160,
                     "startColumn": 4,
-                    "startOffset": 10481,
+                    "startOffset": 10479,
                     "endColumn": 150,
-                    "endOffset": 10627
+                    "endOffset": 10625
                 },
                 "from": {
                     "file": "C:\\Users\\Administrator\\.android\\build-cache\\b9453f8d35720a7e841de7ded4a24a63715d5330\\output\\res\\values\\base_strings.xml"
@@ -1357,9 +1329,9 @@
                 "to": {
                     "startLine": 161,
                     "startColumn": 4,
-                    "startOffset": 10632,
+                    "startOffset": 10630,
                     "endColumn": 91,
-                    "endOffset": 10719
+                    "endOffset": 10717
                 },
                 "from": {
                     "file": "C:\\Users\\Administrator\\.android\\build-cache\\b9453f8d35720a7e841de7ded4a24a63715d5330\\output\\res\\values\\base_strings.xml"
@@ -1369,9 +1341,9 @@
                 "to": {
                     "startLine": 162,
                     "startColumn": 4,
-                    "startOffset": 10724,
+                    "startOffset": 10722,
                     "endColumn": 218,
-                    "endOffset": 10938
+                    "endOffset": 10936
                 },
                 "from": {
                     "file": "C:\\Users\\Administrator\\.android\\build-cache\\67b12fbd82e47259739523ca06c4be31d1b029ca\\output\\res\\values\\common_strings.xml"
@@ -1381,9 +1353,9 @@
                 "to": {
                     "startLine": 163,
                     "startColumn": 4,
-                    "startOffset": 10943,
+                    "startOffset": 10941,
                     "endColumn": 218,
-                    "endOffset": 11157
+                    "endOffset": 11155
                 },
                 "from": {
                     "file": "C:\\Users\\Administrator\\.android\\build-cache\\b9453f8d35720a7e841de7ded4a24a63715d5330\\output\\res\\values\\base_strings.xml"
@@ -1393,9 +1365,9 @@
                 "to": {
                     "startLine": 164,
                     "startColumn": 4,
-                    "startOffset": 11162,
+                    "startOffset": 11160,
                     "endColumn": 94,
-                    "endOffset": 11252
+                    "endOffset": 11250
                 },
                 "from": {
                     "file": "C:\\Users\\Administrator\\.android\\build-cache\\b9453f8d35720a7e841de7ded4a24a63715d5330\\output\\res\\values\\base_strings.xml"
@@ -1405,9 +1377,9 @@
                 "to": {
                     "startLine": 165,
                     "startColumn": 4,
-                    "startOffset": 11257,
+                    "startOffset": 11255,
                     "endColumn": 104,
-                    "endOffset": 11357
+                    "endOffset": 11355
                 },
                 "from": {
                     "file": "C:\\Users\\Administrator\\.android\\build-cache\\b9453f8d35720a7e841de7ded4a24a63715d5330\\output\\res\\values\\base_strings.xml"
@@ -1417,9 +1389,9 @@
                 "to": {
                     "startLine": 166,
                     "startColumn": 4,
-                    "startOffset": 11362,
+                    "startOffset": 11360,
                     "endColumn": 180,
-                    "endOffset": 11538
+                    "endOffset": 11536
                 },
                 "from": {
                     "file": "C:\\Users\\Administrator\\.android\\build-cache\\b9453f8d35720a7e841de7ded4a24a63715d5330\\output\\res\\values\\base_strings.xml"
@@ -1429,9 +1401,9 @@
                 "to": {
                     "startLine": 167,
                     "startColumn": 4,
-                    "startOffset": 11543,
+                    "startOffset": 11541,
                     "endColumn": 124,
-                    "endOffset": 11663
+                    "endOffset": 11661
                 },
                 "from": {
                     "file": "C:\\Users\\Administrator\\.android\\build-cache\\b9453f8d35720a7e841de7ded4a24a63715d5330\\output\\res\\values\\base_strings.xml"
@@ -1441,9 +1413,9 @@
                 "to": {
                     "startLine": 168,
                     "startColumn": 4,
-                    "startOffset": 11668,
+                    "startOffset": 11666,
                     "endColumn": 174,
-                    "endOffset": 11838
+                    "endOffset": 11836
                 },
                 "from": {
                     "file": "C:\\Users\\Administrator\\.android\\build-cache\\b9453f8d35720a7e841de7ded4a24a63715d5330\\output\\res\\values\\base_strings.xml"
@@ -1453,9 +1425,9 @@
                 "to": {
                     "startLine": 169,
                     "startColumn": 4,
-                    "startOffset": 11843,
+                    "startOffset": 11841,
                     "endColumn": 104,
-                    "endOffset": 11943
+                    "endOffset": 11941
                 },
                 "from": {
                     "file": "C:\\Users\\Administrator\\.android\\build-cache\\b9453f8d35720a7e841de7ded4a24a63715d5330\\output\\res\\values\\base_strings.xml"
@@ -1465,9 +1437,9 @@
                 "to": {
                     "startLine": 170,
                     "startColumn": 4,
-                    "startOffset": 11948,
+                    "startOffset": 11946,
                     "endColumn": 147,
-                    "endOffset": 12091
+                    "endOffset": 12089
                 },
                 "from": {
                     "file": "C:\\Users\\Administrator\\.android\\build-cache\\b9453f8d35720a7e841de7ded4a24a63715d5330\\output\\res\\values\\base_strings.xml"
@@ -1477,9 +1449,9 @@
                 "to": {
                     "startLine": 171,
                     "startColumn": 4,
-                    "startOffset": 12096,
+                    "startOffset": 12094,
                     "endColumn": 62,
-                    "endOffset": 12154
+                    "endOffset": 12152
                 },
                 "from": {
                     "file": "C:\\Users\\Administrator\\.android\\build-cache\\b9453f8d35720a7e841de7ded4a24a63715d5330\\output\\res\\values\\base_strings.xml"
@@ -1489,9 +1461,9 @@
                 "to": {
                     "startLine": 172,
                     "startColumn": 4,
-                    "startOffset": 12159,
+                    "startOffset": 12157,
                     "endColumn": 61,
-                    "endOffset": 12216
+                    "endOffset": 12214
                 },
                 "from": {
                     "file": "C:\\Users\\Administrator\\.android\\build-cache\\b9453f8d35720a7e841de7ded4a24a63715d5330\\output\\res\\values\\base_strings.xml"
@@ -1501,9 +1473,9 @@
                 "to": {
                     "startLine": 173,
                     "startColumn": 4,
-                    "startOffset": 12221,
+                    "startOffset": 12219,
                     "endColumn": 78,
-                    "endOffset": 12295
+                    "endOffset": 12293
                 },
                 "from": {
                     "file": "C:\\Users\\Administrator\\.android\\build-cache\\b9453f8d35720a7e841de7ded4a24a63715d5330\\output\\res\\values\\base_strings.xml"
@@ -1513,9 +1485,9 @@
                 "to": {
                     "startLine": 174,
                     "startColumn": 4,
-                    "startOffset": 12300,
+                    "startOffset": 12298,
                     "endColumn": 38,
-                    "endOffset": 12334
+                    "endOffset": 12332
                 },
                 "from": {
                     "file": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\values\\strings.xml"
@@ -1525,9 +1497,9 @@
                 "to": {
                     "startLine": 175,
                     "startColumn": 4,
-                    "startOffset": 12339,
+                    "startOffset": 12337,
                     "endColumn": 37,
-                    "endOffset": 12372
+                    "endOffset": 12370
                 },
                 "from": {
                     "file": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\values\\strings.xml"
@@ -1537,9 +1509,9 @@
                 "to": {
                     "startLine": 176,
                     "startColumn": 4,
-                    "startOffset": 12377,
+                    "startOffset": 12375,
                     "endColumn": 43,
-                    "endOffset": 12416
+                    "endOffset": 12414
                 },
                 "from": {
                     "file": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\values\\strings.xml"
@@ -1549,9 +1521,9 @@
                 "to": {
                     "startLine": 177,
                     "startColumn": 4,
-                    "startOffset": 12421,
+                    "startOffset": 12419,
                     "endColumn": 49,
-                    "endOffset": 12466
+                    "endOffset": 12464
                 },
                 "from": {
                     "file": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\values\\strings.xml"
@@ -1561,9 +1533,9 @@
                 "to": {
                     "startLine": 178,
                     "startColumn": 4,
-                    "startOffset": 12471,
+                    "startOffset": 12469,
                     "endColumn": 44,
-                    "endOffset": 12511
+                    "endOffset": 12509
                 },
                 "from": {
                     "file": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\values\\strings.xml"
@@ -1573,9 +1545,9 @@
                 "to": {
                     "startLine": 179,
                     "startColumn": 4,
-                    "startOffset": 12516,
+                    "startOffset": 12514,
                     "endColumn": 46,
-                    "endOffset": 12558
+                    "endOffset": 12556
                 },
                 "from": {
                     "file": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\values\\strings.xml"
@@ -1585,9 +1557,9 @@
                 "to": {
                     "startLine": 180,
                     "startColumn": 4,
-                    "startOffset": 12563,
+                    "startOffset": 12561,
                     "endColumn": 53,
-                    "endOffset": 12612
+                    "endOffset": 12610
                 },
                 "from": {
                     "file": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\values\\strings.xml"
@@ -1597,9 +1569,9 @@
                 "to": {
                     "startLine": 181,
                     "startColumn": 4,
-                    "startOffset": 12617,
+                    "startOffset": 12615,
                     "endColumn": 44,
-                    "endOffset": 12657
+                    "endOffset": 12655
                 },
                 "from": {
                     "file": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\values\\strings.xml"
@@ -1609,9 +1581,9 @@
                 "to": {
                     "startLine": 182,
                     "startColumn": 4,
-                    "startOffset": 12662,
+                    "startOffset": 12660,
                     "endColumn": 51,
-                    "endOffset": 12709
+                    "endOffset": 12707
                 },
                 "from": {
                     "file": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\values\\strings.xml"
@@ -1621,9 +1593,9 @@
                 "to": {
                     "startLine": 183,
                     "startColumn": 4,
-                    "startOffset": 12714,
+                    "startOffset": 12712,
                     "endColumn": 47,
-                    "endOffset": 12757
+                    "endOffset": 12755
                 },
                 "from": {
                     "file": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\values\\strings.xml"
@@ -1633,9 +1605,9 @@
                 "to": {
                     "startLine": 184,
                     "startColumn": 4,
-                    "startOffset": 12762,
+                    "startOffset": 12760,
                     "endColumn": 46,
-                    "endOffset": 12804
+                    "endOffset": 12802
                 },
                 "from": {
                     "file": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\values\\strings.xml"
@@ -1645,9 +1617,9 @@
                 "to": {
                     "startLine": 185,
                     "startColumn": 4,
-                    "startOffset": 12809,
+                    "startOffset": 12807,
                     "endColumn": 46,
-                    "endOffset": 12851
+                    "endOffset": 12849
                 },
                 "from": {
                     "file": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\values\\strings.xml"
@@ -1657,9 +1629,9 @@
                 "to": {
                     "startLine": 186,
                     "startColumn": 4,
-                    "startOffset": 12856,
+                    "startOffset": 12854,
                     "endColumn": 47,
-                    "endOffset": 12899
+                    "endOffset": 12897
                 },
                 "from": {
                     "file": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\values\\strings.xml"
@@ -1669,9 +1641,9 @@
                 "to": {
                     "startLine": 187,
                     "startColumn": 4,
-                    "startOffset": 12904,
+                    "startOffset": 12902,
                     "endColumn": 53,
-                    "endOffset": 12953
+                    "endOffset": 12951
                 },
                 "from": {
                     "file": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\values\\strings.xml"
@@ -1681,9 +1653,9 @@
                 "to": {
                     "startLine": 188,
                     "startColumn": 4,
-                    "startOffset": 12958,
+                    "startOffset": 12956,
                     "endColumn": 44,
-                    "endOffset": 12998
+                    "endOffset": 12996
                 },
                 "from": {
                     "file": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\values\\strings.xml"
@@ -1693,9 +1665,9 @@
                 "to": {
                     "startLine": 189,
                     "startColumn": 4,
-                    "startOffset": 13003,
+                    "startOffset": 13001,
                     "endColumn": 61,
-                    "endOffset": 13060
+                    "endOffset": 13058
                 },
                 "from": {
                     "file": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\values\\strings.xml"
@@ -1705,9 +1677,9 @@
                 "to": {
                     "startLine": 190,
                     "startColumn": 4,
-                    "startOffset": 13065,
+                    "startOffset": 13063,
                     "endColumn": 57,
-                    "endOffset": 13118
+                    "endOffset": 13116
                 },
                 "from": {
                     "file": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\values\\strings.xml"
@@ -1717,9 +1689,9 @@
                 "to": {
                     "startLine": 191,
                     "startColumn": 4,
-                    "startOffset": 13123,
+                    "startOffset": 13121,
                     "endColumn": 49,
-                    "endOffset": 13168
+                    "endOffset": 13166
                 },
                 "from": {
                     "file": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\values\\strings.xml"
@@ -1729,9 +1701,9 @@
                 "to": {
                     "startLine": 192,
                     "startColumn": 4,
-                    "startOffset": 13173,
+                    "startOffset": 13171,
                     "endColumn": 45,
-                    "endOffset": 13214
+                    "endOffset": 13212
                 },
                 "from": {
                     "file": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\values\\strings.xml"
@@ -1741,9 +1713,9 @@
                 "to": {
                     "startLine": 193,
                     "startColumn": 4,
-                    "startOffset": 13219,
+                    "startOffset": 13217,
                     "endColumn": 48,
-                    "endOffset": 13263
+                    "endOffset": 13261
                 },
                 "from": {
                     "file": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\values\\strings.xml"
@@ -1753,9 +1725,9 @@
                 "to": {
                     "startLine": 194,
                     "startColumn": 4,
-                    "startOffset": 13268,
+                    "startOffset": 13266,
                     "endColumn": 54,
-                    "endOffset": 13318
+                    "endOffset": 13316
                 },
                 "from": {
                     "file": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\values\\strings.xml"
@@ -1765,9 +1737,9 @@
                 "to": {
                     "startLine": 195,
                     "startColumn": 4,
-                    "startOffset": 13323,
+                    "startOffset": 13321,
                     "endColumn": 44,
-                    "endOffset": 13363
+                    "endOffset": 13361
                 },
                 "from": {
                     "file": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\values\\strings.xml"
@@ -1777,9 +1749,9 @@
                 "to": {
                     "startLine": 196,
                     "startColumn": 4,
-                    "startOffset": 13368,
+                    "startOffset": 13366,
                     "endColumn": 46,
-                    "endOffset": 13410
+                    "endOffset": 13408
                 },
                 "from": {
                     "file": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\values\\strings.xml"
@@ -1789,9 +1761,9 @@
                 "to": {
                     "startLine": 197,
                     "startColumn": 4,
-                    "startOffset": 13415,
+                    "startOffset": 13413,
                     "endColumn": 48,
-                    "endOffset": 13459
+                    "endOffset": 13457
                 },
                 "from": {
                     "file": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\values\\strings.xml"
@@ -1801,9 +1773,9 @@
                 "to": {
                     "startLine": 198,
                     "startColumn": 4,
-                    "startOffset": 13464,
+                    "startOffset": 13462,
                     "endColumn": 46,
-                    "endOffset": 13506
+                    "endOffset": 13504
                 },
                 "from": {
                     "file": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\values\\strings.xml"
@@ -1813,9 +1785,9 @@
                 "to": {
                     "startLine": 199,
                     "startColumn": 4,
-                    "startOffset": 13511,
+                    "startOffset": 13509,
                     "endColumn": 48,
-                    "endOffset": 13555
+                    "endOffset": 13553
                 },
                 "from": {
                     "file": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\values\\strings.xml"
@@ -1825,9 +1797,9 @@
                 "to": {
                     "startLine": 200,
                     "startColumn": 4,
-                    "startOffset": 13560,
+                    "startOffset": 13558,
                     "endColumn": 48,
-                    "endOffset": 13604
+                    "endOffset": 13602
                 },
                 "from": {
                     "file": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\values\\strings.xml"
@@ -1837,9 +1809,9 @@
                 "to": {
                     "startLine": 201,
                     "startColumn": 4,
-                    "startOffset": 13609,
+                    "startOffset": 13607,
                     "endColumn": 45,
-                    "endOffset": 13650
+                    "endOffset": 13648
                 },
                 "from": {
                     "file": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\values\\strings.xml"
@@ -1849,9 +1821,9 @@
                 "to": {
                     "startLine": 202,
                     "startColumn": 4,
-                    "startOffset": 13655,
+                    "startOffset": 13653,
                     "endColumn": 42,
-                    "endOffset": 13693
+                    "endOffset": 13691
                 },
                 "from": {
                     "file": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\values\\strings.xml"
@@ -1861,9 +1833,9 @@
                 "to": {
                     "startLine": 203,
                     "startColumn": 4,
-                    "startOffset": 13698,
+                    "startOffset": 13696,
                     "endColumn": 42,
-                    "endOffset": 13736
+                    "endOffset": 13734
                 },
                 "from": {
                     "file": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\values\\strings.xml"
@@ -1873,9 +1845,9 @@
                 "to": {
                     "startLine": 204,
                     "startColumn": 4,
-                    "startOffset": 13741,
+                    "startOffset": 13739,
                     "endColumn": 41,
-                    "endOffset": 13778
+                    "endOffset": 13776
                 },
                 "from": {
                     "file": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\values\\strings.xml"
@@ -1885,9 +1857,9 @@
                 "to": {
                     "startLine": 205,
                     "startColumn": 4,
-                    "startOffset": 13783,
+                    "startOffset": 13781,
                     "endColumn": 42,
-                    "endOffset": 13821
+                    "endOffset": 13819
                 },
                 "from": {
                     "file": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\values\\strings.xml"
@@ -1897,9 +1869,9 @@
                 "to": {
                     "startLine": 206,
                     "startColumn": 4,
-                    "startOffset": 13826,
+                    "startOffset": 13824,
                     "endColumn": 42,
-                    "endOffset": 13864
+                    "endOffset": 13862
                 },
                 "from": {
                     "file": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\values\\strings.xml"
@@ -1909,9 +1881,9 @@
                 "to": {
                     "startLine": 207,
                     "startColumn": 4,
-                    "startOffset": 13869,
+                    "startOffset": 13867,
                     "endColumn": 51,
-                    "endOffset": 13916
+                    "endOffset": 13914
                 },
                 "from": {
                     "file": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\values\\strings.xml"
@@ -1921,9 +1893,9 @@
                 "to": {
                     "startLine": 208,
                     "startColumn": 4,
-                    "startOffset": 13921,
+                    "startOffset": 13919,
                     "endColumn": 55,
-                    "endOffset": 13972
+                    "endOffset": 13970
                 },
                 "from": {
                     "file": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\values\\strings.xml"
@@ -1933,9 +1905,9 @@
                 "to": {
                     "startLine": 209,
                     "startColumn": 4,
-                    "startOffset": 13977,
+                    "startOffset": 13975,
                     "endColumn": 50,
-                    "endOffset": 14023
+                    "endOffset": 14021
                 },
                 "from": {
                     "file": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\values\\strings.xml"
@@ -1945,9 +1917,9 @@
                 "to": {
                     "startLine": 210,
                     "startColumn": 4,
-                    "startOffset": 14028,
+                    "startOffset": 14026,
                     "endColumn": 46,
-                    "endOffset": 14070
+                    "endOffset": 14068
                 },
                 "from": {
                     "file": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\values\\strings.xml"
@@ -1957,9 +1929,9 @@
                 "to": {
                     "startLine": 211,
                     "startColumn": 4,
-                    "startOffset": 14075,
-                    "endColumn": 45,
-                    "endOffset": 14116
+                    "startOffset": 14073,
+                    "endColumn": 42,
+                    "endOffset": 14111
                 },
                 "from": {
                     "file": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\values\\strings.xml"
@@ -1969,21 +1941,28 @@
                 "to": {
                     "startLine": 212,
                     "startColumn": 4,
-                    "startOffset": 14121,
-                    "endColumn": 43,
-                    "endOffset": 14160
+                    "startOffset": 14116,
+                    "endColumn": 50,
+                    "endOffset": 14162
                 },
                 "from": {
-                    "file": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\values\\strings.xml"
+                    "file": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 19,
+                        "startColumn": 4,
+                        "startOffset": 698,
+                        "endColumn": 50,
+                        "endOffset": 744
+                    }
                 }
             },
             {
                 "to": {
                     "startLine": 213,
                     "startColumn": 4,
-                    "startOffset": 14165,
-                    "endColumn": 42,
-                    "endOffset": 14203
+                    "startOffset": 14167,
+                    "endColumn": 41,
+                    "endOffset": 14204
                 },
                 "from": {
                     "file": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\values\\strings.xml"
@@ -1993,21 +1972,28 @@
                 "to": {
                     "startLine": 214,
                     "startColumn": 4,
-                    "startOffset": 14208,
-                    "endColumn": 44,
-                    "endOffset": 14248
+                    "startOffset": 14209,
+                    "endColumn": 54,
+                    "endOffset": 14259
                 },
                 "from": {
-                    "file": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\values\\strings.xml"
+                    "file": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 18,
+                        "startColumn": 4,
+                        "startOffset": 643,
+                        "endColumn": 54,
+                        "endOffset": 693
+                    }
                 }
             },
             {
                 "to": {
                     "startLine": 215,
                     "startColumn": 4,
-                    "startOffset": 14253,
-                    "endColumn": 44,
-                    "endOffset": 14293
+                    "startOffset": 14264,
+                    "endColumn": 45,
+                    "endOffset": 14305
                 },
                 "from": {
                     "file": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\values\\strings.xml"
@@ -2017,9 +2003,9 @@
                 "to": {
                     "startLine": 216,
                     "startColumn": 4,
-                    "startOffset": 14298,
-                    "endColumn": 47,
-                    "endOffset": 14341
+                    "startOffset": 14310,
+                    "endColumn": 43,
+                    "endOffset": 14349
                 },
                 "from": {
                     "file": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\values\\strings.xml"
@@ -2029,9 +2015,9 @@
                 "to": {
                     "startLine": 217,
                     "startColumn": 4,
-                    "startOffset": 14346,
-                    "endColumn": 53,
-                    "endOffset": 14395
+                    "startOffset": 14354,
+                    "endColumn": 42,
+                    "endOffset": 14392
                 },
                 "from": {
                     "file": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\values\\strings.xml"
@@ -2041,9 +2027,9 @@
                 "to": {
                     "startLine": 218,
                     "startColumn": 4,
-                    "startOffset": 14400,
-                    "endColumn": 50,
-                    "endOffset": 14446
+                    "startOffset": 14397,
+                    "endColumn": 44,
+                    "endOffset": 14437
                 },
                 "from": {
                     "file": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\values\\strings.xml"
@@ -2053,9 +2039,9 @@
                 "to": {
                     "startLine": 219,
                     "startColumn": 4,
-                    "startOffset": 14451,
-                    "endColumn": 42,
-                    "endOffset": 14489
+                    "startOffset": 14442,
+                    "endColumn": 44,
+                    "endOffset": 14482
                 },
                 "from": {
                     "file": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\values\\strings.xml"
@@ -2065,9 +2051,9 @@
                 "to": {
                     "startLine": 220,
                     "startColumn": 4,
-                    "startOffset": 14494,
+                    "startOffset": 14487,
                     "endColumn": 47,
-                    "endOffset": 14537
+                    "endOffset": 14530
                 },
                 "from": {
                     "file": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\values\\strings.xml"
@@ -2077,9 +2063,9 @@
                 "to": {
                     "startLine": 221,
                     "startColumn": 4,
-                    "startOffset": 14542,
-                    "endColumn": 49,
-                    "endOffset": 14587
+                    "startOffset": 14535,
+                    "endColumn": 53,
+                    "endOffset": 14584
                 },
                 "from": {
                     "file": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\values\\strings.xml"
@@ -2089,9 +2075,9 @@
                 "to": {
                     "startLine": 222,
                     "startColumn": 4,
-                    "startOffset": 14592,
-                    "endColumn": 44,
-                    "endOffset": 14632
+                    "startOffset": 14589,
+                    "endColumn": 50,
+                    "endOffset": 14635
                 },
                 "from": {
                     "file": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\values\\strings.xml"
@@ -2101,9 +2087,9 @@
                 "to": {
                     "startLine": 223,
                     "startColumn": 4,
-                    "startOffset": 14637,
-                    "endColumn": 55,
-                    "endOffset": 14688
+                    "startOffset": 14640,
+                    "endColumn": 42,
+                    "endOffset": 14678
                 },
                 "from": {
                     "file": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\values\\strings.xml"
@@ -2113,9 +2099,9 @@
                 "to": {
                     "startLine": 224,
                     "startColumn": 4,
-                    "startOffset": 14693,
+                    "startOffset": 14683,
                     "endColumn": 47,
-                    "endOffset": 14736
+                    "endOffset": 14726
                 },
                 "from": {
                     "file": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\values\\strings.xml"
@@ -2125,9 +2111,9 @@
                 "to": {
                     "startLine": 225,
                     "startColumn": 4,
-                    "startOffset": 14741,
-                    "endColumn": 60,
-                    "endOffset": 14797
+                    "startOffset": 14731,
+                    "endColumn": 49,
+                    "endOffset": 14776
                 },
                 "from": {
                     "file": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\values\\strings.xml"
@@ -2137,9 +2123,9 @@
                 "to": {
                     "startLine": 226,
                     "startColumn": 4,
-                    "startOffset": 14802,
-                    "endColumn": 74,
-                    "endOffset": 14872
+                    "startOffset": 14781,
+                    "endColumn": 44,
+                    "endOffset": 14821
                 },
                 "from": {
                     "file": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\values\\strings.xml"
@@ -2149,9 +2135,9 @@
                 "to": {
                     "startLine": 227,
                     "startColumn": 4,
-                    "startOffset": 14877,
-                    "endColumn": 68,
-                    "endOffset": 14941
+                    "startOffset": 14826,
+                    "endColumn": 55,
+                    "endOffset": 14877
                 },
                 "from": {
                     "file": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\values\\strings.xml"
@@ -2161,9 +2147,9 @@
                 "to": {
                     "startLine": 228,
                     "startColumn": 4,
-                    "startOffset": 14946,
-                    "endColumn": 45,
-                    "endOffset": 14987
+                    "startOffset": 14882,
+                    "endColumn": 47,
+                    "endOffset": 14925
                 },
                 "from": {
                     "file": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\values\\strings.xml"
@@ -2173,9 +2159,9 @@
                 "to": {
                     "startLine": 229,
                     "startColumn": 4,
-                    "startOffset": 14992,
-                    "endColumn": 46,
-                    "endOffset": 15034
+                    "startOffset": 14930,
+                    "endColumn": 60,
+                    "endOffset": 14986
                 },
                 "from": {
                     "file": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\values\\strings.xml"
@@ -2185,9 +2171,9 @@
                 "to": {
                     "startLine": 230,
                     "startColumn": 4,
-                    "startOffset": 15039,
-                    "endColumn": 50,
-                    "endOffset": 15085
+                    "startOffset": 14991,
+                    "endColumn": 74,
+                    "endOffset": 15061
                 },
                 "from": {
                     "file": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\values\\strings.xml"
@@ -2197,8 +2183,8 @@
                 "to": {
                     "startLine": 231,
                     "startColumn": 4,
-                    "startOffset": 15090,
-                    "endColumn": 44,
+                    "startOffset": 15066,
+                    "endColumn": 68,
                     "endOffset": 15130
                 },
                 "from": {
@@ -2210,8 +2196,8 @@
                     "startLine": 232,
                     "startColumn": 4,
                     "startOffset": 15135,
-                    "endColumn": 49,
-                    "endOffset": 15180
+                    "endColumn": 45,
+                    "endOffset": 15176
                 },
                 "from": {
                     "file": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\values\\strings.xml"
@@ -2221,9 +2207,9 @@
                 "to": {
                     "startLine": 233,
                     "startColumn": 4,
-                    "startOffset": 15185,
-                    "endColumn": 40,
-                    "endOffset": 15221
+                    "startOffset": 15181,
+                    "endColumn": 46,
+                    "endOffset": 15223
                 },
                 "from": {
                     "file": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\values\\strings.xml"
@@ -2233,23 +2219,58 @@
                 "to": {
                     "startLine": 234,
                     "startColumn": 4,
-                    "startOffset": 15226,
-                    "endLine": 236,
-                    "endColumn": 12,
-                    "endOffset": 15304
+                    "startOffset": 15228,
+                    "endColumn": 50,
+                    "endOffset": 15274
                 },
                 "from": {
-                    "file": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\values\\styles.xml"
+                    "file": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\values\\strings.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 235,
+                    "startColumn": 4,
+                    "startOffset": 15279,
+                    "endColumn": 44,
+                    "endOffset": 15319
+                },
+                "from": {
+                    "file": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\values\\strings.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 236,
+                    "startColumn": 4,
+                    "startOffset": 15324,
+                    "endColumn": 49,
+                    "endOffset": 15369
+                },
+                "from": {
+                    "file": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\values\\strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 237,
                     "startColumn": 4,
-                    "startOffset": 15309,
-                    "endLine": 239,
+                    "startOffset": 15374,
+                    "endColumn": 40,
+                    "endOffset": 15410
+                },
+                "from": {
+                    "file": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\values\\strings.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 238,
+                    "startColumn": 4,
+                    "startOffset": 15415,
+                    "endLine": 240,
                     "endColumn": 12,
-                    "endOffset": 15376
+                    "endOffset": 15493
                 },
                 "from": {
                     "file": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\values\\styles.xml"
@@ -2257,12 +2278,12 @@
             },
             {
                 "to": {
-                    "startLine": 240,
+                    "startLine": 241,
                     "startColumn": 4,
-                    "startOffset": 15381,
+                    "startOffset": 15498,
                     "endLine": 243,
                     "endColumn": 12,
-                    "endOffset": 15606
+                    "endOffset": 15565
                 },
                 "from": {
                     "file": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\values\\styles.xml"
@@ -2272,10 +2293,10 @@
                 "to": {
                     "startLine": 244,
                     "startColumn": 4,
-                    "startOffset": 15611,
+                    "startOffset": 15570,
                     "endLine": 247,
                     "endColumn": 12,
-                    "endOffset": 15817
+                    "endOffset": 15795
                 },
                 "from": {
                     "file": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\values\\styles.xml"
@@ -2285,10 +2306,10 @@
                 "to": {
                     "startLine": 248,
                     "startColumn": 4,
-                    "startOffset": 15822,
-                    "endLine": 263,
+                    "startOffset": 15800,
+                    "endLine": 251,
                     "endColumn": 12,
-                    "endOffset": 16492
+                    "endOffset": 16006
                 },
                 "from": {
                     "file": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\values\\styles.xml"
@@ -2296,12 +2317,12 @@
             },
             {
                 "to": {
-                    "startLine": 264,
+                    "startLine": 252,
                     "startColumn": 4,
-                    "startOffset": 16497,
-                    "endLine": 271,
+                    "startOffset": 16011,
+                    "endLine": 267,
                     "endColumn": 12,
-                    "endOffset": 16897
+                    "endOffset": 16681
                 },
                 "from": {
                     "file": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\values\\styles.xml"
@@ -2309,12 +2330,12 @@
             },
             {
                 "to": {
-                    "startLine": 272,
+                    "startLine": 268,
                     "startColumn": 4,
-                    "startOffset": 16902,
-                    "endLine": 282,
+                    "startOffset": 16686,
+                    "endLine": 275,
                     "endColumn": 12,
-                    "endOffset": 17460
+                    "endOffset": 17086
                 },
                 "from": {
                     "file": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\values\\styles.xml"
@@ -2322,11 +2343,24 @@
             },
             {
                 "to": {
-                    "startLine": 283,
+                    "startLine": 276,
                     "startColumn": 4,
-                    "startOffset": 17465,
+                    "startOffset": 17091,
+                    "endLine": 286,
+                    "endColumn": 12,
+                    "endOffset": 17649
+                },
+                "from": {
+                    "file": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\values\\styles.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 287,
+                    "startColumn": 4,
+                    "startOffset": 17654,
                     "endColumn": 53,
-                    "endOffset": 17514
+                    "endOffset": 17703
                 },
                 "from": {
                     "file": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\values\\styles.xml"

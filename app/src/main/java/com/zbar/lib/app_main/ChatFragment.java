@@ -9,7 +9,8 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 
 import com.zbar.lib.R;
-import com.zbar.lib.app_web.CommentActivity;
+import com.zbar.lib.app_web.CommentListActivity;
+import com.zbar.lib.app_web.ScoreShopListActivity;
 import com.zbar.lib.app_web.ShakeActivity;
 import com.zbar.lib.app_web.ShowStudentClassWorkPic;
 import com.zbar.lib.app_web.WebViewActivity;
@@ -62,12 +63,13 @@ public class ChatFragment extends Fragment {
             case 3:
                 //ToastUtil.showToast(getContext(),"评语管理："+ position);
                 //跳转界面
-                startActivity(new Intent(getActivity(),CommentActivity.class));
+                startActivity(new Intent(getActivity(),CommentListActivity.class));
                 break;
             case 4:
                 //ToastUtil.showToast(getContext(),"添加奖品："+ position);
                 //跳转界面
-                IE("http://lzedu.sinaapp.com/SA/Student_ScoreShop_Add.php");
+                startActivity(new Intent(getActivity(),ScoreShopListActivity.class));
+                //IE("http://lzedu.sinaapp.com/SA/Student_ScoreShop_Add.php");
                 break;
             case 5:
                 //ToastUtil.showToast(getContext(),"积分兑换："+ position);

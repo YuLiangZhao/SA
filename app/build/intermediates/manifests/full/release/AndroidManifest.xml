@@ -81,7 +81,7 @@
         </activity>
         <activity android:name="com.zbar.lib.test.swipemenu_test.SwipeMenuDifferentItemActivity" >
         </activity>
-        <activity android:name="com.zbar.lib.app_web.CommentActivity" >
+        <activity android:name="com.zbar.lib.app_web.CommentListActivity" >
         </activity>
         <activity android:name="com.zbar.lib.app_web.CommentEditActivity" >
         </activity>
@@ -95,6 +95,14 @@
         </activity>
         <activity
             android:name="com.zbar.lib.app_tools.AppAboutActivity"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.zbar.lib.app_web.ScoreShopEditActivity"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.zbar.lib.app_web.ScoreShopListActivity"
             android:theme="@android:style/Theme.NoTitleBar" >
         </activity>
         <!--

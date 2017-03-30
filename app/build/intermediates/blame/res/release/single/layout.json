@@ -28,6 +28,10 @@
         "source": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\layout\\layout_activity_homework_checker.xml"
     },
     {
+        "merged": "E:\\Android\\SA_QR2\\SAS\\app\\build\\intermediates\\res\\merged\\release\\layout\\layout_activity_score_shops_list_item.xml",
+        "source": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\layout\\layout_activity_score_shops_list_item.xml"
+    },
+    {
         "merged": "E:\\Android\\SA_QR2\\SAS\\app\\build\\intermediates\\res\\merged\\release\\layout\\layout_activity_guide_page_2.xml",
         "source": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\layout\\layout_activity_guide_page_2.xml"
     },
@@ -60,16 +64,16 @@
         "source": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\layout\\layout_activity_app_about.xml"
     },
     {
+        "merged": "E:\\Android\\SA_QR2\\SAS\\app\\build\\intermediates\\res\\merged\\release\\layout\\layout_activity_score_shops_list_main.xml",
+        "source": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\layout\\layout_activity_score_shops_list_main.xml"
+    },
+    {
         "merged": "E:\\Android\\SA_QR2\\SAS\\app\\build\\intermediates\\res\\merged\\release\\layout\\layout_activity_json_test_weather.xml",
         "source": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\layout\\layout_activity_json_test_weather.xml"
     },
     {
         "merged": "E:\\Android\\SA_QR2\\SAS\\app\\build\\intermediates\\res\\merged\\release\\layout\\layout_activity_show_student_class_work_pic.xml",
         "source": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\layout\\layout_activity_show_student_class_work_pic.xml"
-    },
-    {
-        "merged": "E:\\Android\\SA_QR2\\SAS\\app\\build\\intermediates\\res\\merged\\release\\layout\\scoreview_activity_main.xml",
-        "source": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\layout\\scoreview_activity_main.xml"
     },
     {
         "merged": "E:\\Android\\SA_QR2\\SAS\\app\\build\\intermediates\\res\\merged\\release\\layout\\layout_activity_sa_top_bar_back_title_search_close.xml",
@@ -90,10 +94,6 @@
     {
         "merged": "E:\\Android\\SA_QR2\\SAS\\app\\build\\intermediates\\res\\merged\\release\\layout\\layout_activity_sa_top_bar_back_title.xml",
         "source": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\layout\\layout_activity_sa_top_bar_back_title.xml"
-    },
-    {
-        "merged": "E:\\Android\\SA_QR2\\SAS\\app\\build\\intermediates\\res\\merged\\release\\layout\\scoreview_activity.xml",
-        "source": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\layout\\scoreview_activity.xml"
     },
     {
         "merged": "E:\\Android\\SA_QR2\\SAS\\app\\build\\intermediates\\res\\merged\\release\\layout\\layout_activity_comments_list_item.xml",
@@ -132,6 +132,10 @@
         "source": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\layout\\layout_activity_sa_main.xml"
     },
     {
+        "merged": "E:\\Android\\SA_QR2\\SAS\\app\\build\\intermediates\\res\\merged\\release\\layout\\layout_activity_score_shop_edit.xml",
+        "source": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\layout\\layout_activity_score_shop_edit.xml"
+    },
+    {
         "merged": "E:\\Android\\SA_QR2\\SAS\\app\\build\\intermediates\\res\\merged\\release\\layout\\layout_activity_sa_top_bar_back_title_close.xml",
         "source": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\layout\\layout_activity_sa_top_bar_back_title_close.xml"
     },
@@ -142,6 +146,10 @@
     {
         "merged": "E:\\Android\\SA_QR2\\SAS\\app\\build\\intermediates\\res\\merged\\release\\layout\\layout_activity_edit_student_class_work_pic.xml",
         "source": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\layout\\layout_activity_edit_student_class_work_pic.xml"
+    },
+    {
+        "merged": "E:\\Android\\SA_QR2\\SAS\\app\\build\\intermediates\\res\\merged\\release\\layout\\layout_activity_score_shop_edit_bak.xml",
+        "source": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\layout\\layout_activity_score_shop_edit_bak.xml"
     },
     {
         "merged": "E:\\Android\\SA_QR2\\SAS\\app\\build\\intermediates\\res\\merged\\release\\layout\\pickerview_custom_options.xml",
@@ -180,12 +188,12 @@
         "source": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\layout\\layout_activity_homework_checker_bak.xml"
     },
     {
-        "merged": "E:\\Android\\SA_QR2\\SAS\\app\\build\\intermediates\\res\\merged\\release\\layout\\layout_activity_sa_shake.xml",
-        "source": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\layout\\layout_activity_sa_shake.xml"
-    },
-    {
         "merged": "E:\\Android\\SA_QR2\\SAS\\app\\build\\intermediates\\res\\merged\\release\\layout\\pickerview_custom_time.xml",
         "source": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\layout\\pickerview_custom_time.xml"
+    },
+    {
+        "merged": "E:\\Android\\SA_QR2\\SAS\\app\\build\\intermediates\\res\\merged\\release\\layout\\layout_activity_sa_shake.xml",
+        "source": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\layout\\layout_activity_sa_shake.xml"
     },
     {
         "merged": "E:\\Android\\SA_QR2\\SAS\\app\\build\\intermediates\\res\\merged\\release\\layout\\layout_activity_upload_pic_pop_window.xml",

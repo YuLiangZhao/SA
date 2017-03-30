@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:1:1-115:12
+ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:1:1-123:12
 	package
 		ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:3:5-27
 		INJECTED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml
@@ -22,7 +22,7 @@ ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:7:5-10:120
 MERGED from [com.google.android.gms:play-services-appindexing:8.4.0] C:\Users\Administrator\.android\build-cache\4db5c475b706d2cfb4ca2485ec38dd1884cdfe1c\output\AndroidManifest.xml:18:5-42
 MERGED from [com.google.android.gms:play-services-base:8.4.0] C:\Users\Administrator\.android\build-cache\b9453f8d35720a7e841de7ded4a24a63715d5330\output\AndroidManifest.xml:18:5-42
 MERGED from [com.google.android.gms:play-services-basement:8.4.0] C:\Users\Administrator\.android\build-cache\67b12fbd82e47259739523ca06c4be31d1b029ca\output\AndroidManifest.xml:18:5-42
-MERGED from [com.android.support:support-v4:23.0.0] C:\Users\Administrator\.android\build-cache\a6dee4f95e44b07502c631dfb6cf4cffc9a475c1\output\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:23.0.0] C:\Users\Administrator\.android\build-cache\81e91c94eab32d8c4161eaeb5ea53db5910b6011\output\AndroidManifest.xml:20:5-43
 MERGED from [com.yanzhenjie.nohttp:nohttp:1.1.1] C:\Users\Administrator\.android\build-cache\b3872ba299da20bf3285b25cbe3718bc4d38c354\output\AndroidManifest.xml:20:5-22:41
 MERGED from [com.contrarywind:Android-PickerView:3.1.1] C:\Users\Administrator\.android\build-cache\8f9284ae112de74969f7fc9df84cf86a0a6ff720\output\AndroidManifest.xml:7:5-9:41
 	tools:overrideLibrary
@@ -89,10 +89,10 @@ ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:24:5-76
 	android:name
 		ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:24:22-74
 application
-ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:26:5-113:19
+ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:26:5-121:19
 MERGED from [com.google.android.gms:play-services-appindexing:8.4.0] C:\Users\Administrator\.android\build-cache\4db5c475b706d2cfb4ca2485ec38dd1884cdfe1c\output\AndroidManifest.xml:19:5-20
 MERGED from [com.google.android.gms:play-services-basement:8.4.0] C:\Users\Administrator\.android\build-cache\67b12fbd82e47259739523ca06c4be31d1b029ca\output\AndroidManifest.xml:20:5-24:19
-MERGED from [com.android.support:support-v4:23.0.0] C:\Users\Administrator\.android\build-cache\a6dee4f95e44b07502c631dfb6cf4cffc9a475c1\output\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.0.0] C:\Users\Administrator\.android\build-cache\81e91c94eab32d8c4161eaeb5ea53db5910b6011\output\AndroidManifest.xml:22:5-20
 	android:label
 		ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:30:9-41
 	android:allowBackup
@@ -191,10 +191,10 @@ activity#com.zbar.lib.test.swipemenu_test.SwipeMenuDifferentItemActivity
 ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:90:9-91:20
 	android:name
 		ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:90:19-85
-activity#com.zbar.lib.app_web.CommentActivity
+activity#com.zbar.lib.app_web.CommentListActivity
 ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:92:9-93:20
 	android:name
-		ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:92:19-58
+		ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:92:19-62
 activity#com.zbar.lib.app_web.CommentEditActivity
 ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:94:9-95:20
 	android:name
@@ -219,10 +219,22 @@ ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:104:9-107:20
 		ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:106:13-60
 	android:name
 		ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:105:13-55
+activity#com.zbar.lib.app_web.ScoreShopEditActivity
+ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:108:9-111:20
+	android:theme
+		ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:110:13-60
+	android:name
+		ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:109:13-58
+activity#com.zbar.lib.app_web.ScoreShopListActivity
+ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:112:9-115:20
+	android:theme
+		ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:114:13-60
+	android:name
+		ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:113:13-58
 meta-data#com.google.android.gms.version
-ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:110:9-112:69
+ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:118:9-120:69
 MERGED from [com.google.android.gms:play-services-basement:8.4.0] C:\Users\Administrator\.android\build-cache\67b12fbd82e47259739523ca06c4be31d1b029ca\output\AndroidManifest.xml:21:9-23:69
 	android:value
-		ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:112:13-66
+		ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:120:13-66
 	android:name
-		ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:111:13-58
+		ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:119:13-58

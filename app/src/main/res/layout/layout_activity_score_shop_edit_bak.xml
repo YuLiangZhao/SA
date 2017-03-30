@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_student_class_work"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bgColor_default"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/sa_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <include layout="@layout/layout_activity_sa_top_bar_back_title_tvbtn" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_shop_info1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sa_top_bar"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/tv_shop_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/shop_name" />
+
+        <EditText
+            android:id="@+id/et_shop_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/shop_name"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_shop_info2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_shop_info1"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/tv_shop_score"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/shop_score" />
+
+        <EditText
+            android:id="@+id/et_shop_score"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/shop_score"
+            android:inputType="number"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_shop_info3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_shop_info2"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/tv_shop_num"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/shop_num" />
+
+        <EditText
+            android:id="@+id/et_shop_num"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/shop_num"
+            android:inputType="number"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ll_shop_info3"
+        android:orientation="vertical"
+        android:padding="10dp"
+        tools:ignore="UseCompoundDrawables">
+
+        <TextView
+            android:id="@+id/tv_shop_pic_url"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/imv_shop_pic"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="false"
+            android:contentDescription="@string/up_pic_student_class_work_pic_tips"
+            android:padding="10dp"
+            android:src="@drawable/up_pic_add_new_photo" />
+
+    </LinearLayout>
+
+</RelativeLayout>

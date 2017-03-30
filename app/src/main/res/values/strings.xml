@@ -14,6 +14,12 @@
     <string name="app_idea">意见建议</string>
     <string name="app_update">检查新版本</string>
 
+    <!--添加奖品界面字符串-->
+    <string name="shop_name">奖品名称</string>
+    <string name="shop_score">奖品售价（1元 = 100分）</string>
+    <string name="shop_num">奖品库存（0 – 999）</string>
+    <string name="shop_pic">奖品图片</string>
+
     <string name="scan_tips">将二维码图片对准扫描框即可自动扫描</string>
     <string name="qr_checkbox_text">开启连续扫描</string>
 

@@ -16,24 +16,24 @@
         "source": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\drawable-xhdpi\\shake_bottom.png"
     },
     {
-        "merged": "E:\\Android\\SA_QR2\\SAS\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\common_plus_signin_btn_text_dark_disabled.9.png",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\b9453f8d35720a7e841de7ded4a24a63715d5330\\output\\res\\drawable-xhdpi\\common_plus_signin_btn_text_dark_disabled.9.png"
-    },
-    {
         "merged": "E:\\Android\\SA_QR2\\SAS\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\common_plus_signin_btn_icon_light_disabled.9.png",
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\b9453f8d35720a7e841de7ded4a24a63715d5330\\output\\res\\drawable-xhdpi\\common_plus_signin_btn_icon_light_disabled.9.png"
+    },
+    {
+        "merged": "E:\\Android\\SA_QR2\\SAS\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\common_plus_signin_btn_text_dark_disabled.9.png",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\b9453f8d35720a7e841de7ded4a24a63715d5330\\output\\res\\drawable-xhdpi\\common_plus_signin_btn_text_dark_disabled.9.png"
     },
     {
         "merged": "E:\\Android\\SA_QR2\\SAS\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\common_plus_signin_btn_icon_dark_focused.9.png",
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\b9453f8d35720a7e841de7ded4a24a63715d5330\\output\\res\\drawable-xhdpi\\common_plus_signin_btn_icon_dark_focused.9.png"
     },
     {
-        "merged": "E:\\Android\\SA_QR2\\SAS\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\common_google_signin_btn_text_dark_focused.9.png",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\b9453f8d35720a7e841de7ded4a24a63715d5330\\output\\res\\drawable-xhdpi\\common_google_signin_btn_text_dark_focused.9.png"
-    },
-    {
         "merged": "E:\\Android\\SA_QR2\\SAS\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\y4.png",
         "source": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\drawable-xhdpi\\y4.png"
+    },
+    {
+        "merged": "E:\\Android\\SA_QR2\\SAS\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\common_google_signin_btn_text_dark_focused.9.png",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\b9453f8d35720a7e841de7ded4a24a63715d5330\\output\\res\\drawable-xhdpi\\common_google_signin_btn_text_dark_focused.9.png"
     },
     {
         "merged": "E:\\Android\\SA_QR2\\SAS\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\scan_line.png",
@@ -148,12 +148,12 @@
         "source": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\drawable-xhdpi\\y6.png"
     },
     {
-        "merged": "E:\\Android\\SA_QR2\\SAS\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\common_plus_signin_btn_icon_dark_pressed.9.png",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\b9453f8d35720a7e841de7ded4a24a63715d5330\\output\\res\\drawable-xhdpi\\common_plus_signin_btn_icon_dark_pressed.9.png"
-    },
-    {
         "merged": "E:\\Android\\SA_QR2\\SAS\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\btns_student_manage.png",
         "source": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\drawable-xhdpi\\btns_student_manage.png"
+    },
+    {
+        "merged": "E:\\Android\\SA_QR2\\SAS\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\common_plus_signin_btn_icon_dark_pressed.9.png",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\b9453f8d35720a7e841de7ded4a24a63715d5330\\output\\res\\drawable-xhdpi\\common_plus_signin_btn_icon_dark_pressed.9.png"
     },
     {
         "merged": "E:\\Android\\SA_QR2\\SAS\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\shake_top_line.png",
@@ -180,16 +180,16 @@
         "source": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\drawable-xhdpi\\sa_ads_group_3.png"
     },
     {
-        "merged": "E:\\Android\\SA_QR2\\SAS\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\btns_camera.png",
-        "source": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\drawable-xhdpi\\btns_camera.png"
+        "merged": "E:\\Android\\SA_QR2\\SAS\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\btns_homeworkcheck.png",
+        "source": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\drawable-xhdpi\\btns_homeworkcheck.png"
     },
     {
         "merged": "E:\\Android\\SA_QR2\\SAS\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\common_google_signin_btn_text_dark_disabled.9.png",
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\b9453f8d35720a7e841de7ded4a24a63715d5330\\output\\res\\drawable-xhdpi\\common_google_signin_btn_text_dark_disabled.9.png"
     },
     {
-        "merged": "E:\\Android\\SA_QR2\\SAS\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\btns_homeworkcheck.png",
-        "source": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\drawable-xhdpi\\btns_homeworkcheck.png"
+        "merged": "E:\\Android\\SA_QR2\\SAS\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\btns_camera.png",
+        "source": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\drawable-xhdpi\\btns_camera.png"
     },
     {
         "merged": "E:\\Android\\SA_QR2\\SAS\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\btns_wechat.png",
@@ -280,12 +280,12 @@
         "source": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\drawable-xhdpi\\marker.png"
     },
     {
-        "merged": "E:\\Android\\SA_QR2\\SAS\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\btns_bad.png",
-        "source": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\drawable-xhdpi\\btns_bad.png"
-    },
-    {
         "merged": "E:\\Android\\SA_QR2\\SAS\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\sa_ads_group_1.png",
         "source": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\drawable-xhdpi\\sa_ads_group_1.png"
+    },
+    {
+        "merged": "E:\\Android\\SA_QR2\\SAS\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\btns_bad.png",
+        "source": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\drawable-xhdpi\\btns_bad.png"
     },
     {
         "merged": "E:\\Android\\SA_QR2\\SAS\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\btns_exam.png",

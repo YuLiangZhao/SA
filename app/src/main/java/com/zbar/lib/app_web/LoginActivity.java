@@ -20,6 +20,7 @@ import com.zbar.lib.app_main.SA_MainActivity;
 import com.zbar.lib.app_root.BaseActivity;
 import com.zbar.lib.nohttp.CallServer;
 import com.zbar.lib.nohttp.HttpListener;
+import com.zbar.lib.util.Constants;
 import com.zbar.lib.util.NetworkUtil;
 import com.zbar.lib.util.StringUtil;
 
@@ -208,7 +209,6 @@ public class LoginActivity extends BaseActivity {
     private void login() {
         tel = et_name.getText().toString();
         pwd = et_pass.getText().toString();
-        String LoginUrl = "http://lzedu.sinaapp.com/SA/Teacher_Login.php";
         if (StringUtil.isEmpty(tel) ) {
             this.showMessage("请输入手机号码！");
             return;
@@ -221,7 +221,7 @@ public class LoginActivity extends BaseActivity {
         en_tel = StringUtil.Base64Encode(tel);
         en_pwd = StringUtil.Base64Encode(pwd);
         //this.showMessage(tel + "|" + pwd + en_tel + "|" + en_pwd);
-        Request<JSONObject> request = NoHttp.createJsonObjectRequest(LoginUrl, RequestMethod.POST);
+        Request<JSONObject> request = NoHttp.createJsonObjectRequest(Constants.SAE_LoginUrl, RequestMethod.POST);
         request.add("tel", en_tel);
         request.add("pwd", en_pwd);
         CallServer.getRequestInstance().add(this, 0, request, new HttpListener<JSONObject>() {

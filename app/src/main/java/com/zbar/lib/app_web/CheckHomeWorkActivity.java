@@ -23,6 +23,7 @@ import com.google.android.gms.appindexing.AppIndex;
 import com.google.android.gms.appindexing.Thing;
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.zbar.lib.R;
+import com.zbar.lib.util.Constants;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
@@ -34,7 +35,7 @@ public class CheckHomeWorkActivity extends Activity {
     private ImageButton ibTopBack,ibTopSearch,ibTopClose;
     private TextView tvTopTitle;
     private WebView webView;
-    private String baseURL = "http://lzedu.sinaapp.com/SA/Student_HomeWork_Checker.php",URL;
+    private String baseURL,URL;
     private TimePickerView pvTime,pvCustomTime;
     /**
      * ATTENTION: This was auto-generated to implement the App Indexing API.
@@ -75,6 +76,7 @@ public class CheckHomeWorkActivity extends Activity {
         //添加客户端标示
         String ua = webSettings.getUserAgentString();
         webSettings.setUserAgentString(ua + "; SAS_Phone_Client /");
+        baseURL = Constants.SAE_CheckHomeWorkUrl;
         if (baseURL.indexOf("?") > 0) {
             URL = baseURL + "&TID="+TID;//教师二维码登录附加参数
         } else {

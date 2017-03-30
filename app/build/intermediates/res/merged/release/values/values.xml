@@ -32,7 +32,7 @@
     <color name="app_bg">#efefef</color>
     <color name="app_foot_bar_bg">#DDDDDD</color>
     <color name="app_top_bar_bg">#393A3F</color>
-    <color name="bgColor_default">#FFFFFFFF</color>
+    <color name="bgColor_default">#ffffff</color>
     <color name="bgColor_overlay">#60000000</color>
     <color name="black">#000000</color>
     <color name="black_gray">#393A3F</color>
@@ -209,6 +209,10 @@
     <string name="scan_tips">将二维码图片对准扫描框即可自动扫描</string>
     <string name="shake_user_info">其他一些信息</string>
     <string name="shake_user_name">姓名</string>
+    <string name="shop_name">奖品名称</string>
+    <string name="shop_num">奖品库存（0 – 999）</string>
+    <string name="shop_pic">奖品图片</string>
+    <string name="shop_score">奖品售价（1元 = 100分）</string>
     <string name="teacher_mood">个性签名</string>
     <string name="teacher_name">姓名</string>
     <string name="teacher_sex">性别</string>

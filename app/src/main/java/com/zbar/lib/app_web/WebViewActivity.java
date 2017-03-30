@@ -65,6 +65,7 @@ public class WebViewActivity extends Activity {
         webSettings.setCacheMode(WebSettings.LOAD_NO_CACHE);//不使用缓存
         webSettings.setAllowFileAccess(true);  //设置可以访问文件
 
+
         if(URL.indexOf("weixin.qq.com")> 0){
             URL = "http://weixin.qq.com/";//后期可尝试开启微信....
         }else {
@@ -81,6 +82,9 @@ public class WebViewActivity extends Activity {
         }
         //打开网页
         webView.loadUrl(URL);
+        //String str = "圆明园";
+        //String url = "javascript:alert('" + str + "')";//调用网页Js
+        //webView.loadUrl(url);
 
         //覆盖WebView默认使用第三方或系统默认浏览器打开网页的行为，使网页用WebView打开
         webView.setWebViewClient(new WebViewClient() {
@@ -234,7 +238,7 @@ public class WebViewActivity extends Activity {
     @Override
     protected void onDestroy() {
         // TODO Auto-generated method stub
-        webView.stopLoading();
+        //webView.stopLoading();
         webView.destroy();
         super.onDestroy();
     }

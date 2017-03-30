@@ -28,6 +28,7 @@ import com.zbar.lib.app_root.BaseActivity;
 import com.zbar.lib.custom_views.imgview.UserFaceImageView;
 import com.zbar.lib.nohttp.CallServer;
 import com.zbar.lib.nohttp.HttpListener;
+import com.zbar.lib.util.Constants;
 import com.zbar.lib.util.NetworkUtil;
 import com.zbar.lib.util.StringUtil;
 
@@ -291,13 +292,11 @@ public class ShakeActivity extends BaseActivity implements SensorEventListener {
 	 * 随机返回学生信息，并显示
 	 */
 	private void ShowResult() {
-        //String ShakeUrl = "http://192.168.0.108/SA/SA_RandStudentOne.php";
-        String ShakeUrl = "http://lzedu.sinaapp.com/SA/SA_RandStudentOne.php";
         String tid = sp.getString("TcID","0");
         //ToastUtil.showToast(getApplicationContext(),"tid=" + tid);
 		String TID = StringUtil.Base64Encode(tid);
         //ToastUtil.showToast(getApplicationContext(),"TID=" + TID);
-		Request<JSONObject> request = NoHttp.createJsonObjectRequest(ShakeUrl, RequestMethod.POST);
+		Request<JSONObject> request = NoHttp.createJsonObjectRequest(Constants.SAE_ShakeUrl, RequestMethod.POST);
 		request.add("TID", TID);
 		CallServer.getRequestInstance().add(this, 0, request, new HttpListener<JSONObject>() {
 			@Override

@@ -13,9 +13,9 @@
     android:layout_height="wrap_content"
     android:orientation="horizontal">
 
-    <include layout="@layout/layout_activity_sa_top_bar_back_title_config" />
+        <include layout="@layout/layout_activity_sa_top_bar_back_title_config" />
 
-</LinearLayout>
+    </LinearLayout>
 
     <RelativeLayout
         android:layout_width="match_parent"
