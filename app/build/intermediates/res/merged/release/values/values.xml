@@ -5,7 +5,7 @@
         <item>@drawable/btns_qr_scan</item>
         <item>@drawable/btns_good</item>
         <item>@drawable/btns_homework</item>
-        <item>@drawable/btns_student_manage</item>
+        <item>@drawable/btns_db_st_info</item>
         <item>@drawable/btns_exam</item>
         <item>@drawable/btns_cash</item>
         <item>@drawable/btns_wechat</item>
@@ -237,14 +237,10 @@
     <string name="userpwd_tips">请输入登录密码…</string>
     <string name="userreg">注册用户</string>
     <style name="AppBaseTheme" parent="android:Theme.Light">
-        <!--
-            Theme customizations available in newer API levels can go in
-            res/values-vXX/styles.xml, while customizations related to
-            backward-compatibility can go here.
-        -->
+        
     </style>
     <style name="AppTheme" parent="AppBaseTheme">
-        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+        
     </style>
     <style name="PopupAnimation" parent="android:Animation">
         <item name="android:windowEnterAnimation">@anim/push_bottom_in</item>
@@ -256,18 +252,18 @@
     </style>
     <style name="custom_dialog2" parent="@android:style/Theme.Dialog">
         <item name="android:windowFrame">@null</item>
-        <!-- Dialog的windowFrame框为无 -->
+        
         <item name="android:windowIsFloating">true</item>
-        <!-- 是否漂现在activity上 -->
+        
         <item name="android:windowIsTranslucent">true</item>
-        <!-- 是否半透明 -->
+        
         <item name="android:windowNoTitle">true</item>
         <item name="android:background">@null</item>
         <item name="android:windowBackground">@android:color/transparent</item>
         <item name="android:windowContentOverlay">@null</item>
-        <!-- 去除黑色边框的关键设置项 -->
+        
         <item name="android:backgroundDimEnabled">true</item>
-        <!-- 屏幕背景是否变暗 -->
+        
         <item name="android:backgroundDimAmount">0.3</item>
     </style>
     <style name="dot_style">

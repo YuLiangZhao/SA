@@ -10,7 +10,7 @@
         android:id="@+id/app_Flash_imageView"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:background="@drawable/sad_ad"
+        android:background="@drawable/sas_ad"
         android:contentDescription=""
         tools:ignore="ContentDescription" />
 

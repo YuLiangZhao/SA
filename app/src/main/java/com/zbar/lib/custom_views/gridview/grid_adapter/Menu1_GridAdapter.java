@@ -23,22 +23,26 @@ public class Menu1_GridAdapter extends BaseAdapter {
 			"课堂拍照",
 			"摇 一 摇",
 
+			"学生管理",
 			"评语管理",
-			"添加奖品",
-            "积分兑换",
+			"批量评价",
 
-			"批量加分",
+			"奖品管理",
+            "积分兑换",
             "更多..."
 	};
 	public int[] Btn_ImageArr = {
 			R.drawable.btns_qr_scan,
             R.drawable.btns_camera,
 			R.drawable.btns_shake,
-			R.drawable.btns_good,
+
+			R.drawable.btns_st_list,
+			R.drawable.btns_gold,
+			R.drawable.btns_score_list_add,
+
+			R.drawable.btns_score_shop,
 			R.drawable.btns_cash,
-			R.drawable.btns_more,
-			R.drawable.btns_more,
-            R.drawable.btns_more
+            R.drawable.btns_add_more
 	};
 
 	public Menu1_GridAdapter(Context mContext) {

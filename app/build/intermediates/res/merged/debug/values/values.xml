@@ -5,7 +5,7 @@
         <item>@drawable/btns_qr_scan</item>
         <item>@drawable/btns_good</item>
         <item>@drawable/btns_homework</item>
-        <item>@drawable/btns_student_manage</item>
+        <item>@drawable/btns_db_st_info</item>
         <item>@drawable/btns_exam</item>
         <item>@drawable/btns_cash</item>
         <item>@drawable/btns_wechat</item>

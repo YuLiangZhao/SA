@@ -61,28 +61,33 @@ public class ChatFragment extends Fragment {
                 startActivity(new Intent(getActivity(),ShakeActivity.class));
                 break;
             case 3:
+                ToastUtil.showToast(getContext(),"学生管理："+ position);
+                //跳转界面
+                //startActivity(new Intent(getActivity(),CommentListActivity.class));
+                break;
+            case 4:
                 //ToastUtil.showToast(getContext(),"评语管理："+ position);
                 //跳转界面
                 startActivity(new Intent(getActivity(),CommentListActivity.class));
                 break;
-            case 4:
-                //ToastUtil.showToast(getContext(),"添加奖品："+ position);
-                //跳转界面
-                startActivity(new Intent(getActivity(),ScoreShopListActivity.class));
-                //IE("http://lzedu.sinaapp.com/SA/Student_ScoreShop_Add.php");
-                break;
             case 5:
-                //ToastUtil.showToast(getContext(),"积分兑换："+ position);
-                //跳转界面
-                IE("http://lzedu.sinaapp.com/SA/Student_ScoreShop_Logs.php");
-                break;
-            case 6:
                 //ToastUtil.showToast(getContext(),"批量加分："+ position);
                 //跳转界面
                 IE("http://lzedu.sinaapp.com/SA/Student_List_AddScore.php");
                 break;
+            case 6:
+                //ToastUtil.showToast(getContext(),"奖品管理："+ position);
+                //跳转界面
+                startActivity(new Intent(getActivity(),ScoreShopListActivity.class));
+                //IE("http://lzedu.sinaapp.com/SA/Student_ScoreShop_Add.php");
+                break;
             case 7:
-                //ToastUtil.showToast(getContext(),"批量加分："+ position);
+                //ToastUtil.showToast(getContext(),"积分兑换："+ position);
+                //跳转界面
+                IE("http://lzedu.sinaapp.com/SA/Student_ScoreShop_Logs.php");
+                break;
+            case 8:
+                //ToastUtil.showToast(getContext(),"更多："+ position);
                 //跳转界面
                 startActivity(new Intent(getActivity(), PickerTestActivity.class));
                 break;

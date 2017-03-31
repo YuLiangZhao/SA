@@ -28,8 +28,8 @@ public class Menu2_GridAdapter extends BaseAdapter {
 	public int[] Btn_ImageArr = {
 			R.drawable.btns_qr_scan,
             R.drawable.btns_homeworkcheck,
-			R.drawable.btns_homework,
-			R.drawable.btns_more
+			R.drawable.btns_xxt,
+			R.drawable.btns_add_more
 	};
 
 	public Menu2_GridAdapter(Context mContext) {

@@ -85,7 +85,7 @@ public class ScoreShopEditActivity extends BaseActivity {
             pName = "";
             pPrice = "";
             pNum = "";
-            tvTitle.setText("修改奖品信息");
+            tvTitle.setText("添加奖品");
         }
 
         etName = (EditText) findViewById(R.id.et_shop_name);

@@ -20,6 +20,10 @@ public class Menu3_GridAdapter extends BaseAdapter {
 
 	public String[] Btn_TextArr = {
 			"学生信息",
+			"教师信息",
+			"班级信息",
+
+			"数据导入",
 			"综合查询",
 			"统计分析",
 
@@ -30,13 +34,19 @@ public class Menu3_GridAdapter extends BaseAdapter {
             "更多..."
 	};
 	public int[] Btn_ImageArr = {
-			R.drawable.btns_student_manage,
-            R.drawable.btns_more,
-			R.drawable.btns_more,
-			R.drawable.btns_more,
-            R.drawable.btns_more,
-            R.drawable.btns_more,
-            R.drawable.btns_more
+			R.drawable.btns_db_st_info,
+			R.drawable.btns_db_tc_info,
+			R.drawable.btns_db_class_info,
+
+			R.drawable.btns_db_import,
+			R.drawable.btns_db_search,
+			R.drawable.btns_db_spass,
+
+			R.drawable.btns_db_sync,
+            R.drawable.btns_db_backup,
+            R.drawable.btns_db_restore,
+
+            R.drawable.btns_add_more
 	};
 
 	public Menu3_GridAdapter(Context mContext) {

@@ -56,12 +56,12 @@
         "source": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\layout\\include_pickerview_topbar.xml"
     },
     {
-        "merged": "E:\\Android\\SA_QR2\\SAS\\app\\build\\intermediates\\res\\merged\\release\\layout\\layout_activity_sa_top_bar_wx_title_search_plus.xml",
-        "source": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\layout\\layout_activity_sa_top_bar_wx_title_search_plus.xml"
-    },
-    {
         "merged": "E:\\Android\\SA_QR2\\SAS\\app\\build\\intermediates\\res\\merged\\release\\layout\\layout_activity_app_about.xml",
         "source": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\layout\\layout_activity_app_about.xml"
+    },
+    {
+        "merged": "E:\\Android\\SA_QR2\\SAS\\app\\build\\intermediates\\res\\merged\\release\\layout\\layout_activity_sa_top_bar_wx_title_search_plus.xml",
+        "source": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\layout\\layout_activity_sa_top_bar_wx_title_search_plus.xml"
     },
     {
         "merged": "E:\\Android\\SA_QR2\\SAS\\app\\build\\intermediates\\res\\merged\\release\\layout\\layout_activity_score_shops_list_main.xml",
@@ -84,12 +84,12 @@
         "source": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\layout\\layout_activity_sa_top_bar_back_title_plus.xml"
     },
     {
-        "merged": "E:\\Android\\SA_QR2\\SAS\\app\\build\\intermediates\\res\\merged\\release\\layout\\layout_activity_gridview_item.xml",
-        "source": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\layout\\layout_activity_gridview_item.xml"
-    },
-    {
         "merged": "E:\\Android\\SA_QR2\\SAS\\app\\build\\intermediates\\res\\merged\\release\\layout\\layout_activity_login.xml",
         "source": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\layout\\layout_activity_login.xml"
+    },
+    {
+        "merged": "E:\\Android\\SA_QR2\\SAS\\app\\build\\intermediates\\res\\merged\\release\\layout\\layout_activity_gridview_item.xml",
+        "source": "E:\\Android\\SA_QR2\\SAS\\app\\src\\main\\res\\layout\\layout_activity_gridview_item.xml"
     },
     {
         "merged": "E:\\Android\\SA_QR2\\SAS\\app\\build\\intermediates\\res\\merged\\release\\layout\\layout_activity_sa_top_bar_back_title.xml",
