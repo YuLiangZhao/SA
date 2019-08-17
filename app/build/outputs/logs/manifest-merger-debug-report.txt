@@ -1,240 +1,407 @@
 -- Merging decision tree log ---
+provider#android.support.v4.content.FileProvider
+INJECTED from E:\MyApps\Android\SAS\app\src\main\AndroidManifest.xml:30:9-38:20
+	android:grantUriPermissions
+		ADDED from E:\MyApps\Android\SAS\app\src\main\AndroidManifest.xml:34:13-47
+	android:authorities
+		INJECTED from E:\MyApps\Android\SAS\app\src\main\AndroidManifest.xml
+		ADDED from E:\MyApps\Android\SAS\app\src\main\AndroidManifest.xml:32:13-60
+	android:exported
+		ADDED from E:\MyApps\Android\SAS\app\src\main\AndroidManifest.xml:33:13-37
+	android:name
+		ADDED from E:\MyApps\Android\SAS\app\src\main\AndroidManifest.xml:31:13-67
 manifest
-ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:1:1-123:12
+ADDED from E:\MyApps\Android\SAS\app\src\main\AndroidManifest.xml:1:1-140:12
+INJECTED from E:\MyApps\Android\SAS\app\src\main\AndroidManifest.xml:1:1-140:12
+INJECTED from E:\MyApps\Android\SAS\app\src\main\AndroidManifest.xml:1:1-140:12
+INJECTED from E:\MyApps\Android\SAS\app\src\main\AndroidManifest.xml:1:1-140:12
+MERGED from [com.google.firebase:firebase-appindexing:11.0.4] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\d8f87270fd814e7fd2c25baa2fb356f4\AndroidManifest.xml:16:1-19:12
+MERGED from [com.yanzhenjie.nohttp:nohttp:1.1.1] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\91d32418c5690c8579c456b2adaa3fee\AndroidManifest.xml:17:1-30:12
+MERGED from [com.contrarywind:Android-PickerView:3.1.1] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\21fb735811977a36ee3921fedd05aa43\AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.exifinterface:exifinterface:1.1.0-beta01] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\885c8244da971b6bb2718c4438311adf\AndroidManifest.xml:17:1-24:12
+MERGED from [cjt.library.wheel:camera:1.1.9] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\cbf26bf51d0ca2fc219ea1863048e00f\AndroidManifest.xml:2:1-17:12
+MERGED from [com.google.android.gms:play-services-base:11.0.4] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\0c669e39b793d0cd8c93ef3406342dc1\AndroidManifest.xml:16:1-21:12
+MERGED from [com.google.firebase:firebase-common:11.0.4] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\564fc1d416e55db68720edf623c4cb31\AndroidManifest.xml:2:1-8:12
+MERGED from [com.google.android.gms:play-services-tasks:11.0.4] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\93c9722cda3bf5df84ccfff22fb4c6c6\AndroidManifest.xml:2:1-5:12
+MERGED from [com.google.android.gms:play-services-basement:11.0.4] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\26723f526491800a7ff07da029da023c\AndroidManifest.xml:16:1-23:12
+MERGED from [com.android.support:appcompat-v7:25.3.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\6b689e5b8571ce019751a12c3dd1e944\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-v4:25.3.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\bfc60bb192cc56b76168ad4f4f7d0fca\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:animated-vector-drawable:25.3.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\7e97cec0879660a616c78e1e116c6079\AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-vector-drawable:25.3.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\fb6c4a96f125aac00b71f62640ff45a9\AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-fragment:25.3.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\936918ac159dfd33dd109bd43de9a1ea\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-media-compat:25.3.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\8c39577ff7e6eb467d78284b25fb4d77\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-core-utils:25.3.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\43b11b9c2ff23e369dd080899d04c86b\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-core-ui:25.3.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\a63864ddd7895f00fd637360dcb189af\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-compat:25.3.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\3a644eafa54c0528298a890a583f16c2\AndroidManifest.xml:17:1-31:12
+INJECTED from E:\MyApps\Android\SAS\app\src\main\AndroidManifest.xml:1:1-140:12
+INJECTED from E:\MyApps\Android\SAS\app\src\main\AndroidManifest.xml:1:1-140:12
+INJECTED from E:\MyApps\Android\SAS\app\src\main\AndroidManifest.xml:1:1-140:12
 	package
-		ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:3:5-27
-		INJECTED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml
-		INJECTED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml
+		ADDED from E:\MyApps\Android\SAS\app\src\main\AndroidManifest.xml:3:5-27
+		INJECTED from E:\MyApps\Android\SAS\app\src\main\AndroidManifest.xml
+		INJECTED from E:\MyApps\Android\SAS\app\src\main\AndroidManifest.xml
 	android:versionName
-		ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:5:5-30
-		INJECTED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml
-		INJECTED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml
+		INJECTED from E:\MyApps\Android\SAS\app\src\main\AndroidManifest.xml
+		ADDED from E:\MyApps\Android\SAS\app\src\main\AndroidManifest.xml:1:1-140:12
+		INJECTED from E:\MyApps\Android\SAS\app\src\main\AndroidManifest.xml
 	xmlns:tools
-		ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:2:5-51
+		ADDED from E:\MyApps\Android\SAS\app\src\main\AndroidManifest.xml:2:5-51
 	android:versionCode
-		ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:4:5-28
-		INJECTED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml
-		INJECTED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml
+		INJECTED from E:\MyApps\Android\SAS\app\src\main\AndroidManifest.xml
+		ADDED from E:\MyApps\Android\SAS\app\src\main\AndroidManifest.xml:1:1-140:12
+		INJECTED from E:\MyApps\Android\SAS\app\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:1:11-69
+		ADDED from E:\MyApps\Android\SAS\app\src\main\AndroidManifest.xml:1:11-69
 uses-sdk
-ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:7:5-10:120
-MERGED from [com.google.android.gms:play-services-appindexing:8.4.0] C:\Users\Administrator\.android\build-cache\4db5c475b706d2cfb4ca2485ec38dd1884cdfe1c\output\AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-base:8.4.0] C:\Users\Administrator\.android\build-cache\b9453f8d35720a7e841de7ded4a24a63715d5330\output\AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-basement:8.4.0] C:\Users\Administrator\.android\build-cache\67b12fbd82e47259739523ca06c4be31d1b029ca\output\AndroidManifest.xml:18:5-42
-MERGED from [com.android.support:support-v4:23.0.0] C:\Users\Administrator\.android\build-cache\81e91c94eab32d8c4161eaeb5ea53db5910b6011\output\AndroidManifest.xml:20:5-43
-MERGED from [com.yanzhenjie.nohttp:nohttp:1.1.1] C:\Users\Administrator\.android\build-cache\b3872ba299da20bf3285b25cbe3718bc4d38c354\output\AndroidManifest.xml:20:5-22:41
-MERGED from [com.contrarywind:Android-PickerView:3.1.1] C:\Users\Administrator\.android\build-cache\8f9284ae112de74969f7fc9df84cf86a0a6ff720\output\AndroidManifest.xml:7:5-9:41
+ADDED from E:\MyApps\Android\SAS\app\src\main\AndroidManifest.xml:5:5-126
+INJECTED from E:\MyApps\Android\SAS\app\src\main\AndroidManifest.xml:5:5-126
+INJECTED from E:\MyApps\Android\SAS\app\src\main\AndroidManifest.xml:5:5-126
+MERGED from [com.google.firebase:firebase-appindexing:11.0.4] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\d8f87270fd814e7fd2c25baa2fb356f4\AndroidManifest.xml:17:5-43
+MERGED from [com.google.firebase:firebase-appindexing:11.0.4] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\d8f87270fd814e7fd2c25baa2fb356f4\AndroidManifest.xml:17:5-43
+MERGED from [com.yanzhenjie.nohttp:nohttp:1.1.1] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\91d32418c5690c8579c456b2adaa3fee\AndroidManifest.xml:20:5-22:41
+MERGED from [com.yanzhenjie.nohttp:nohttp:1.1.1] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\91d32418c5690c8579c456b2adaa3fee\AndroidManifest.xml:20:5-22:41
+MERGED from [com.contrarywind:Android-PickerView:3.1.1] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\21fb735811977a36ee3921fedd05aa43\AndroidManifest.xml:7:5-9:41
+MERGED from [com.contrarywind:Android-PickerView:3.1.1] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\21fb735811977a36ee3921fedd05aa43\AndroidManifest.xml:7:5-9:41
+MERGED from [androidx.exifinterface:exifinterface:1.1.0-beta01] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\885c8244da971b6bb2718c4438311adf\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.exifinterface:exifinterface:1.1.0-beta01] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\885c8244da971b6bb2718c4438311adf\AndroidManifest.xml:20:5-22:41
+MERGED from [cjt.library.wheel:camera:1.1.9] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\cbf26bf51d0ca2fc219ea1863048e00f\AndroidManifest.xml:7:5-9:41
+MERGED from [cjt.library.wheel:camera:1.1.9] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\cbf26bf51d0ca2fc219ea1863048e00f\AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.android.gms:play-services-base:11.0.4] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\0c669e39b793d0cd8c93ef3406342dc1\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-base:11.0.4] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\0c669e39b793d0cd8c93ef3406342dc1\AndroidManifest.xml:17:5-43
+MERGED from [com.google.firebase:firebase-common:11.0.4] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\564fc1d416e55db68720edf623c4cb31\AndroidManifest.xml:3:5-43
+MERGED from [com.google.firebase:firebase-common:11.0.4] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\564fc1d416e55db68720edf623c4cb31\AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-tasks:11.0.4] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\93c9722cda3bf5df84ccfff22fb4c6c6\AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-tasks:11.0.4] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\93c9722cda3bf5df84ccfff22fb4c6c6\AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-basement:11.0.4] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\26723f526491800a7ff07da029da023c\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-basement:11.0.4] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\26723f526491800a7ff07da029da023c\AndroidManifest.xml:17:5-43
+MERGED from [com.android.support:appcompat-v7:25.3.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\6b689e5b8571ce019751a12c3dd1e944\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:appcompat-v7:25.3.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\6b689e5b8571ce019751a12c3dd1e944\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:support-v4:25.3.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\bfc60bb192cc56b76168ad4f4f7d0fca\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-v4:25.3.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\bfc60bb192cc56b76168ad4f4f7d0fca\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:animated-vector-drawable:25.3.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\7e97cec0879660a616c78e1e116c6079\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:25.3.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\7e97cec0879660a616c78e1e116c6079\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:25.3.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\fb6c4a96f125aac00b71f62640ff45a9\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-vector-drawable:25.3.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\fb6c4a96f125aac00b71f62640ff45a9\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-fragment:25.3.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\936918ac159dfd33dd109bd43de9a1ea\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-fragment:25.3.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\936918ac159dfd33dd109bd43de9a1ea\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-media-compat:25.3.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\8c39577ff7e6eb467d78284b25fb4d77\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-media-compat:25.3.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\8c39577ff7e6eb467d78284b25fb4d77\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-core-utils:25.3.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\43b11b9c2ff23e369dd080899d04c86b\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-core-utils:25.3.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\43b11b9c2ff23e369dd080899d04c86b\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-core-ui:25.3.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\a63864ddd7895f00fd637360dcb189af\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-ui:25.3.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\a63864ddd7895f00fd637360dcb189af\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:25.3.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\3a644eafa54c0528298a890a583f16c2\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:25.3.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\3a644eafa54c0528298a890a583f16c2\AndroidManifest.xml:21:5-23:58
+INJECTED from E:\MyApps\Android\SAS\app\src\main\AndroidManifest.xml:5:5-126
+INJECTED from E:\MyApps\Android\SAS\app\src\main\AndroidManifest.xml:5:5-126
 	tools:overrideLibrary
-		ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:10:9-118
+		ADDED from E:\MyApps\Android\SAS\app\src\main\AndroidManifest.xml:5:15-124
 	android:targetSdkVersion
-		ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:9:9-38
-		INJECTED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml
-		INJECTED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml
+		INJECTED from E:\MyApps\Android\SAS\app\src\main\AndroidManifest.xml
+		ADDED from E:\MyApps\Android\SAS\app\src\main\AndroidManifest.xml:5:5-126
+		INJECTED from E:\MyApps\Android\SAS\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:8:9-34
-		INJECTED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml
-		INJECTED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml
+		INJECTED from E:\MyApps\Android\SAS\app\src\main\AndroidManifest.xml
+		ADDED from E:\MyApps\Android\SAS\app\src\main\AndroidManifest.xml:5:5-126
+		INJECTED from E:\MyApps\Android\SAS\app\src\main\AndroidManifest.xml
 uses-permission#android.permission.INTERNET
-ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:12:5-66
-MERGED from [com.yanzhenjie.nohttp:nohttp:1.1.1] C:\Users\Administrator\.android\build-cache\b3872ba299da20bf3285b25cbe3718bc4d38c354\output\AndroidManifest.xml:26:5-67
+ADDED from E:\MyApps\Android\SAS\app\src\main\AndroidManifest.xml:6:5-66
+MERGED from [com.yanzhenjie.nohttp:nohttp:1.1.1] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\91d32418c5690c8579c456b2adaa3fee\AndroidManifest.xml:26:5-67
+MERGED from [com.yanzhenjie.nohttp:nohttp:1.1.1] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\91d32418c5690c8579c456b2adaa3fee\AndroidManifest.xml:26:5-67
 	android:name
-		ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:12:22-64
+		ADDED from E:\MyApps\Android\SAS\app\src\main\AndroidManifest.xml:6:22-64
 uses-permission#android.permission.CAMERA
-ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:13:5-65
+ADDED from E:\MyApps\Android\SAS\app\src\main\AndroidManifest.xml:7:5-65
 	android:name
-		ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:13:22-62
+		ADDED from E:\MyApps\Android\SAS\app\src\main\AndroidManifest.xml:7:22-62
 uses-permission#android.permission.FLASHLIGHT
-ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:14:5-69
+ADDED from E:\MyApps\Android\SAS\app\src\main\AndroidManifest.xml:8:5-69
 	android:name
-		ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:14:22-66
+		ADDED from E:\MyApps\Android\SAS\app\src\main\AndroidManifest.xml:8:22-66
 uses-permission#android.permission.VIBRATE
-ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:15:5-66
+ADDED from E:\MyApps\Android\SAS\app\src\main\AndroidManifest.xml:9:5-66
 	android:name
-		ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:15:22-63
+		ADDED from E:\MyApps\Android\SAS\app\src\main\AndroidManifest.xml:9:22-63
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
-ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:16:5-80
-MERGED from [com.yanzhenjie.nohttp:nohttp:1.1.1] C:\Users\Administrator\.android\build-cache\b3872ba299da20bf3285b25cbe3718bc4d38c354\output\AndroidManifest.xml:24:5-80
+ADDED from E:\MyApps\Android\SAS\app\src\main\AndroidManifest.xml:10:5-80
+MERGED from [com.yanzhenjie.nohttp:nohttp:1.1.1] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\91d32418c5690c8579c456b2adaa3fee\AndroidManifest.xml:24:5-80
+MERGED from [com.yanzhenjie.nohttp:nohttp:1.1.1] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\91d32418c5690c8579c456b2adaa3fee\AndroidManifest.xml:24:5-80
 	android:name
-		ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:16:22-77
+		ADDED from E:\MyApps\Android\SAS\app\src\main\AndroidManifest.xml:10:22-77
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:17:5-81
-MERGED from [com.yanzhenjie.nohttp:nohttp:1.1.1] C:\Users\Administrator\.android\build-cache\b3872ba299da20bf3285b25cbe3718bc4d38c354\output\AndroidManifest.xml:25:5-81
+ADDED from E:\MyApps\Android\SAS\app\src\main\AndroidManifest.xml:11:5-81
+MERGED from [com.yanzhenjie.nohttp:nohttp:1.1.1] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\91d32418c5690c8579c456b2adaa3fee\AndroidManifest.xml:25:5-81
+MERGED from [com.yanzhenjie.nohttp:nohttp:1.1.1] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\91d32418c5690c8579c456b2adaa3fee\AndroidManifest.xml:25:5-81
 	android:name
-		ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:17:22-78
+		ADDED from E:\MyApps\Android\SAS\app\src\main\AndroidManifest.xml:11:22-78
 uses-permission#android.permission.MOUNT_UNMOUNT_FILESYSTEMS
-ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:18:5-84
+ADDED from E:\MyApps\Android\SAS\app\src\main\AndroidManifest.xml:12:5-119
+	tools:ignore
+		ADDED from E:\MyApps\Android\SAS\app\src\main\AndroidManifest.xml:12:82-117
 	android:name
-		ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:18:22-81
+		ADDED from E:\MyApps\Android\SAS\app\src\main\AndroidManifest.xml:12:22-81
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:19:5-79
-MERGED from [com.yanzhenjie.nohttp:nohttp:1.1.1] C:\Users\Administrator\.android\build-cache\b3872ba299da20bf3285b25cbe3718bc4d38c354\output\AndroidManifest.xml:27:5-79
+ADDED from E:\MyApps\Android\SAS\app\src\main\AndroidManifest.xml:13:5-79
+MERGED from [com.yanzhenjie.nohttp:nohttp:1.1.1] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\91d32418c5690c8579c456b2adaa3fee\AndroidManifest.xml:27:5-79
+MERGED from [com.yanzhenjie.nohttp:nohttp:1.1.1] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\91d32418c5690c8579c456b2adaa3fee\AndroidManifest.xml:27:5-79
 	android:name
-		ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:19:22-76
+		ADDED from E:\MyApps\Android\SAS\app\src\main\AndroidManifest.xml:13:22-76
 uses-permission#android.permission.ACCESS_WIFI_STATE
-ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:20:5-76
-MERGED from [com.yanzhenjie.nohttp:nohttp:1.1.1] C:\Users\Administrator\.android\build-cache\b3872ba299da20bf3285b25cbe3718bc4d38c354\output\AndroidManifest.xml:28:5-76
+ADDED from E:\MyApps\Android\SAS\app\src\main\AndroidManifest.xml:14:5-76
+MERGED from [com.yanzhenjie.nohttp:nohttp:1.1.1] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\91d32418c5690c8579c456b2adaa3fee\AndroidManifest.xml:28:5-76
+MERGED from [com.yanzhenjie.nohttp:nohttp:1.1.1] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\91d32418c5690c8579c456b2adaa3fee\AndroidManifest.xml:28:5-76
 	android:name
-		ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:20:22-73
+		ADDED from E:\MyApps\Android\SAS\app\src\main\AndroidManifest.xml:14:22-73
 uses-feature#android.hardware.camera
-ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:22:5-60
+ADDED from E:\MyApps\Android\SAS\app\src\main\AndroidManifest.xml:16:5-60
 	android:name
-		ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:22:19-57
+		ADDED from E:\MyApps\Android\SAS\app\src\main\AndroidManifest.xml:16:19-57
 uses-feature#android.hardware.camera.autofocus
-ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:23:5-70
+ADDED from E:\MyApps\Android\SAS\app\src\main\AndroidManifest.xml:17:5-70
 	android:name
-		ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:23:19-67
+		ADDED from E:\MyApps\Android\SAS\app\src\main\AndroidManifest.xml:17:19-67
 uses-permission#android.hardware.sensor.accelerometer
-ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:24:5-76
+ADDED from E:\MyApps\Android\SAS\app\src\main\AndroidManifest.xml:18:5-76
 	android:name
-		ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:24:22-74
+		ADDED from E:\MyApps\Android\SAS\app\src\main\AndroidManifest.xml:18:22-74
 application
-ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:26:5-121:19
-MERGED from [com.google.android.gms:play-services-appindexing:8.4.0] C:\Users\Administrator\.android\build-cache\4db5c475b706d2cfb4ca2485ec38dd1884cdfe1c\output\AndroidManifest.xml:19:5-20
-MERGED from [com.google.android.gms:play-services-basement:8.4.0] C:\Users\Administrator\.android\build-cache\67b12fbd82e47259739523ca06c4be31d1b029ca\output\AndroidManifest.xml:20:5-24:19
-MERGED from [com.android.support:support-v4:23.0.0] C:\Users\Administrator\.android\build-cache\81e91c94eab32d8c4161eaeb5ea53db5910b6011\output\AndroidManifest.xml:22:5-20
+ADDED from E:\MyApps\Android\SAS\app\src\main\AndroidManifest.xml:20:5-138:19
+MERGED from [com.google.firebase:firebase-appindexing:11.0.4] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\d8f87270fd814e7fd2c25baa2fb356f4\AndroidManifest.xml:18:5-19
+MERGED from [com.google.firebase:firebase-appindexing:11.0.4] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\d8f87270fd814e7fd2c25baa2fb356f4\AndroidManifest.xml:18:5-19
+MERGED from [cjt.library.wheel:camera:1.1.9] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\cbf26bf51d0ca2fc219ea1863048e00f\AndroidManifest.xml:11:5-15:19
+MERGED from [cjt.library.wheel:camera:1.1.9] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\cbf26bf51d0ca2fc219ea1863048e00f\AndroidManifest.xml:11:5-15:19
+MERGED from [com.google.android.gms:play-services-base:11.0.4] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\0c669e39b793d0cd8c93ef3406342dc1\AndroidManifest.xml:18:5-20:19
+MERGED from [com.google.android.gms:play-services-base:11.0.4] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\0c669e39b793d0cd8c93ef3406342dc1\AndroidManifest.xml:18:5-20:19
+MERGED from [com.google.firebase:firebase-common:11.0.4] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\564fc1d416e55db68720edf623c4cb31\AndroidManifest.xml:4:5-7:19
+MERGED from [com.google.firebase:firebase-common:11.0.4] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\564fc1d416e55db68720edf623c4cb31\AndroidManifest.xml:4:5-7:19
+MERGED from [com.google.android.gms:play-services-tasks:11.0.4] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\93c9722cda3bf5df84ccfff22fb4c6c6\AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-tasks:11.0.4] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\93c9722cda3bf5df84ccfff22fb4c6c6\AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-basement:11.0.4] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\26723f526491800a7ff07da029da023c\AndroidManifest.xml:19:5-21:19
+MERGED from [com.google.android.gms:play-services-basement:11.0.4] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\26723f526491800a7ff07da029da023c\AndroidManifest.xml:19:5-21:19
+MERGED from [com.android.support:appcompat-v7:25.3.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\6b689e5b8571ce019751a12c3dd1e944\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:appcompat-v7:25.3.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\6b689e5b8571ce019751a12c3dd1e944\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-v4:25.3.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\bfc60bb192cc56b76168ad4f4f7d0fca\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-v4:25.3.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\bfc60bb192cc56b76168ad4f4f7d0fca\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:animated-vector-drawable:25.3.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\7e97cec0879660a616c78e1e116c6079\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:animated-vector-drawable:25.3.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\7e97cec0879660a616c78e1e116c6079\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-vector-drawable:25.3.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\fb6c4a96f125aac00b71f62640ff45a9\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-vector-drawable:25.3.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\fb6c4a96f125aac00b71f62640ff45a9\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-fragment:25.3.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\936918ac159dfd33dd109bd43de9a1ea\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-fragment:25.3.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\936918ac159dfd33dd109bd43de9a1ea\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-media-compat:25.3.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\8c39577ff7e6eb467d78284b25fb4d77\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-media-compat:25.3.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\8c39577ff7e6eb467d78284b25fb4d77\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-utils:25.3.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\43b11b9c2ff23e369dd080899d04c86b\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-utils:25.3.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\43b11b9c2ff23e369dd080899d04c86b\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-ui:25.3.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\a63864ddd7895f00fd637360dcb189af\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-ui:25.3.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\a63864ddd7895f00fd637360dcb189af\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-compat:25.3.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\3a644eafa54c0528298a890a583f16c2\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-compat:25.3.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\3a644eafa54c0528298a890a583f16c2\AndroidManifest.xml:29:5-20
+	android:supportsRtl
+		ADDED from [cjt.library.wheel:camera:1.1.9] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\cbf26bf51d0ca2fc219ea1863048e00f\AndroidManifest.xml:14:9-35
 	android:label
-		ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:30:9-41
-	android:allowBackup
-		ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:28:9-35
+		ADDED from E:\MyApps\Android\SAS\app\src\main\AndroidManifest.xml:25:9-41
 	android:icon
-		ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:29:9-45
+		ADDED from E:\MyApps\Android\SAS\app\src\main\AndroidManifest.xml:24:9-45
+	android:allowBackup
+		ADDED from E:\MyApps\Android\SAS\app\src\main\AndroidManifest.xml:22:9-36
+		REJECTED from [cjt.library.wheel:camera:1.1.9] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\cbf26bf51d0ca2fc219ea1863048e00f\AndroidManifest.xml:12:9-35
 	android:theme
-		ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:31:9-40
+		ADDED from E:\MyApps\Android\SAS\app\src\main\AndroidManifest.xml:26:9-40
+	tools:replace
+		ADDED from E:\MyApps\Android\SAS\app\src\main\AndroidManifest.xml:23:9-44
 	android:name
-		ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:27:9-40
+		ADDED from E:\MyApps\Android\SAS\app\src\main\AndroidManifest.xml:21:9-40
 activity#com.zbar.lib.guide.GuideMainActivity
-ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:32:9-41:20
+ADDED from E:\MyApps\Android\SAS\app\src\main\AndroidManifest.xml:41:9-47:20
 	android:screenOrientation
-		ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:35:13-49
+		ADDED from E:\MyApps\Android\SAS\app\src\main\AndroidManifest.xml:44:13-49
 	android:label
-		ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:34:13-45
+		ADDED from E:\MyApps\Android\SAS\app\src\main\AndroidManifest.xml:43:13-45
 	android:theme
-		ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:36:13-71
+		ADDED from E:\MyApps\Android\SAS\app\src\main\AndroidManifest.xml:45:13-71
 	android:name
-		ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:33:13-52
-intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:37:13-40:29
-action#android.intent.action.MAIN
-ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:38:17-69
-	android:name
-		ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:38:25-66
-category#android.intent.category.LAUNCHER
-ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:39:17-77
-	android:name
-		ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:39:27-74
+		ADDED from E:\MyApps\Android\SAS\app\src\main\AndroidManifest.xml:42:13-52
 activity#com.zbar.lib.guide.WelcomeActivity
-ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:42:9-47:20
+ADDED from E:\MyApps\Android\SAS\app\src\main\AndroidManifest.xml:48:9-53:20
 	android:screenOrientation
-		ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:45:13-49
+		ADDED from E:\MyApps\Android\SAS\app\src\main\AndroidManifest.xml:51:13-49
 	android:label
-		ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:44:13-45
+		ADDED from E:\MyApps\Android\SAS\app\src\main\AndroidManifest.xml:50:13-45
 	android:theme
-		ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:46:13-71
+		ADDED from E:\MyApps\Android\SAS\app\src\main\AndroidManifest.xml:52:13-71
 	android:name
-		ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:43:13-50
+		ADDED from E:\MyApps\Android\SAS\app\src\main\AndroidManifest.xml:49:13-50
 activity#com.zbar.lib.app_web.LoginActivity
-ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:48:9-51:20
+ADDED from E:\MyApps\Android\SAS\app\src\main\AndroidManifest.xml:54:9-61:20
 	android:screenOrientation
-		ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:50:13-49
+		ADDED from E:\MyApps\Android\SAS\app\src\main\AndroidManifest.xml:56:13-49
 	android:name
-		ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:49:13-50
+		ADDED from E:\MyApps\Android\SAS\app\src\main\AndroidManifest.xml:55:13-50
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from E:\MyApps\Android\SAS\app\src\main\AndroidManifest.xml:57:13-60:29
+action#android.intent.action.MAIN
+ADDED from E:\MyApps\Android\SAS\app\src\main\AndroidManifest.xml:58:17-69
+	android:name
+		ADDED from E:\MyApps\Android\SAS\app\src\main\AndroidManifest.xml:58:25-66
+category#android.intent.category.LAUNCHER
+ADDED from E:\MyApps\Android\SAS\app\src\main\AndroidManifest.xml:59:17-77
+	android:name
+		ADDED from E:\MyApps\Android\SAS\app\src\main\AndroidManifest.xml:59:27-74
 activity#com.zbar.lib.camera_scan.QRScanActivity
-ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:52:9-56:20
+ADDED from E:\MyApps\Android\SAS\app\src\main\AndroidManifest.xml:62:9-66:20
 	android:screenOrientation
-		ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:54:13-49
+		ADDED from E:\MyApps\Android\SAS\app\src\main\AndroidManifest.xml:64:13-49
 	android:theme
-		ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:55:13-66
+		ADDED from E:\MyApps\Android\SAS\app\src\main\AndroidManifest.xml:65:13-66
 	android:name
-		ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:53:13-55
+		ADDED from E:\MyApps\Android\SAS\app\src\main\AndroidManifest.xml:63:13-55
 activity#com.zbar.lib.app_web.WebViewActivity
-ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:57:9-61:20
+ADDED from E:\MyApps\Android\SAS\app\src\main\AndroidManifest.xml:69:9-75:20
 	android:theme
-		ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:59:13-60
+		ADDED from E:\MyApps\Android\SAS\app\src\main\AndroidManifest.xml:71:13-60
 	android:name
-		ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:58:13-52
+		ADDED from E:\MyApps\Android\SAS\app\src\main\AndroidManifest.xml:70:13-52
+intent-filter#action:name:android.intent.action.VIEW
+ADDED from E:\MyApps\Android\SAS\app\src\main\AndroidManifest.xml:72:13-74:29
+action#android.intent.action.VIEW
+ADDED from E:\MyApps\Android\SAS\app\src\main\AndroidManifest.xml:73:17-69
+	android:name
+		ADDED from E:\MyApps\Android\SAS\app\src\main\AndroidManifest.xml:73:25-66
 activity#com.zbar.lib.app_web.UploadTeacherFacePic
-ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:63:9-65:20
+ADDED from E:\MyApps\Android\SAS\app\src\main\AndroidManifest.xml:77:9-79:20
 	android:name
-		ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:63:19-63
-activity#com.zbar.lib.app_web.ShowStudentClassWorkPic
-ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:66:9-69:20
+		ADDED from E:\MyApps\Android\SAS\app\src\main\AndroidManifest.xml:77:19-63
+activity#com.zbar.lib.app_web.UploadClassWorkPic
+ADDED from E:\MyApps\Android\SAS\app\src\main\AndroidManifest.xml:80:9-82:20
 	android:name
-		ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:67:13-60
+		ADDED from E:\MyApps\Android\SAS\app\src\main\AndroidManifest.xml:80:19-61
 activity#com.zbar.lib.camera_upload_pic.EditStudentClassWorkPicActivity
-ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:70:9-74:20
+ADDED from E:\MyApps\Android\SAS\app\src\main\AndroidManifest.xml:83:9-87:20
 	android:theme
-		ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:72:13-71
+		ADDED from E:\MyApps\Android\SAS\app\src\main\AndroidManifest.xml:85:13-71
 	android:name
-		ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:71:13-78
+		ADDED from E:\MyApps\Android\SAS\app\src\main\AndroidManifest.xml:84:13-78
 activity#com.zbar.lib.app_main.SA_MainActivity
-ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:75:9-79:20
+ADDED from E:\MyApps\Android\SAS\app\src\main\AndroidManifest.xml:88:9-92:20
 	android:theme
-		ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:77:13-60
+		ADDED from E:\MyApps\Android\SAS\app\src\main\AndroidManifest.xml:90:13-60
 	android:name
-		ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:76:13-53
+		ADDED from E:\MyApps\Android\SAS\app\src\main\AndroidManifest.xml:89:13-53
 activity#com.zbar.lib.app_web.ShakeActivity
-ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:80:9-84:20
+ADDED from E:\MyApps\Android\SAS\app\src\main\AndroidManifest.xml:93:9-97:20
 	android:theme
-		ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:82:13-60
+		ADDED from E:\MyApps\Android\SAS\app\src\main\AndroidManifest.xml:95:13-60
 	android:name
-		ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:81:13-50
+		ADDED from E:\MyApps\Android\SAS\app\src\main\AndroidManifest.xml:94:13-50
 activity#com.zbar.lib.test.swipemenu_test.SwipeMenuTestMainActivity
-ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:85:9-87:20
+ADDED from E:\MyApps\Android\SAS\app\src\main\AndroidManifest.xml:98:9-100:20
 	android:name
-		ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:85:19-80
+		ADDED from E:\MyApps\Android\SAS\app\src\main\AndroidManifest.xml:98:19-80
 activity#com.zbar.lib.test.swipemenu_test.SwipeMenuAppManagerActivity
-ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:88:9-89:20
+ADDED from E:\MyApps\Android\SAS\app\src\main\AndroidManifest.xml:101:9-102:20
 	android:name
-		ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:88:19-82
+		ADDED from E:\MyApps\Android\SAS\app\src\main\AndroidManifest.xml:101:19-82
 activity#com.zbar.lib.test.swipemenu_test.SwipeMenuDifferentItemActivity
-ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:90:9-91:20
+ADDED from E:\MyApps\Android\SAS\app\src\main\AndroidManifest.xml:103:9-104:20
 	android:name
-		ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:90:19-85
+		ADDED from E:\MyApps\Android\SAS\app\src\main\AndroidManifest.xml:103:19-85
 activity#com.zbar.lib.app_web.CommentListActivity
-ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:92:9-93:20
+ADDED from E:\MyApps\Android\SAS\app\src\main\AndroidManifest.xml:105:9-106:20
 	android:name
-		ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:92:19-62
+		ADDED from E:\MyApps\Android\SAS\app\src\main\AndroidManifest.xml:105:19-62
 activity#com.zbar.lib.app_web.CommentEditActivity
-ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:94:9-95:20
+ADDED from E:\MyApps\Android\SAS\app\src\main\AndroidManifest.xml:107:9-108:20
 	android:name
-		ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:94:19-62
-activity#com.zbar.lib.test.pickerview_test.PickerTestActivity
-ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:96:9-97:20
+		ADDED from E:\MyApps\Android\SAS\app\src\main\AndroidManifest.xml:107:19-62
+activity#com.zbar.lib.test.pickerview_test.PickerViewTestActivity
+ADDED from E:\MyApps\Android\SAS\app\src\main\AndroidManifest.xml:109:9-110:20
 	android:name
-		ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:96:19-74
+		ADDED from E:\MyApps\Android\SAS\app\src\main\AndroidManifest.xml:109:19-78
 activity#com.zbar.lib.app_web.WeatherActivity
-ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:98:9-99:20
+ADDED from E:\MyApps\Android\SAS\app\src\main\AndroidManifest.xml:111:9-112:20
 	android:name
-		ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:98:19-58
+		ADDED from E:\MyApps\Android\SAS\app\src\main\AndroidManifest.xml:111:19-58
 activity#com.zbar.lib.app_web.CheckHomeWorkActivity
-ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:100:9-103:20
+ADDED from E:\MyApps\Android\SAS\app\src\main\AndroidManifest.xml:113:9-116:20
 	android:theme
-		ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:102:13-60
+		ADDED from E:\MyApps\Android\SAS\app\src\main\AndroidManifest.xml:115:13-60
 	android:name
-		ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:101:13-58
+		ADDED from E:\MyApps\Android\SAS\app\src\main\AndroidManifest.xml:114:13-58
 activity#com.zbar.lib.app_tools.AppAboutActivity
-ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:104:9-107:20
+ADDED from E:\MyApps\Android\SAS\app\src\main\AndroidManifest.xml:117:9-120:20
 	android:theme
-		ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:106:13-60
+		ADDED from E:\MyApps\Android\SAS\app\src\main\AndroidManifest.xml:119:13-60
 	android:name
-		ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:105:13-55
+		ADDED from E:\MyApps\Android\SAS\app\src\main\AndroidManifest.xml:118:13-55
 activity#com.zbar.lib.app_web.ScoreShopEditActivity
-ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:108:9-111:20
+ADDED from E:\MyApps\Android\SAS\app\src\main\AndroidManifest.xml:121:9-124:20
 	android:theme
-		ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:110:13-60
+		ADDED from E:\MyApps\Android\SAS\app\src\main\AndroidManifest.xml:123:13-60
 	android:name
-		ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:109:13-58
+		ADDED from E:\MyApps\Android\SAS\app\src\main\AndroidManifest.xml:122:13-58
 activity#com.zbar.lib.app_web.ScoreShopListActivity
-ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:112:9-115:20
+ADDED from E:\MyApps\Android\SAS\app\src\main\AndroidManifest.xml:125:9-128:20
 	android:theme
-		ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:114:13-60
+		ADDED from E:\MyApps\Android\SAS\app\src\main\AndroidManifest.xml:127:13-60
 	android:name
-		ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:113:13-58
+		ADDED from E:\MyApps\Android\SAS\app\src\main\AndroidManifest.xml:126:13-58
+activity#com.zbar.lib.SettingActivity
+ADDED from E:\MyApps\Android\SAS\app\src\main\AndroidManifest.xml:129:9-132:20
+	android:theme
+		ADDED from E:\MyApps\Android\SAS\app\src\main\AndroidManifest.xml:131:13-60
+	android:name
+		ADDED from E:\MyApps\Android\SAS\app\src\main\AndroidManifest.xml:130:13-44
 meta-data#com.google.android.gms.version
-ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:118:9-120:69
-MERGED from [com.google.android.gms:play-services-basement:8.4.0] C:\Users\Administrator\.android\build-cache\67b12fbd82e47259739523ca06c4be31d1b029ca\output\AndroidManifest.xml:21:9-23:69
+ADDED from E:\MyApps\Android\SAS\app\src\main\AndroidManifest.xml:135:9-137:69
+MERGED from [com.google.android.gms:play-services-basement:11.0.4] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\26723f526491800a7ff07da029da023c\AndroidManifest.xml:20:9-121
+MERGED from [com.google.android.gms:play-services-basement:11.0.4] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\26723f526491800a7ff07da029da023c\AndroidManifest.xml:20:9-121
 	android:value
-		ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:120:13-66
+		ADDED from E:\MyApps\Android\SAS\app\src\main\AndroidManifest.xml:137:13-66
 	android:name
-		ADDED from E:\Android\SA_QR2\SAS\app\src\main\AndroidManifest.xml:119:13-58
+		ADDED from E:\MyApps\Android\SAS\app\src\main\AndroidManifest.xml:136:13-58
+meta-data#android.support.FILE_PROVIDER_PATHS
+ADDED from E:\MyApps\Android\SAS\app\src\main\AndroidManifest.xml:35:13-37:58
+	android:resource
+		ADDED from E:\MyApps\Android\SAS\app\src\main\AndroidManifest.xml:37:17-55
+	android:name
+		ADDED from E:\MyApps\Android\SAS\app\src\main\AndroidManifest.xml:36:17-67
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:11.0.4] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\0c669e39b793d0cd8c93ef3406342dc1\AndroidManifest.xml:19:9-172
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:11.0.4] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\0c669e39b793d0cd8c93ef3406342dc1\AndroidManifest.xml:19:146-170
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:11.0.4] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\0c669e39b793d0cd8c93ef3406342dc1\AndroidManifest.xml:19:86-145
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:11.0.4] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\0c669e39b793d0cd8c93ef3406342dc1\AndroidManifest.xml:19:19-85
+provider#com.google.firebase.provider.FirebaseInitProvider
+ADDED from [com.google.firebase:firebase-common:11.0.4] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\564fc1d416e55db68720edf623c4cb31\AndroidManifest.xml:6:9-194
+	android:authorities
+		ADDED from [com.google.firebase:firebase-common:11.0.4] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\564fc1d416e55db68720edf623c4cb31\AndroidManifest.xml:6:19-78
+	android:exported
+		ADDED from [com.google.firebase:firebase-common:11.0.4] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\564fc1d416e55db68720edf623c4cb31\AndroidManifest.xml:6:144-168
+	android:initOrder
+		ADDED from [com.google.firebase:firebase-common:11.0.4] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\564fc1d416e55db68720edf623c4cb31\AndroidManifest.xml:6:169-192
+	android:name
+		ADDED from [com.google.firebase:firebase-common:11.0.4] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\564fc1d416e55db68720edf623c4cb31\AndroidManifest.xml:6:79-143
+meta-data#android.support.VERSION
+ADDED from [com.android.support:appcompat-v7:25.3.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\6b689e5b8571ce019751a12c3dd1e944\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-v4:25.3.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\bfc60bb192cc56b76168ad4f4f7d0fca\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-v4:25.3.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\bfc60bb192cc56b76168ad4f4f7d0fca\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:animated-vector-drawable:25.3.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\7e97cec0879660a616c78e1e116c6079\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:animated-vector-drawable:25.3.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\7e97cec0879660a616c78e1e116c6079\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-vector-drawable:25.3.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\fb6c4a96f125aac00b71f62640ff45a9\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-vector-drawable:25.3.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\fb6c4a96f125aac00b71f62640ff45a9\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-fragment:25.3.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\936918ac159dfd33dd109bd43de9a1ea\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-fragment:25.3.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\936918ac159dfd33dd109bd43de9a1ea\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-media-compat:25.3.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\8c39577ff7e6eb467d78284b25fb4d77\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-media-compat:25.3.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\8c39577ff7e6eb467d78284b25fb4d77\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-utils:25.3.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\43b11b9c2ff23e369dd080899d04c86b\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-utils:25.3.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\43b11b9c2ff23e369dd080899d04c86b\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-ui:25.3.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\a63864ddd7895f00fd637360dcb189af\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-ui:25.3.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\a63864ddd7895f00fd637360dcb189af\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-compat:25.3.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\3a644eafa54c0528298a890a583f16c2\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-compat:25.3.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\3a644eafa54c0528298a890a583f16c2\AndroidManifest.xml:25:5-27:34
+	android:value
+		ADDED from [com.android.support:appcompat-v7:25.3.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\6b689e5b8571ce019751a12c3dd1e944\AndroidManifest.xml:27:9-31
+	android:name
+		ADDED from [com.android.support:appcompat-v7:25.3.0] C:\Users\Admin\.gradle\caches\transforms-2\files-2.1\6b689e5b8571ce019751a12c3dd1e944\AndroidManifest.xml:26:9-47

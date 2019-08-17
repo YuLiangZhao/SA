@@ -1,12 +1,19 @@
 package com.zbar.lib.app_web;
 
+import android.Manifest;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
 import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.Environment;
 import android.provider.MediaStore;
+import android.support.annotation.NonNull;
+import android.support.v4.app.ActivityCompat;
+import android.support.v4.content.ContextCompat;
+import android.support.v4.content.FileProvider;
 import android.view.Gravity;
 import android.view.View;
 import android.widget.EditText;
@@ -23,13 +30,16 @@ import com.yanzhenjie.nohttp.rest.StringRequest;
 import com.zbar.lib.R;
 import com.zbar.lib.SerializableMap;
 import com.zbar.lib.app_root.BaseActivity;
+import com.zbar.lib.constant.SinaUrlConstants;
 import com.zbar.lib.nohttp.CallServer;
 import com.zbar.lib.nohttp.HttpListener;
 import com.zbar.lib.popup_window.SelectPicPopupWindow;
-import com.zbar.lib.util.Constants;
 import com.zbar.lib.util.ImageUtil;
 import com.zbar.lib.util.NetworkUtil;
 import com.zbar.lib.util.StringUtil;
+
+import org.json.JSONException;
+import org.json.JSONObject;
 
 import java.io.File;
 import java.io.IOException;
@@ -57,6 +67,8 @@ public class ScoreShopEditActivity extends BaseActivity {
 
     /* 头像名称 */
     private String PHOTO_FILE_NAME = "tmp.jpg";
+    private Uri imageUri;
+    private File imageFile = new File(Environment.getExternalStorageDirectory() + File.separator + "sa"  + File.separator + PHOTO_FILE_NAME);
 
     @Override
     public void initWidget() {
@@ -65,9 +77,9 @@ public class ScoreShopEditActivity extends BaseActivity {
         //获得实例对象
         sp = this.getSharedPreferences("TcInfo",MODE_PRIVATE);//教师登录信息存储器
         TID = sp.getString("TcID","");
-        ibTopBack = (ImageButton)  findViewById(R.id.ib_top_back);
-        tvTitle = (TextView)  findViewById(R.id.tv_top_title);
-        tvRightBtn = (TextView) findViewById(R.id.tv_top_right_btn);// + 号 按钮
+        ibTopBack = findViewById(R.id.ib_top_back);
+        tvTitle = findViewById(R.id.tv_top_title);
+        tvRightBtn = findViewById(R.id.tv_top_right_btn);// + 号 按钮
         ibTopBack.setOnClickListener(this);
         tvRightBtn.setOnClickListener(this);
         //
@@ -88,17 +100,17 @@ public class ScoreShopEditActivity extends BaseActivity {
             tvTitle.setText("添加奖品");
         }
 
-        etName = (EditText) findViewById(R.id.et_shop_name);
-        etScore = (EditText) findViewById(R.id.et_shop_score);
-        etNum = (EditText) findViewById(R.id.et_shop_num);
+        etName = findViewById(R.id.et_shop_name);
+        etScore = findViewById(R.id.et_shop_score);
+        etNum = findViewById(R.id.et_shop_num);
         etName.setText(pName);
         etScore.setText(pPrice);
         etNum.setText(pNum);
 
-        imvPic = (ImageView) findViewById(R.id.imv_shop_pic);
+        imvPic = findViewById(R.id.imv_shop_pic);
         imvPic.setOnClickListener(this);
         //
-        tvUrl = (TextView) findViewById(R.id.tv_shop_pic_url);
+        tvUrl = findViewById(R.id.tv_shop_pic_url);
         tvUrl.setText(pImg);
         setShopPic();//设置编辑时的图片
     }
@@ -156,14 +168,53 @@ public class ScoreShopEditActivity extends BaseActivity {
         intent.setDataAndType(MediaStore.Images.Media.EXTERNAL_CONTENT_URI, "image/*");
         startActivityForResult(intent, PHOTO_REQUEST);
     }
-    //从摄像头拍照
-    private void getPicFromCamera() {
-        Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-        // 下面这句指定调用相机拍照后的照片存储的路径
-        intent.putExtra(MediaStore.EXTRA_OUTPUT, Uri.fromFile(new File(Environment.getExternalStorageDirectory(), PHOTO_FILE_NAME)));
-        startActivityForResult(intent, CAMERA_REQUEST);
+//    //从摄像头拍照
+//    private void getPicFromCamera() {
+//        Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+//        // 下面这句指定调用相机拍照后的照片存储的路径
+//        intent.putExtra(MediaStore.EXTRA_OUTPUT, Uri.fromFile(new File(Environment.getExternalStorageDirectory(), PHOTO_FILE_NAME)));
+//        startActivityForResult(intent, CAMERA_REQUEST);
+//    }
+// 检查并获取相机权限、存取权限 后拍照 2019年8月17日18:03:41
+private void getPicFromCamera() {
+    String[] CAMERA_PERMISSIONS = {
+            Manifest.permission.CAMERA,
+            Manifest.permission.WRITE_EXTERNAL_STORAGE,
+            Manifest.permission.ACCESS_FINE_LOCATION,
+            Manifest.permission.READ_CALENDAR
+    };
+    if (ContextCompat.checkSelfPermission(this,
+            android.Manifest.permission.CAMERA) != PackageManager.PERMISSION_GRANTED) {
+        //先判断有没有权限 ，没有就在这里进行权限的申请
+        ActivityCompat.requestPermissions(this,
+                CAMERA_PERMISSIONS, 1);
+    }else{
+        TakePhoto();
     }
-
+}
+    @Override
+    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+        TakePhoto();
+    }
+    //从摄像头拍照
+    private void TakePhoto() {
+        Intent takePictureIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+        if (takePictureIntent.resolveActivity(getPackageManager()) != null) {
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
+                //如果是7.0及以上的系统使用FileProvider的方式创建一个Uri
+                imageUri = FileProvider.getUriForFile(this, this.getApplicationContext().getPackageName() + ".provider", imageFile);
+                takePictureIntent.setFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
+                takePictureIntent.setFlags(Intent.FLAG_GRANT_WRITE_URI_PERMISSION);
+            } else {
+                imageUri = Uri.fromFile(new File(Environment.getExternalStorageDirectory(), PHOTO_FILE_NAME));
+            }
+            //Log.e("imageUri:", imageUri.toString());
+            //将Uri传递给系统相机
+            takePictureIntent.putExtra(MediaStore.EXTRA_OUTPUT, imageUri);
+            startActivityForResult(takePictureIntent, CAMERA_REQUEST);
+        }
+    }
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         // TODO Auto-generated method stub
@@ -172,9 +223,8 @@ public class ScoreShopEditActivity extends BaseActivity {
             case CAMERA_REQUEST:
                 switch (resultCode) {
                     case -1:// -1表示拍照成功
-                        File file = new File(Environment.getExternalStorageDirectory() + "/"+PHOTO_FILE_NAME);
-                        if (file.exists()) {
-                            uploadPic(Uri.fromFile(file));//异步上传文件
+                        if (imageFile.exists()) {
+                            uploadPic(imageUri);//异步上传文件
                         }
 
                         break;
@@ -215,7 +265,7 @@ public class ScoreShopEditActivity extends BaseActivity {
     //上传头像
     private void uploadFile(Bitmap photo) {
         //图片上传网址
-        String UpUrl = Constants.SAE_UPLOAD_ScoreShopPic_URL + "?TID=" + sp.getString("TcID","0");
+        String UpUrl = SinaUrlConstants.SAE_UPLOAD_ScoreShopPic_URL + "?TID=" + sp.getString("TcID","0");
         Request<String> request = new StringRequest(UpUrl, RequestMethod.POST);
         request.add("file",new BitmapBinary(photo,"temp.jpg"));
         CallServer.getRequestInstance().add(this, 1, request, new HttpListener<String>() {
@@ -270,7 +320,7 @@ public class ScoreShopEditActivity extends BaseActivity {
         sScore = StringUtil.Base64Encode(sScore);
         sNum = StringUtil.Base64Encode(sNum);
         sUrl = StringUtil.Base64Encode(sUrl);
-        Request<String> request = NoHttp.createStringRequest(Constants.SAE_SaveScoreShop_URL, RequestMethod.POST);
+        Request<JSONObject> request = NoHttp.createJsonObjectRequest(SinaUrlConstants.SAE_SaveScoreShop_URL, RequestMethod.POST);
         request.add("ID",ID);
         request.add("TID",TID);
         request.add("pName",sName);
@@ -280,23 +330,27 @@ public class ScoreShopEditActivity extends BaseActivity {
         //获取核心的NoHttp网络工具类对象
         CallServer callSever  = CallServer.getRequestInstance();
         //把队列添加进去
-        callSever.add(this, 0, request, new HttpListener<String>() {
+        callSever.add(this, 0, request, new HttpListener<JSONObject>() {
             @Override
-            public void onSucceed(int what, Response<String> response) {
+            public void onSucceed(int what, Response<JSONObject> response) {
                 System.out.println("请求成功:" + response.toString());
-                String r = response.toString();
-                if(!r.equals("0")) {
-                    showMessage("保存奖品信息成功！");
-                }else{
-                    showMessage("保存奖品信息失败！");
+                // 开始解析JSON字符串
+                JSONObject jsonObject = response.get();
+                try {
+                    if (jsonObject.get("err").equals("0")) {
+                        showMessage("保存奖品信息成功！");
+                    }else{
+                        showMessage("保存奖品信息失败！");
+                    }
+                } catch (JSONException e) {
+                    e.printStackTrace();
                 }
-
                 finish();
             }
 
             @Override
-            public void onFailed(int what, Response<String> response) {
-                showMessage(response.toString());
+            public void onFailed(int what, Response<JSONObject> response) {
+                //showMessage(response.toString());
                 System.out.println("请求失败:" + response.toString());
                 finish();
             }

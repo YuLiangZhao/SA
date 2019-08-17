@@ -52,8 +52,8 @@ public class GuideMainActivity extends FragmentActivity {
     }
 
     private void initView() {
-        dotLayout = (RadioGroup) findViewById(R.id.ad_point_group);
-        viewPage = (ViewPager) findViewById(R.id.viewPager);
+        dotLayout = findViewById(R.id.ad_point_group);
+        viewPage = findViewById(R.id.viewPager);
         mGuidePage1Fragment = new GuidePage1Fragment();
         mGuidePage2Fragment = new GuidePage2Fragment();
         mGuidePage3Fragment = new GuidePage3Fragment();

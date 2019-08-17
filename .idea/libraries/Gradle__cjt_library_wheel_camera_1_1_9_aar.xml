@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: cjt.library.wheel:camera:1.1.9@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/cbf26bf51d0ca2fc219ea1863048e00f/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/cbf26bf51d0ca2fc219ea1863048e00f/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/cjt.library.wheel/camera/1.1.9/b65b1227187ce8dec4a777d5459ace7a897f4eb8/camera-1.1.9-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -48,13 +48,13 @@ public class CallServer {
 
     /**
      *
-     * @param context   上下文,用来实例化自定义的对话框
-     * @param what      标识,用来标志请求,当多个请求使用同一个时,在回调方法中
-     * @param callback  网络请求的监听器
-     * @param request   请求对象
-     * @param canCancle 是否允许用户请求取消
-     * @param isLoading 是否显示进度条对话框
-     * @param <T>
+     * =>param context   上下文,用来实例化自定义的对话框
+     * =>param what      标识,用来标志请求,当多个请求使用同一个时,在回调方法中
+     * =>param callback  网络请求的监听器
+     * =>param request   请求对象
+     * =>param canCancle 是否允许用户请求取消
+     * =>param isLoading 是否显示进度条对话框
+     * =>param <T>
 
      */
     public <T> void add(Context context, int what, Request<T> request, HttpListener<T> callback, boolean canCancle, boolean isLoading){
@@ -63,10 +63,10 @@ public class CallServer {
     /**
      * 发起一个请求。
      *
-     * @param what     what.
-     * @param request  请求对象。
-     * @param listener 结果监听。
-     * @param <T>      要请求到的数据类型。
+     * =>param what     what.
+     * =>param request  请求对象。
+     * =>param listener 结果监听。
+     * =>param <T>      要请求到的数据类型。
      */
     public <T> void add(int what, Request<T> request, OnResponseListener<T> listener) {
         requestQueue.add(what, request, listener);
@@ -101,11 +101,11 @@ public class CallServer {
     }
 
     /**
-     * @param url      请求服务器链接
-     * @param what     请求服务标识
-     * @param map      请求参数封装
-     * @param filePath 下载文件的保存路径与文件名
-     * @param listener 下载监听
+     * =>param url      请求服务器链接
+     * =>param what     请求服务标识
+     * =>param map      请求参数封装
+     * =>param filePath 下载文件的保存路径与文件名
+     * =>param listener 下载监听
      */
     public void asyncDownloadFile(String url, int what,
                                      Map<String, String> map,
@@ -146,11 +146,11 @@ public class CallServer {
     }
     /**
      * 分块级上传文件 提交表单数据
-     * @param url
-     * @param what      网络请求标识
-     * @param forMap    网络请求提交表单数据
-     * @param fileMap   网络请求提交上传文件
-     * @param listener  网络请求标识
+     * =>param url
+     * =>param what      网络请求标识
+     * =>param forMap    网络请求提交表单数据
+     * =>param fileMap   网络请求提交上传文件
+     * =>param listener  网络请求标识
      */
     public void asyncUploadFile(String url, int what, Map<String, String> forMap,Map<String, String> fileMap, OnResponseListener<String> listener) {
         requestQueue.cancelBySign(what);

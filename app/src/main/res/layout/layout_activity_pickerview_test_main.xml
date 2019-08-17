@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <Button
+        android:layout_margin="20dp"
+        android:id="@+id/btn_Time"
+        android:text="@string/picker_time"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+    <Button
+        android:id="@+id/btn_Options"
+        android:layout_margin="20dp"
+        android:text="@string/picker_province"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+
+    <Button
+        android:id="@+id/btn_CustomTime"
+        android:layout_margin="20dp"
+        android:text="@string/picker_custom_time"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+
+    <Button
+        android:id="@+id/btn_CustomOptions"
+        android:layout_margin="20dp"
+        android:text="@string/picker_custom_province"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/gif_test"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:background="@drawable/animation_list_gif_loading"
+            android:contentDescription="@string/app_img_alt" />
+
+        <ImageView
+            android:id="@+id/gif_test2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/animation_list_gif_wx_dice"
+            android:contentDescription="@string/app_img_alt" />
+
+    </LinearLayout>
+</LinearLayout>

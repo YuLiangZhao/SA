@@ -71,7 +71,7 @@ public class SwipeMenuAppManagerActivity extends Activity {
         String arr = mAppList.toString();
         ToastUtil.showToast(this,arr);
 
-        mListView = (SwipeMenuListView) findViewById(R.id.listView);
+        mListView = findViewById(R.id.listView);
 
         mAdapter = new AppAdapter();
         mListView.setAdapter(mAdapter);
@@ -258,8 +258,8 @@ public class SwipeMenuAppManagerActivity extends Activity {
             TextView tv_name;
 
             public ViewHolder(View view) {
-                iv_icon = (ImageView) view.findViewById(R.id.iv_icon);
-                tv_name = (TextView) view.findViewById(R.id.tv_name);
+                iv_icon = view.findViewById(R.id.iv_icon);
+                tv_name = view.findViewById(R.id.tv_name);
                 view.setTag(this);
             }
         }

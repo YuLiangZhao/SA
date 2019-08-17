@@ -25,10 +25,10 @@ import com.yanzhenjie.nohttp.rest.Request;
 import com.yanzhenjie.nohttp.rest.Response;
 import com.zbar.lib.R;
 import com.zbar.lib.app_root.BaseActivity;
+import com.zbar.lib.constant.SinaUrlConstants;
 import com.zbar.lib.custom_views.imgview.UserFaceImageView;
 import com.zbar.lib.nohttp.CallServer;
 import com.zbar.lib.nohttp.HttpListener;
-import com.zbar.lib.util.Constants;
 import com.zbar.lib.util.NetworkUtil;
 import com.zbar.lib.util.StringUtil;
 
@@ -60,10 +60,10 @@ public class ShakeActivity extends BaseActivity implements SensorEventListener {
         this.setAllowFullScreen(true);//true 不显示系统的标题栏
         setContentView(R.layout.layout_activity_sa_shake);
         sp = this.getSharedPreferences("TcInfo",0);//教师登录信息存储器
-        ibBack = (ImageButton) findViewById(R.id.ib_top_back);
-        tvTitle = (TextView) findViewById(R.id.tv_top_title);
+        ibBack = findViewById(R.id.ib_top_back);
+        tvTitle = findViewById(R.id.tv_top_title);
         tvTitle.setText("摇一摇");
-        ibConfig = (ImageButton) findViewById(R.id.ib_top_config);
+        ibConfig = findViewById(R.id.ib_top_config);
 
         View.OnClickListener clickListener = new View.OnClickListener(){
             @Override
@@ -81,18 +81,18 @@ public class ShakeActivity extends BaseActivity implements SensorEventListener {
         ibBack.setOnClickListener(clickListener);
         ibConfig.setOnClickListener(clickListener);
 
-        topLayout = (LinearLayout) findViewById(R.id.shake_top_layout);
-        topLineIv = (ImageView) findViewById(R.id.shake_top_line);
-        bottomLayout = (LinearLayout) findViewById(R.id.shake_bottom_layout);
-        bottomLineIv = (ImageView) findViewById(R.id.shake_bottom_line);
+        topLayout = findViewById(R.id.shake_top_layout);
+        topLineIv = findViewById(R.id.shake_top_line);
+        bottomLayout = findViewById(R.id.shake_bottom_layout);
+        bottomLineIv = findViewById(R.id.shake_bottom_line);
         topLineIv.setVisibility(View.GONE);
         bottomLineIv.setVisibility(View.GONE);
 
-        rlResult = (RelativeLayout) findViewById(R.id.rl_shake_result_box);
+        rlResult = findViewById(R.id.rl_shake_result_box);
         rlResult.setVisibility(View.GONE);//隐藏结果显示区域
-        tvStName = (TextView) findViewById(R.id.tv_shake_result_user_name);
-        tvStInfo = (TextView) findViewById(R.id.tv_shake_result_user_info);
-        imvResultPic = (UserFaceImageView) findViewById(R.id.imv_shake_result_user_face);
+        tvStName = findViewById(R.id.tv_shake_result_user_name);
+        tvStInfo = findViewById(R.id.tv_shake_result_user_info);
+        imvResultPic = findViewById(R.id.imv_shake_result_user_face);
 
         sensorManager = (SensorManager) getSystemService(SENSOR_SERVICE);
         mVibrate = (Vibrator) getSystemService(Service.VIBRATOR_SERVICE);
@@ -207,7 +207,7 @@ public class ShakeActivity extends BaseActivity implements SensorEventListener {
 							// TODO Auto-generated catch block
 							e.printStackTrace();
 						}
-					};
+					}
 				}.start();
 			}
 		}
@@ -296,7 +296,7 @@ public class ShakeActivity extends BaseActivity implements SensorEventListener {
         //ToastUtil.showToast(getApplicationContext(),"tid=" + tid);
 		String TID = StringUtil.Base64Encode(tid);
         //ToastUtil.showToast(getApplicationContext(),"TID=" + TID);
-		Request<JSONObject> request = NoHttp.createJsonObjectRequest(Constants.SAE_ShakeUrl, RequestMethod.POST);
+		Request<JSONObject> request = NoHttp.createJsonObjectRequest(SinaUrlConstants.SAE_ShakeUrl, RequestMethod.POST);
 		request.add("TID", TID);
 		CallServer.getRequestInstance().add(this, 0, request, new HttpListener<JSONObject>() {
 			@Override
@@ -305,8 +305,8 @@ public class ShakeActivity extends BaseActivity implements SensorEventListener {
 				JSONObject jsonObject = (JSONObject)response.get();
 				//Log.i("ShakeResultJSON：",response.toString());
 				try {
-					if (jsonObject.has("StData")) {
-						JSONObject StData = jsonObject.getJSONObject("StData");
+					if (jsonObject.has("Data")) {
+						JSONObject StData = jsonObject.getJSONObject("Data");
 						StID = StData.getString("SID");
 						StName = StData.getString("SN");
 						StSex = StData.getString("Sex");
@@ -343,7 +343,7 @@ public class ShakeActivity extends BaseActivity implements SensorEventListener {
 		CallServer.getRequestInstance().add(this, 1, request, new HttpListener<Bitmap>() {
 			@Override
 			public void onSucceed(int what, Response<Bitmap> response) {
-				imvResultPic.setImageBitmap((Bitmap)response.get());
+				imvResultPic.setImageBitmap(response.get());
 			}
 
 			@Override

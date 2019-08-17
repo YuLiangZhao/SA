@@ -20,7 +20,7 @@
     <string name="shop_num">奖品库存（0 – 999）</string>
     <string name="shop_pic">奖品图片</string>
 
-    <string name="scan_tips">将二维码图片对准扫描框即可自动扫描</string>
+    <string name="scan_tips">请将学生的二维码对准扫描框</string>
     <string name="qr_checkbox_text">开启连续扫描</string>
 
     <string name="back">返回</string>

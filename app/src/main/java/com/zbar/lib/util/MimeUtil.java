@@ -348,8 +348,8 @@ public final class MimeUtil {
 
     /**
      * Returns true if the given MIME type has an entry in the map.
-     * @param mimeType A MIME type (i.e. text/plain)
-     * @return True iff there is a mimeType entry in the map.
+     * =>param mimeType A MIME type (i.e. text/plain)
+     * =>return True iff there is a mimeType entry in the map.
      */
     public static boolean hasMimeType(String mimeType) {
         if (mimeType == null || mimeType.isEmpty()) {
@@ -360,8 +360,8 @@ public final class MimeUtil {
 
     /**
      * Returns the MIME type for the given extension.
-     * @param extension A file extension without the leading '.'
-     * @return The MIME type for the given extension or null iff there is none.
+     * =>param extension A file extension without the leading '.'
+     * =>return The MIME type for the given extension or null iff there is none.
      */
     public static String guessMimeTypeFromExtension(String extension) {
         if (extension == null || extension.isEmpty()) {
@@ -372,8 +372,8 @@ public final class MimeUtil {
 
     /**
      * Returns true if the given extension has a registered MIME type.
-     * @param extension A file extension without the leading '.'
-     * @return True iff there is an extension entry in the map.
+     * =>param extension A file extension without the leading '.'
+     * =>return True iff there is an extension entry in the map.
      */
     public static boolean hasExtension(String extension) {
         if (extension == null || extension.isEmpty()) {
@@ -386,8 +386,8 @@ public final class MimeUtil {
      * Returns the registered extension for the given MIME type. Note that some
      * MIME types map to multiple extensions. This call will return the most
      * common extension for the given MIME type.
-     * @param mimeType A MIME type (i.e. text/plain)
-     * @return The extension for the given MIME type or null iff there is none.
+     * =>param mimeType A MIME type (i.e. text/plain)
+     * =>return The extension for the given MIME type or null iff there is none.
      */
     public static String guessExtensionFromMimeType(String mimeType) {
         if (mimeType == null || mimeType.isEmpty()) {

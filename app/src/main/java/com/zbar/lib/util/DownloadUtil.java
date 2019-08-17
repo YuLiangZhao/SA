@@ -29,9 +29,9 @@ public class DownloadUtil {
     }
 
     /**
-     * @param file  上传文件
-     * @param RequestURL 上传文件URL
-     * @return 服务器返回的信息，如果出错则返回为null
+     * =>param file  上传文件
+     * =>param RequestURL 上传文件URL
+     * =>return 服务器返回的信息，如果出错则返回为null
      */
     public static String uploadFile(File file,String RequestURL) {
         String BOUNDARY = UUID.randomUUID().toString(); //边界标识 随机生成 String PREFIX = "--" , LINE_END = "\r\n";

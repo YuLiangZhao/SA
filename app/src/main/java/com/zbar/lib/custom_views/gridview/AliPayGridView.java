@@ -5,8 +5,8 @@ import android.util.AttributeSet;
 import android.widget.GridView;
 
 /**
- * @Description:解决在scrollview中只显示第一行数据的问题
- * @author http://blog.csdn.net/finddreams
+ * =>Description:解决在scrollview中只显示第一行数据的问题
+ * =>author http://blog.csdn.net/finddreams
  */ 
 public class AliPayGridView extends GridView {
 	public AliPayGridView(Context context, AttributeSet attrs) {

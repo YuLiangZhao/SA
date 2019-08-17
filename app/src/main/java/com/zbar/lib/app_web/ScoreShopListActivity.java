@@ -48,6 +48,7 @@ import com.yanzhenjie.nohttp.rest.Response;
 import com.zbar.lib.R;
 import com.zbar.lib.SerializableMap;
 import com.zbar.lib.app_root.BaseActivity;
+import com.zbar.lib.constant.SinaUrlConstants;
 import com.zbar.lib.custom_views.swipemenulistview.BaseSwipListAdapter;
 import com.zbar.lib.custom_views.swipemenulistview.SwipeMenu;
 import com.zbar.lib.custom_views.swipemenulistview.SwipeMenuCreator;
@@ -56,7 +57,6 @@ import com.zbar.lib.custom_views.swipemenulistview.SwipeMenuListView;
 import com.zbar.lib.nohttp.CallServer;
 import com.zbar.lib.nohttp.HttpListener;
 import com.zbar.lib.util.ArrayUtil;
-import com.zbar.lib.util.Constants;
 import com.zbar.lib.util.StringUtil;
 
 import org.json.JSONArray;
@@ -86,14 +86,14 @@ public class ScoreShopListActivity extends BaseActivity {
         //获得实例对象
         sp = this.getSharedPreferences("TcInfo",MODE_PRIVATE);//教师登录信息存储器
         TID = sp.getString("TcID","");
-        ibTopBack = (ImageButton)  findViewById(R.id.ib_top_back);
-        tvTopTitle = (TextView)  findViewById(R.id.tv_top_title);
+        ibTopBack = findViewById(R.id.ib_top_back);
+        tvTopTitle = findViewById(R.id.tv_top_title);
         tvTopTitle.setText("奖品管理");
-        ibAddBtn = (ImageButton) findViewById(R.id.ib_top_plus);// + 号 按钮
+        ibAddBtn = findViewById(R.id.ib_top_plus);// + 号 按钮
         ibTopBack.setOnClickListener(this);
         ibAddBtn.setOnClickListener(this);
         //SwipeMenuListView
-        mListView = (SwipeMenuListView) findViewById(R.id.slv_score_shop);
+        mListView = findViewById(R.id.slv_score_shop);
         //
         MyTask mAsyncTask = new MyTask();
         mAsyncTask.execute();
@@ -125,16 +125,16 @@ public class ScoreShopListActivity extends BaseActivity {
             /*
              * 获取服务器评语数据
              */
-            Request<JSONObject> request = new JsonObjectRequest(Constants.SAE_GetScoreShopJsonUrl, RequestMethod.POST);
+            Request<JSONObject> request = new JsonObjectRequest(SinaUrlConstants.SAE_GetScoreShopJsonUrl, RequestMethod.POST);
             request.add("TID", TID);
             Response<JSONObject> response = NoHttp.startRequestSync(request);
             if (response.isSucceed()) {
                 //System.out.println("请求成功:" + response.toString());
                 // 开始解析JSON字符串
-                JSONObject jsonObject = (JSONObject)response.get();
+                JSONObject jsonObject = response.get();
                 try {
-                    if (jsonObject.has("ShopData")) {
-                        JSONArray ShopData = jsonObject.getJSONArray("ShopData");
+                    if (jsonObject.has("Data")) {
+                        JSONArray ShopData = jsonObject.getJSONArray("Data");
                         String jsonString = ShopData.toString();
                         mAppList = ArrayUtil.getList(jsonString);
                     }
@@ -164,7 +164,7 @@ public class ScoreShopListActivity extends BaseActivity {
     }
     //
     private void initView(){
-        // step 1. create a MenuCreator
+        // step 1. create more_pic_2_gif_loading MenuCreator
         SwipeMenuCreator creator = new SwipeMenuCreator() {
 
             @Override
@@ -194,7 +194,7 @@ public class ScoreShopListActivity extends BaseActivity {
                         0x3F, 0x25)));
                 // set item width
                 deleteItem.setWidth(dp2px(90));
-                // set a icon
+                // set more_pic_2_gif_loading icon
                 deleteItem.setIcon(R.drawable.ic_delete);
                 // add to menu
                 menu.addMenuItem(deleteItem);
@@ -282,7 +282,7 @@ public class ScoreShopListActivity extends BaseActivity {
     }
     //删除item
     public void DelScoreShop(Map item){
-        Request<JSONObject> request = NoHttp.createJsonObjectRequest(Constants.SAE_DelScoreShopUrl, RequestMethod.POST);
+        Request<JSONObject> request = NoHttp.createJsonObjectRequest(SinaUrlConstants.SAE_DelScoreShopUrl, RequestMethod.POST);
         String ID = StringUtil.Base64Encode(item.get("ID").toString());
         request.add("ID", ID);
         request.add("TID", StringUtil.Base64Encode(TID));
@@ -291,7 +291,7 @@ public class ScoreShopListActivity extends BaseActivity {
             public void onSucceed(int what, Response<JSONObject> response) {
                 System.out.println("请求成功:" + response.toString());
                 // 开始解析JSON字符串
-                JSONObject jsonObject = (JSONObject)response.get();
+                JSONObject jsonObject = response.get();
                 try {
                     if (jsonObject.get("err").equals(0)) {
                         showMessage("删除成功！");
@@ -389,8 +389,8 @@ public class ScoreShopListActivity extends BaseActivity {
             TextView tv_name;
 
             public ViewHolder(View view) {
-                iv_Icon = (ImageView) view.findViewById(R.id.iv_shop_icon);
-                tv_name = (TextView) view.findViewById(R.id.tv_shop_name);
+                iv_Icon = view.findViewById(R.id.iv_shop_icon);
+                tv_name = view.findViewById(R.id.tv_shop_name);
                 view.setTag(this);
             }
         }

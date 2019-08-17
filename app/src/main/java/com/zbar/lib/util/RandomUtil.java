@@ -11,11 +11,11 @@ public class RandomUtil {
     //获取一个用list展现的随机数的方法
     /**
      *
-     * @param datas
+     * =>param datas
      * 目标数列
-     * @param num
+     * =>param num
      * 所需要的数列大小
-     * @return
+     * =>return
      *用法：
      * ArrayList<Integer> arrayList = RandomUtil.getRandomList(10,8);
      * Log.i("msg" , arrayList.toString());

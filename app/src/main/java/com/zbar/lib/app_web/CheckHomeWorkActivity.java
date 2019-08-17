@@ -23,7 +23,7 @@ import com.google.android.gms.appindexing.AppIndex;
 import com.google.android.gms.appindexing.Thing;
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.zbar.lib.R;
-import com.zbar.lib.util.Constants;
+import com.zbar.lib.constant.SinaUrlConstants;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
@@ -53,12 +53,12 @@ public class CheckHomeWorkActivity extends Activity {
         //获取用户名、密码、
         TID = sp.getString("TcID","");
 
-        ibTopBack = (ImageButton)  findViewById(R.id.ib_top_back);
-        tvTopTitle = (TextView)  findViewById(R.id.tv_top_title);
-        ibTopClose = (ImageButton)  findViewById(R.id.ib_top_close);
-        webView = (WebView) findViewById(R.id.webView_Main);
+        ibTopBack = findViewById(R.id.ib_top_back);
+        tvTopTitle = findViewById(R.id.tv_top_title);
+        ibTopClose = findViewById(R.id.ib_top_close);
+        webView = findViewById(R.id.webView_Main);
         initCustomTimePicker();//初始化日期选择器
-        ibTopSearch = (ImageButton)  findViewById(R.id.ib_top_search);
+        ibTopSearch = findViewById(R.id.ib_top_search);
 
         WebSettings webSettings = webView.getSettings();
         webSettings.setJavaScriptEnabled(true);//允许执行JavaScript
@@ -76,7 +76,7 @@ public class CheckHomeWorkActivity extends Activity {
         //添加客户端标示
         String ua = webSettings.getUserAgentString();
         webSettings.setUserAgentString(ua + "; SAS_Phone_Client /");
-        baseURL = Constants.SAE_CheckHomeWorkUrl;
+        baseURL = SinaUrlConstants.SAE_CheckHomeWorkUrl;
         if (baseURL.indexOf("?") > 0) {
             URL = baseURL + "&TID="+TID;//教师二维码登录附加参数
         } else {
@@ -198,8 +198,8 @@ public class CheckHomeWorkActivity extends Activity {
                 .setLayoutRes(R.layout.layout_activity_pickerview_date, new CustomListener() {
                     @Override
                     public void customLayout(View v) {
-                        final Button btSubmit = (Button) v.findViewById(R.id.btnSubmit);
-                        Button btCancel = (Button) v.findViewById(R.id.btnCancel);
+                        final Button btSubmit = v.findViewById(R.id.btnSubmit);
+                        Button btCancel = v.findViewById(R.id.btnCancel);
                         btSubmit.setOnClickListener(new View.OnClickListener() {
                             @Override
                             public void onClick(View v) {
@@ -233,7 +233,7 @@ public class CheckHomeWorkActivity extends Activity {
      */
     public Action getIndexApiAction() {
         Thing object = new Thing.Builder()
-                .setName("WebViewActivity Page") // TODO: Define a title for the content shown.
+                .setName("WebViewActivity Page") // TODO: Define more_pic_2_gif_loading title for the content shown.
                 // TODO: Make sure this auto-generated URL is correct.
                 .setUrl(Uri.parse("http://[ENTER-YOUR-URL-HERE]"))
                 .build();

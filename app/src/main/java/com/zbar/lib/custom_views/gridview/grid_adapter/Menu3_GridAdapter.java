@@ -12,8 +12,8 @@ import com.zbar.lib.R;
 import com.zbar.lib.custom_views.gridview.BaseViewHolder;
 
 /**
- * @Description:gridview的Adapter
- * @author http://blog.csdn.net/finddreams
+ * =>Description:gridview的Adapter
+ * =>author http://blog.csdn.net/finddreams
  */
 public class Menu3_GridAdapter extends BaseAdapter {
 	private Context mContext;

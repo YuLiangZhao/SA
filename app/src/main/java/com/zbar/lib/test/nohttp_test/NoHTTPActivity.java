@@ -27,8 +27,8 @@ public class NoHTTPActivity extends Activity implements View.OnClickListener {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.layout_activity_welcome);
 
-        ivBG = (ImageView) findViewById(R.id.app_Flash_imageView);
-        mTvResult = (TextView) findViewById(R.id.app_author_textView);
+        ivBG = findViewById(R.id.app_Flash_imageView);
+        mTvResult = findViewById(R.id.app_author_textView);
         mTvResult.setOnClickListener(this);
     }
 
@@ -50,7 +50,7 @@ public class NoHTTPActivity extends Activity implements View.OnClickListener {
     private void response(Response<Bitmap> response) {
         if (response.isSucceed()) {
             //mTvResult.setText("请求成功: " + response.get());
-            Bitmap bitmap = (Bitmap) response.get();
+            Bitmap bitmap = response.get();
             ivBG.setImageBitmap(bitmap);
         } else {
             mTvResult.setText("请求失败: " + response.responseCode());

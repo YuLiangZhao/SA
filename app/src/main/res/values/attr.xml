@@ -40,7 +40,7 @@
         <!-- 边框的宽度 -->
         <attr name="roundBorderWidth" format="integer"/>
     </declare-styleable>
-    <!--123-->
+    <!--pickerview-->
     <declare-styleable name="pickerview">
         <attr name="pickerview_gravity">
             <enum name="center" value="17"/>

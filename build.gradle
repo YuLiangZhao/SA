@@ -1,15 +1,45 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
+//==================================
+//
+//==================================
+//Gradle统一管理版本号引用配置
+ext {
+    var = [
+            versionCode              : 1,//
+            versionName              : "1.0.0",//
+
+            //minSdkVersion (lowest possible) <= targetSdkVersion == compileSdkVersion (latest SDK)
+            minSdkVersion            : 14,// 最低支持Android版本——minSdkVersion 是应用可以运行的最低要求
+            targetSdkVersion         : 29,// 目标版本——将 targetSdkVersion 更新为最新的 SDK 是所有应用都应该优先处理的事情,但一定在更新 targetSdkVersion 之前做测试！
+            compileSdkVersion        : 29,// 用于编译的SDK版本——强烈推荐总是使用最新的 SDK 进行编译
+
+            MINIFY_ENABLED           : true, // 使用混淆
+            MINIFY_DISABLED          : false,// 不使用混淆
+            applicationId           : 'com.sinaapp.lzedu.sas',// 应用程序包名
+            //Dependencies
+            supportLibraryVersion    : "25.2.0"
+    ]
+}
+//==================================
+//
+//==================================
 buildscript {
     repositories {
+        google()
         jcenter()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:2.3.0'
+        classpath 'com.android.tools.build:gradle:3.4.2'
     }
 }
 
 allprojects {
     repositories {
+        google()
         jcenter()
     }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
 }

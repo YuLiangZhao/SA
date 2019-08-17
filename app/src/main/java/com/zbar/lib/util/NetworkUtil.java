@@ -86,11 +86,7 @@ public class NetworkUtil {
                     (ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE);
             NetworkInfo activeInfo = connMgr.getActiveNetworkInfo();
             //返回链接状态
-            if (activeInfo != null && activeInfo.isConnected()) {
-                return true;
-            } else {
-                return false;
-            }
+            return activeInfo != null && activeInfo.isConnected();
         } catch (Exception e) {
             return false;
         }
@@ -102,12 +98,8 @@ public class NetworkUtil {
                     (ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE);
             NetworkInfo activeInfo = connMgr.getActiveNetworkInfo();
             //返回链接状态
-            if (activeInfo != null && activeInfo.isConnected()
-                    && activeInfo.getType() == ConnectivityManager.TYPE_WIFI) {
-                return true;
-            } else {
-                return false;
-            }
+            return activeInfo != null && activeInfo.isConnected()
+                    && activeInfo.getType() == ConnectivityManager.TYPE_WIFI;
         } catch (Exception e) {
             return false;
         }

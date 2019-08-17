@@ -4,9 +4,9 @@ import android.os.Handler;
 import android.os.Looper;
 import android.os.Message;
 
-import com.zbar.lib.camera_scan.QRScanActivity;
 import com.zbar.lib.R;
 import com.zbar.lib.ZbarManager;
+import com.zbar.lib.camera_scan.QRScanActivity;
 
 /**
  * 作者: 陈涛(1076559197@qq.com)

@@ -47,8 +47,8 @@ public class RoundCanvasView extends ImageView {
 
     /**
      * 设置需要设置圆角的源图片, 并进行缩放
-     * @param bitmap 源图片
-     * @param isInvalidate 是否通知View组件重绘
+     * =>param bitmap 源图片
+     * =>param isInvalidate 是否通知View组件重绘
      */
     public void setBitmap(Bitmap bitmap, boolean isInvalidate){
         //创建一个矩阵
@@ -193,8 +193,8 @@ public class RoundCanvasView extends ImageView {
 
     /***
      * 利用Bitmap进行缓冲,将圆角图片绘制到bitmap中
-     * @param bmp 源位图
-     * @return 圆角的Bitmap图片
+     * =>param bmp 源位图
+     * =>return 圆角的Bitmap图片
      */
     private Bitmap getCroppedBitmap(Bitmap bmp){
         //通过ImageView的大小生成位图
@@ -216,9 +216,9 @@ public class RoundCanvasView extends ImageView {
 
     /***
      * ImageView边框的RectF
-     * @param canvas 画布
+     * =>param canvas 画布
 
-     * @return
+     * =>return
      */
     private RectF getBorderLineRectF(Canvas canvas){
         //通过画布得到ImageView所占用的矩形区域
@@ -236,7 +236,7 @@ public class RoundCanvasView extends ImageView {
 
     /**
      * ImageView边框的Paint
-     * @return 返回Paint
+     * =>return 返回Paint
      */
     private Paint getBorderPaint(int borderColor, int borderWidth){
         //画笔

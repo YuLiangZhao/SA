@@ -1,8 +1,8 @@
 package com.zbar.lib.test.pickerview_test;
 
-import android.app.Activity;
 import android.graphics.Color;
-import android.os.Bundle;
+import android.graphics.drawable.AnimationDrawable;
+import android.text.format.Time;
 import android.view.KeyEvent;
 import android.view.View;
 import android.widget.Button;
@@ -15,31 +15,36 @@ import com.bigkoo.pickerview.lib.WheelView;
 import com.bigkoo.pickerview.listener.CustomListener;
 import com.bigkoo.pickerview.model.IPickerViewData;
 import com.zbar.lib.R;
+import com.zbar.lib.app_root.BaseActivity;
 import com.zbar.lib.test.pickerview_test.bean.CardBean;
 import com.zbar.lib.test.pickerview_test.bean.PickerViewData;
 import com.zbar.lib.test.pickerview_test.bean.ProvinceBean;
+import com.zbar.lib.util.ToastUtil;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
+import java.util.Locale;
 
+/**
+ * Created by Administrator on 2017/3/15.
+ */
 
-public class PickerViewTestActivity extends Activity implements View.OnClickListener {
-
-    private ArrayList<ProvinceBean> options1Items = new ArrayList<ProvinceBean>();
-    private ArrayList<ArrayList<String>> options2Items = new ArrayList<ArrayList<String>>();
-    private ArrayList<ArrayList<ArrayList<IPickerViewData>>> options3Items = new ArrayList<ArrayList<ArrayList<IPickerViewData>>>();
+public class PickerViewTestActivity extends BaseActivity{
+    private ArrayList<ProvinceBean> options1Items = new ArrayList<>();
+    private ArrayList<ArrayList<String>> options2Items = new ArrayList<>();
+    private ArrayList<ArrayList<ArrayList<IPickerViewData>>> options3Items = new ArrayList<>();
     private Button btn_Time, btn_Options,btn_CustomOptions,btn_CustomTime;
 
     private TimePickerView pvTime,pvCustomTime;
     private OptionsPickerView pvOptions,pvCustomOptions;
-    private ArrayList<CardBean> cardItem = new ArrayList<CardBean>();
+    private ArrayList<CardBean> cardItem = new ArrayList<>();
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+    public void initWidget() {
+        setAllowFullScreen(false);
+        setContentView(R.layout.layout_activity_pickerview_test_main);
         //最好等数据加载完毕再初始化并显示，以免数据量大的时候，还未加载完毕就显示，造成APP崩溃
 
         initTimePicker();
@@ -49,19 +54,21 @@ public class PickerViewTestActivity extends Activity implements View.OnClickList
         initOptionPicker();
         initCustomOptionPicker();
 
-        btn_Time = (Button) findViewById(R.id.btn_Time);
-        btn_Options = (Button) findViewById(R.id.btn_Options);
-        btn_CustomOptions = (Button) findViewById(R.id.btn_CustomOptions);
-        btn_CustomTime = (Button) findViewById(R.id.btn_CustomTime);
+        btn_Time = findViewById(R.id.btn_Time);
+        btn_Options = findViewById(R.id.btn_Options);
+        btn_CustomOptions = findViewById(R.id.btn_CustomOptions);
+        btn_CustomTime = findViewById(R.id.btn_CustomTime);
         btn_Time.setOnClickListener(this);
         btn_Options.setOnClickListener(this);
         btn_CustomOptions.setOnClickListener(this);
         btn_CustomTime.setOnClickListener(this);
+
+        gifAnima();
     }
 
-
     @Override
-    public void onClick(View v) {
+    public void widgetClick(View v) {
+        ToastUtil.showToast(this,"gif_test" + v.getId());
         if (v.getId() == R.id.btn_Time && pvTime != null) {
             pvTime.setDate(Calendar.getInstance());
             pvTime.show(); //弹出时间选择器
@@ -73,7 +80,35 @@ public class PickerViewTestActivity extends Activity implements View.OnClickList
             pvCustomTime.show(); //弹出自定义时间选择器
         }
     }
+    private void gifAnima() {
+        ImageView imageView = findViewById(R.id.gif_test);
+        AnimationDrawable animationDrawable = (AnimationDrawable)imageView.getBackground();
+        animationDrawable.start();
 
+        ImageView imageView2 = findViewById(R.id.gif_test2);
+        AnimationDrawable animationDrawable2 = (AnimationDrawable)imageView2.getBackground();
+        animationDrawable2.start();
+        /*
+        ImageView imageView = (ImageView) findViewById(R.id.gif_test);
+        // 获取AnimationDrawable对象
+        AnimationDrawable animationDrawable = (AnimationDrawable)imageView.getBackground();
+        animationDrawable.start();
+        // 动画是否正在运行
+        if(animationDrawable.isRunning()){
+            //停止动画播放
+            animationDrawable.stop();
+            System.out.println("isRunning");
+        }else{
+            //开始或者继续动画播放
+            animationDrawable.start();
+            System.out.println("start");
+        }
+        */
+    }
+    @Override
+    public boolean widgetLongClick(View v) {
+        return false;
+    }
 
     private void initTimePicker() {
         //控制时间范围(如果不设置范围，则使用默认时间1900-2100年，此段代码可注释)
@@ -119,13 +154,20 @@ public class PickerViewTestActivity extends Activity implements View.OnClickList
         // 注意，自定义布局中，optionspicker 或者 timepicker 的布局必须要有（即WheelView内容部分）
         // 否则会报空指针
         // 具体可参考demo 里面的两个自定义布局
-
+        Time t=new Time(); // or Time t=new Time("GMT+8"); 加上Time Zone资料。
+        t.setToNow(); // 取得系统时间。
+        int year = t.year - 1;
+        int month = t.month;
+        int day = t.monthDay;
+        int hour = t.hour; // 0-23
+        int minute = t.minute;
+        int second = t.second;
         //控制时间范围(如果不设置范围，则使用默认时间1900-2100年，此段代码可注释)
         Calendar selectedDate = Calendar.getInstance();//系统当前时间
         Calendar startDate = Calendar.getInstance();
-        startDate.set(2013,1,23);
+        startDate.set(year,1,1);
         Calendar endDate = Calendar.getInstance();
-        endDate.set(2019,2,28);
+        //endDate.set(year,month,day);
         //时间选择器 ，自定义布局
         pvCustomTime = new TimePickerView.Builder(this, new TimePickerView.OnTimeSelectListener() {
             @Override
@@ -135,19 +177,25 @@ public class PickerViewTestActivity extends Activity implements View.OnClickList
         })      .setType(TimePickerView.Type.YEAR_MONTH_DAY)
                 .setDate(selectedDate)
                 .setRangDate(startDate,endDate)
-                .setLayoutRes(R.layout.pickerview_custom_time, new CustomListener() {
-
+                .setDividerColor(Color.WHITE)//设置分割线的颜色
+                .setTextColorCenter(Color.LTGRAY)//设置选中项的颜色
+                .setLineSpacingMultiplier(1.6f)//设置两横线之间的间隔倍数
+                .setTitleBgColor(Color.DKGRAY)//标题背景颜色 Night mode
+                .setBgColor(Color.BLACK)//滚轮背景颜色 Night mode
+                .setSubmitColor(Color.WHITE)
+                .setCancelColor(Color.WHITE)
+                .setLayoutRes(R.layout.layout_activity_pickerview_date, new CustomListener() {
                     @Override
                     public void customLayout(View v) {
-                        final TextView tvSubmit = (TextView) v.findViewById(R.id.tv_finish);
-                        ImageView ivCancel = (ImageView) v.findViewById(R.id.iv_cancel);
-                        tvSubmit.setOnClickListener(new View.OnClickListener() {
+                        final Button btSubmit = v.findViewById(R.id.btnSubmit);
+                        Button btCancel = v.findViewById(R.id.btnCancel);
+                        btSubmit.setOnClickListener(new View.OnClickListener() {
                             @Override
                             public void onClick(View v) {
-                                pvCustomTime.returnData(tvSubmit);
+                                pvCustomTime.returnData(btSubmit);
                             }
                         });
-                        ivCancel.setOnClickListener(new View.OnClickListener() {
+                        btCancel.setOnClickListener(new View.OnClickListener() {
                             @Override
                             public void onClick(View v) {
                                 pvCustomTime.dismiss();
@@ -159,7 +207,8 @@ public class PickerViewTestActivity extends Activity implements View.OnClickList
     }
 
     private String getTime(Date date) {//可根据需要自行截取数据显示
-        SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        //SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd", Locale.US);
         return format.format(date);
     }
 
@@ -171,18 +220,18 @@ public class PickerViewTestActivity extends Activity implements View.OnClickList
         options1Items.add(new ProvinceBean(2,"广西","描述部分","其他数据"));
 
         //选项2
-        ArrayList<String> options2Items_01 = new ArrayList<String>();
+        ArrayList<String> options2Items_01 = new ArrayList<>();
         options2Items_01.add("广州");
         options2Items_01.add("佛山");
         options2Items_01.add("东莞");
         options2Items_01.add("阳江");
         options2Items_01.add("珠海");
-        ArrayList<String> options2Items_02 = new ArrayList<String>();
+        ArrayList<String> options2Items_02 = new ArrayList<>();
         options2Items_02.add("长沙");
         options2Items_02.add("岳阳");
         options2Items_02.add("株洲");
         options2Items_02.add("衡阳");
-        ArrayList<String> options2Items_03 = new ArrayList<String>();
+        ArrayList<String> options2Items_03 = new ArrayList<>();
         options2Items_03.add("桂林");
         options2Items_03.add("玉林");
         options2Items.add(options2Items_01);
@@ -190,12 +239,12 @@ public class PickerViewTestActivity extends Activity implements View.OnClickList
         options2Items.add(options2Items_03);
 
         //选项3
-        ArrayList<ArrayList<IPickerViewData>> options3Items_01 = new ArrayList<ArrayList<IPickerViewData>>();
-        ArrayList<ArrayList<IPickerViewData>> options3Items_02 = new ArrayList<ArrayList<IPickerViewData>>();
-        ArrayList<ArrayList<IPickerViewData>> options3Items_03 = new ArrayList<ArrayList<IPickerViewData>>();
+        ArrayList<ArrayList<IPickerViewData>> options3Items_01 = new ArrayList<>();
+        ArrayList<ArrayList<IPickerViewData>> options3Items_02 = new ArrayList<>();
+        ArrayList<ArrayList<IPickerViewData>> options3Items_03 = new ArrayList<>();
 
         //广东的地区
-        ArrayList<IPickerViewData> options3Items_01_01 = new ArrayList<IPickerViewData>();
+        ArrayList<IPickerViewData> options3Items_01_01 = new ArrayList<>();
         options3Items_01_01.add(new PickerViewData("天河"));
         options3Items_01_01.add(new PickerViewData("海珠"));
         options3Items_01_01.add(new PickerViewData("越秀"));
@@ -205,25 +254,25 @@ public class PickerViewTestActivity extends Activity implements View.OnClickList
         options3Items_01_01.add(new PickerViewData("萝岗"));
         options3Items_01.add(options3Items_01_01);
 
-        ArrayList<IPickerViewData> options3Items_01_02 = new ArrayList<IPickerViewData>();
+        ArrayList<IPickerViewData> options3Items_01_02 = new ArrayList<>();
         options3Items_01_02.add(new PickerViewData("南海"));
         options3Items_01_02.add(new PickerViewData("高明"));
         options3Items_01_02.add(new PickerViewData("禅城"));
         options3Items_01_02.add(new PickerViewData("桂城"));
         options3Items_01.add(options3Items_01_02);
 
-        ArrayList<IPickerViewData> options3Items_01_03 = new ArrayList<IPickerViewData>();
+        ArrayList<IPickerViewData> options3Items_01_03 = new ArrayList<>();
         options3Items_01_03.add(new PickerViewData("其他"));
         options3Items_01_03.add(new PickerViewData("常平"));
         options3Items_01_03.add(new PickerViewData("虎门"));
         options3Items_01.add(options3Items_01_03);
 
-        ArrayList<IPickerViewData> options3Items_01_04 = new ArrayList<IPickerViewData>();
+        ArrayList<IPickerViewData> options3Items_01_04 = new ArrayList<>();
         options3Items_01_04.add(new PickerViewData("其他"));
         options3Items_01_04.add(new PickerViewData("其他"));
         options3Items_01_04.add(new PickerViewData("其他"));
         options3Items_01.add(options3Items_01_04);
-        ArrayList<IPickerViewData> options3Items_01_05 = new ArrayList<IPickerViewData>();
+        ArrayList<IPickerViewData> options3Items_01_05 = new ArrayList<>();
 
         options3Items_01_05.add(new PickerViewData("其他1"));
         options3Items_01_05.add(new PickerViewData("其他2"));
@@ -231,25 +280,25 @@ public class PickerViewTestActivity extends Activity implements View.OnClickList
 
 
         //湖南的地区
-        ArrayList<IPickerViewData> options3Items_02_01 = new ArrayList<IPickerViewData>();
+        ArrayList<IPickerViewData> options3Items_02_01 = new ArrayList<>();
         options3Items_02_01.add(new PickerViewData("长沙1"));
         options3Items_02_01.add(new PickerViewData("长沙2"));
         options3Items_02_01.add(new PickerViewData("长沙3"));
         options3Items_02.add(options3Items_02_01);
 
-        ArrayList<IPickerViewData> options3Items_02_02 = new ArrayList<IPickerViewData>();
+        ArrayList<IPickerViewData> options3Items_02_02 = new ArrayList<>();
         options3Items_02_02.add(new PickerViewData("岳阳1"));
         options3Items_02_02.add(new PickerViewData("岳阳2"));
         options3Items_02_02.add(new PickerViewData("岳阳3"));
         options3Items_02.add(options3Items_02_02);
 
-        ArrayList<IPickerViewData> options3Items_02_03 = new ArrayList<IPickerViewData>();
+        ArrayList<IPickerViewData> options3Items_02_03 = new ArrayList<>();
         options3Items_02_03.add(new PickerViewData("株洲1"));
         options3Items_02_03.add(new PickerViewData("株洲2"));
         options3Items_02_03.add(new PickerViewData("株洲3"));
         options3Items_02.add(options3Items_02_03);
 
-        ArrayList<IPickerViewData> options3Items_02_04 = new ArrayList<IPickerViewData>();
+        ArrayList<IPickerViewData> options3Items_02_04 = new ArrayList<>();
         options3Items_02_04.add(new PickerViewData("衡阳1"));
         options3Items_02_04.add(new PickerViewData("衡阳2"));
         options3Items_02_04.add(new PickerViewData("衡阳3"));
@@ -257,11 +306,11 @@ public class PickerViewTestActivity extends Activity implements View.OnClickList
 
 
         //广西的地区
-        ArrayList<IPickerViewData> options3Items_03_01 = new ArrayList<IPickerViewData>();
+        ArrayList<IPickerViewData> options3Items_03_01 = new ArrayList<>();
         options3Items_03_01.add(new PickerViewData("阳朔"));
         options3Items_03.add(options3Items_03_01);
 
-        ArrayList<IPickerViewData> options3Items_03_02 = new ArrayList<IPickerViewData>();
+        ArrayList<IPickerViewData> options3Items_03_02 = new ArrayList<>();
         options3Items_03_02.add(new PickerViewData("北流"));
         options3Items_03.add(options3Items_03_02);
 
@@ -279,8 +328,8 @@ public class PickerViewTestActivity extends Activity implements View.OnClickList
             public void onOptionsSelect(int options1, int options2, int options3, View v) {
                 //返回的分别是三个级别的选中位置
                 String tx = options1Items.get(options1).getPickerViewText()+
-                            options2Items.get(options1).get(options2)+
-                            options3Items.get(options1).get(options2).get(options3).getPickerViewText();
+                        options2Items.get(options1).get(options2)+
+                        options3Items.get(options1).get(options2).get(options3).getPickerViewText();
                 btn_Options.setText(tx);
             }
         })
@@ -331,9 +380,9 @@ public class PickerViewTestActivity extends Activity implements View.OnClickList
                 .setLayoutRes(R.layout.pickerview_custom_options, new CustomListener() {
                     @Override
                     public void customLayout(View v) {
-                        final TextView tvSubmit = (TextView) v.findViewById(R.id.tv_finish);
-                        final TextView tvAdd = (TextView) v.findViewById(R.id.tv_add);
-                        ImageView ivCancel = (ImageView) v.findViewById(R.id.iv_cancel);
+                        final TextView tvSubmit = v.findViewById(R.id.tv_finish);
+                        final TextView tvAdd = v.findViewById(R.id.tv_add);
+                        ImageView ivCancel = v.findViewById(R.id.iv_cancel);
                         tvSubmit.setOnClickListener(new View.OnClickListener() {
                             @Override
                             public void onClick(View v) {
@@ -389,5 +438,4 @@ public class PickerViewTestActivity extends Activity implements View.OnClickList
         }
         return super.onKeyDown(keyCode, event);
     }
-
 }

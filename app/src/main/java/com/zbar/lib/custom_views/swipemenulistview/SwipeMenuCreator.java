@@ -3,8 +3,8 @@ package com.zbar.lib.custom_views.swipemenulistview;
 
 /**
  * 
- * @author baoyz
- * @date 2014-8-24
+ * =>author baoyz
+ * =>date 2014-8-24
  *
  */
 public interface SwipeMenuCreator {

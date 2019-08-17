@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--课堂评价 评语列表及编辑 添加-->
+    <LinearLayout
+        android:id="@+id/sa_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <include layout="@layout/layout_activity_sa_top_bar_back_title_tvbtn" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/ll_com_msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sa_top_bar"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        tools:ignore="UselessParent">
+
+        <EditText
+            android:id="@+id/et_com_msg"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="-10dp"
+            android:layout_toRightOf="@+id/tv_com_score"
+            android:background="@drawable/box_white_bg_green_boder_2px"
+            android:hint="@string/com_msg_tips"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:textSize="20sp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:inputType="text"
+            android:layout_marginStart="-10dp"
+            android:layout_toEndOf="@+id/tv_com_score"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            tools:ignore="Autofill" />
+
+        <TextView
+            android:id="@+id/tv_com_score"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/corners_green_bg"
+            android:gravity="center"
+            android:text="@string/com_score"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="normal|bold" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_com_tips"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_com_msg">
+
+        <TextView
+            android:id="@+id/tv_com_msg_tips"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="@string/com_msg_char_len_tips_text" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_com_score"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_com_tips"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/box_gray_bg_black_boder_2px"
+        android:orientation="horizontal"
+        tools:ignore="UselessParent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <com.bigkoo.pickerview.lib.WheelView
+                android:id="@+id/wv_aop"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <com.bigkoo.pickerview.lib.WheelView
+                android:id="@+id/wv_score"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <com.bigkoo.pickerview.lib.WheelView
+                android:id="@+id/wv_mark"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -56,13 +56,13 @@ public class AppAboutActivity extends BaseActivity {
         //获得实例对象
         sp = this.getSharedPreferences("TcInfo",MODE_PRIVATE);//教师登录信息存储器
 
-        ibTopBack = (ImageButton)  findViewById(R.id.ib_top_back);
-        tvTitle = (TextView)  findViewById(R.id.tv_top_title);
-        tvAppName = (TextView)  findViewById(R.id.tv_app_name);
-        tvInfo = (TextView)  findViewById(R.id.tv_app_info);
-        tvNotice = (TextView)  findViewById(R.id.tv_app_notice);
-        tvIdea = (TextView)  findViewById(R.id.tv_app_idea);
-        tvUpdate = (TextView)  findViewById(R.id.tv_app_update);
+        ibTopBack = findViewById(R.id.ib_top_back);
+        tvTitle = findViewById(R.id.tv_top_title);
+        tvAppName = findViewById(R.id.tv_app_name);
+        tvInfo = findViewById(R.id.tv_app_info);
+        tvNotice = findViewById(R.id.tv_app_notice);
+        tvIdea = findViewById(R.id.tv_app_idea);
+        tvUpdate = findViewById(R.id.tv_app_update);
 
         ibTopBack.setOnClickListener(this);
         tvTitle.setText(R.string.app_about);
@@ -150,8 +150,8 @@ public class AppAboutActivity extends BaseActivity {
                 JSONObject jsonObject = (JSONObject)response.get();
                 Log.i("SA_CheckAppUpdateJSON：",response.toString());
                 try {
-                    if (jsonObject.has("AppData")) {
-                        JSONObject AppData = jsonObject.getJSONObject("AppData");
+                    if (jsonObject.has("Data")) {
+                        JSONObject AppData = jsonObject.getJSONObject("Data");
                         int verCode = AppData.getInt("verCode");
                         if(verCode > oldVer){
                             //有新版本
@@ -282,7 +282,8 @@ public class AppAboutActivity extends BaseActivity {
                 m_progressDlg.cancel();
             }
         });
-    };
+    }
+
     /**
      * 安装程序
      */

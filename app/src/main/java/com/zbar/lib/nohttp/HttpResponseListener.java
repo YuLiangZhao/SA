@@ -23,11 +23,11 @@ public class HttpResponseListener<T> implements OnResponseListener {
     private Request<?> request;
 
     /**
-     * @param context   上下文
-     * @param request   NoHttp的队列对象
-     * @param canCancle 判断进度条对话框是否可以取消
-     * @param callback  我们自定义的一个接口对象,就是那个复写NoHttp成功失败的类
-     * @param isLoading 判断进度条对话框是否正在加载状态
+     * =>param context   上下文
+     * =>param request   NoHttp的队列对象
+     * =>param canCancle 判断进度条对话框是否可以取消
+     * =>param callback  我们自定义的一个接口对象,就是那个复写NoHttp成功失败的类
+     * =>param isLoading 判断进度条对话框是否正在加载状态
      */
     public HttpResponseListener(Context context, Request<?> request, HttpListener<T> callback, boolean canCancle, boolean isLoading) {
         this.callback = callback;
@@ -37,6 +37,7 @@ public class HttpResponseListener<T> implements OnResponseListener {
         if (context != null && isLoading) {
             waitDialog = new WaitDialog(context);
             waitDialog.setCancelable(canCancle);
+            //waitDialog.setMessage("正在获取学生信息,请稍候...");
             //当对话框点击外面可以取消,那么就让它取消掉逻辑代码
             waitDialog.setOnCancelListener(new DialogInterface.OnCancelListener() {
                 @Override

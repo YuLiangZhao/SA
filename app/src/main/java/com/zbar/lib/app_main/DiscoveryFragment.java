@@ -9,6 +9,7 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 
 import com.zbar.lib.R;
+import com.zbar.lib.SettingActivity;
 import com.zbar.lib.app_web.WebViewActivity;
 import com.zbar.lib.custom_views.gridview.AliPayGridView;
 import com.zbar.lib.custom_views.gridview.grid_adapter.Menu3_GridAdapter;
@@ -24,7 +25,7 @@ public class DiscoveryFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,Bundle savedInstanceState) {
         super.onCreateView(inflater, container, savedInstanceState);
         View view = inflater.inflate(R.layout.layout_activity_sa_fragment_3, container, false);
-        Menu_Grid =(AliPayGridView) view.findViewById(R.id.gv_btn3_menu_grid);//教师菜单九宫格
+        Menu_Grid = view.findViewById(R.id.gv_btn3_menu_grid);//教师菜单九宫格
         Menu_Grid.setAdapter(new Menu3_GridAdapter(this.getContext()));
         Menu_Grid.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
@@ -68,6 +69,12 @@ public class DiscoveryFragment extends Fragment {
                 ToastUtil.showToast(getContext(),"数据恢复："+ position);
                 //跳转界面
                 //IE("http://lzedu.sinaapp.com/SA/Student_ScoreShop_Logs.php");
+                break;
+            case 9:
+                ToastUtil.showToast(getContext(),"测试按钮："+ position);
+                //跳转界面
+                //IE("http://lzedu.sinaapp.com/SA/Student_ScoreShop_Logs.php");
+                startActivity(new Intent(getActivity(),SettingActivity.class));
                 break;
             case 60:
                 //ToastUtil.showToast(getContext(),"批量加分："+ position);

@@ -250,7 +250,7 @@ public class AutoUpdateManager implements DialogInterface.OnClickListener, Runna
             File apkFile = new File(BaseApplication.SAVE_PATH + "/Apk/" + Version_Name + ".apk");
             fos = new FileOutputStream(apkFile);
             int count = 0;
-            byte buf[] = new byte[1024];
+            byte[] buf = new byte[1024];
             do {
                 int len = is.read(buf);
                 if (len != -1) {

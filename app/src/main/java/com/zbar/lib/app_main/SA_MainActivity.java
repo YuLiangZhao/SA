@@ -36,10 +36,10 @@ public class SA_MainActivity extends FragmentActivity implements View.OnClickLis
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.layout_activity_sa_main);
-        rlTopBar = (RelativeLayout) findViewById(R.id.rl_sa_top_bar);
-        tvTitle = (TextView) findViewById(R.id.tv_top_title);
-        ibTopAdd =  (ImageButton) findViewById(R.id.ib_top_close);
-        ibTopSearch =  (ImageButton) findViewById(R.id.ib_top_search);
+        rlTopBar = findViewById(R.id.rl_sa_top_bar);
+        tvTitle = findViewById(R.id.tv_top_title);
+        ibTopAdd = findViewById(R.id.ib_top_close);
+        ibTopSearch = findViewById(R.id.ib_top_search);
         ibTopSearch.setOnClickListener(this);
         ibTopAdd.setOnClickListener(this);
         initView();
@@ -61,11 +61,11 @@ public class SA_MainActivity extends FragmentActivity implements View.OnClickLis
         /**
          * RadioGroup部分
          */
-        radioGroup = (RadioGroup) findViewById(R.id.radioGroup);
-        rbChat = (RadioButton) findViewById(R.id.sa_chat);
-        rbContacts = (RadioButton) findViewById(R.id.sa_contacts);
-        rbDiscovery = (RadioButton) findViewById(R.id.sa_discovery);
-        rbMe = (RadioButton) findViewById(R.id.sa_me);
+        radioGroup = findViewById(R.id.radioGroup);
+        rbChat = findViewById(R.id.sa_chat);
+        rbContacts = findViewById(R.id.sa_contacts);
+        rbDiscovery = findViewById(R.id.sa_discovery);
+        rbMe = findViewById(R.id.sa_me);
         //RadioGroup选中状态改变监听
         radioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
@@ -98,7 +98,7 @@ public class SA_MainActivity extends FragmentActivity implements View.OnClickLis
         /**
          * ViewPager部分
          */
-        viewPager = (ViewPager) findViewById(R.id.viewPager);
+        viewPager = findViewById(R.id.viewPager);
         ChatFragment weChatFragment = new ChatFragment();
         ContactsFragment contactsFragment = new ContactsFragment();
         DiscoveryFragment discoveryFragment = new DiscoveryFragment();

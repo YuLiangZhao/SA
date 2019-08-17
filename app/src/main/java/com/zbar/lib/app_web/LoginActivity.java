@@ -18,9 +18,9 @@ import com.yanzhenjie.nohttp.rest.Response;
 import com.zbar.lib.R;
 import com.zbar.lib.app_main.SA_MainActivity;
 import com.zbar.lib.app_root.BaseActivity;
+import com.zbar.lib.constant.SinaUrlConstants;
 import com.zbar.lib.nohttp.CallServer;
 import com.zbar.lib.nohttp.HttpListener;
-import com.zbar.lib.util.Constants;
 import com.zbar.lib.util.NetworkUtil;
 import com.zbar.lib.util.StringUtil;
 
@@ -57,13 +57,13 @@ public class LoginActivity extends BaseActivity {
         //获得实例对象
         sp = this.getSharedPreferences("TcInfo",MODE_PRIVATE);//教师登录信息存储器
 
-        et_name = (EditText) findViewById(R.id.username);//用户名
-        et_pass = (EditText) findViewById(R.id.password);//密码
-        bt_username_clear = (Button)findViewById(R.id.bt_username_clear);//清除用户名
-        bt_pwd_clear = (Button)findViewById(R.id.bt_pwd_clear);//清除密码
-        bt_pwd_eye = (Button)findViewById(R.id.bt_pwd_eye);//密码可见性开关
-        rem_pw = (CheckBox) findViewById(R.id.cb_mima);//记住密码
-        auto_login = (CheckBox) findViewById(R.id.cb_auto);//自动登录
+        et_name = findViewById(R.id.username);//用户名
+        et_pass = findViewById(R.id.password);//密码
+        bt_username_clear = findViewById(R.id.bt_username_clear);//清除用户名
+        bt_pwd_clear = findViewById(R.id.bt_pwd_clear);//清除密码
+        bt_pwd_eye = findViewById(R.id.bt_pwd_eye);//密码可见性开关
+        rem_pw = findViewById(R.id.cb_mima);//记住密码
+        auto_login = findViewById(R.id.cb_auto);//自动登录
 
 
 
@@ -97,10 +97,10 @@ public class LoginActivity extends BaseActivity {
         et_name.addTextChangedListener(username_watcher);
         et_pass.addTextChangedListener(password_watcher);
 
-        mLoginButton = (Button) findViewById(R.id.login);
-        mLoginError  = (Button) findViewById(R.id.login_error);
-        mRegister    = (Button) findViewById(R.id.register);
-        ONLYTEST     = (Button) findViewById(R.id.registfer);
+        mLoginButton = findViewById(R.id.login);
+        mLoginError  = findViewById(R.id.login_error);
+        mRegister    = findViewById(R.id.register);
+        ONLYTEST     = findViewById(R.id.registfer);
 
         ONLYTEST.setOnClickListener(this);
         ONLYTEST.setOnLongClickListener(this);
@@ -164,15 +164,18 @@ public class LoginActivity extends BaseActivity {
                 }
                 break;
             case R.id.login_error: //无法登陆(忘记密码了吧)
-                this.showMessage("忘记密码了吧...");
+                //this.showMessage("忘记密码了吧...");
+                IE(SinaUrlConstants.SAE_Teacher_GetPWD_Url);
                 break;
             case R.id.register:    //注册新的用户
-                this.showMessage("注册新的用户...");
+                //this.showMessage("注册新的用户...");
+                IE(SinaUrlConstants.SAE_Teacher_Reg_Url);
                 break;
 
             case R.id.registfer:
                 if(SERVER_FLAG>10){
-                    this.showMessage("内部测试--谨慎操作...");
+                    //this.showMessage("内部测试--谨慎操作...");
+                    System.out.println("LoginActivity:内部测试--谨慎操作...:");
                 }
                 SERVER_FLAG++;
                 break;
@@ -221,7 +224,7 @@ public class LoginActivity extends BaseActivity {
         en_tel = StringUtil.Base64Encode(tel);
         en_pwd = StringUtil.Base64Encode(pwd);
         //this.showMessage(tel + "|" + pwd + en_tel + "|" + en_pwd);
-        Request<JSONObject> request = NoHttp.createJsonObjectRequest(Constants.SAE_LoginUrl, RequestMethod.POST);
+        Request<JSONObject> request = NoHttp.createJsonObjectRequest(SinaUrlConstants.SAE_LoginUrl, RequestMethod.POST);
         request.add("tel", en_tel);
         request.add("pwd", en_pwd);
         CallServer.getRequestInstance().add(this, 0, request, new HttpListener<JSONObject>() {
@@ -230,8 +233,8 @@ public class LoginActivity extends BaseActivity {
                 //showMessage(response.get().toString());
                 JSONObject jsonObject = (JSONObject)response.get();
                 try {
-                    if (jsonObject.has("TcData")) {
-                        JSONObject TcData = jsonObject.getJSONObject("TcData");
+                    if (jsonObject.has("Data")) {
+                        JSONObject TcData = jsonObject.getJSONObject("Data");
                         TcID = TcData.getString("ID");
                         TcName = TcData.getString("Name");
                         TcSex = TcData.getString("Sex");
@@ -312,5 +315,10 @@ public class LoginActivity extends BaseActivity {
             return super.onKeyDown(keyCode, event);
         }
     }
-
+    //APP内 打开指定网址
+    private void IE(String url){
+        Intent intent = new Intent(getActivity(),WebViewActivity.class);
+        intent.putExtra("url", url);
+        startActivity(intent);
+    }
 }

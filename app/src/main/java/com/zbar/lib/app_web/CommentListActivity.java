@@ -47,6 +47,7 @@ import com.yanzhenjie.nohttp.rest.Response;
 import com.zbar.lib.R;
 import com.zbar.lib.SerializableMap;
 import com.zbar.lib.app_root.BaseActivity;
+import com.zbar.lib.constant.SinaUrlConstants;
 import com.zbar.lib.custom_views.swipemenulistview.BaseSwipListAdapter;
 import com.zbar.lib.custom_views.swipemenulistview.SwipeMenu;
 import com.zbar.lib.custom_views.swipemenulistview.SwipeMenuCreator;
@@ -55,7 +56,6 @@ import com.zbar.lib.custom_views.swipemenulistview.SwipeMenuListView;
 import com.zbar.lib.nohttp.CallServer;
 import com.zbar.lib.nohttp.HttpListener;
 import com.zbar.lib.util.ArrayUtil;
-import com.zbar.lib.util.Constants;
 import com.zbar.lib.util.StringUtil;
 
 import org.json.JSONArray;
@@ -73,6 +73,7 @@ public class CommentListActivity extends BaseActivity {
     private String TID;
     private SharedPreferences sp;
     private ImageButton ibTopBack,ibAddBtn;
+    private TextView tvTitle;
     private List<Map<String, Object>> mAppList = null;
     private AppAdapter mAdapter;
     private SwipeMenuListView mListView;
@@ -84,12 +85,13 @@ public class CommentListActivity extends BaseActivity {
         //获得实例对象
         sp = this.getSharedPreferences("TcInfo",MODE_PRIVATE);//教师登录信息存储器
         TID = sp.getString("TcID","");
-        ibTopBack = (ImageButton)  findViewById(R.id.ib_top_back);
-        ibAddBtn = (ImageButton) findViewById(R.id.ib_top_plus);// + 号 按钮
+        ibTopBack = findViewById(R.id.ib_top_back);
+        tvTitle = findViewById(R.id.tv_top_title);
+        ibAddBtn = findViewById(R.id.ib_top_plus);// + 号 按钮
         ibTopBack.setOnClickListener(this);
         ibAddBtn.setOnClickListener(this);
         //SwipeMenuListView
-        mListView = (SwipeMenuListView) findViewById(R.id.slv_comment);
+        mListView = findViewById(R.id.slv_comment);
         //
         MyTask mAsyncTask = new MyTask();
         mAsyncTask.execute();
@@ -121,18 +123,21 @@ public class CommentListActivity extends BaseActivity {
             /*
              * 获取服务器评语数据
              */
-            Request<JSONObject> request = new JsonObjectRequest(Constants.SAE_GetCommentJsonUrl, RequestMethod.POST);
+            Request<JSONObject> request = new JsonObjectRequest(SinaUrlConstants.SAE_GetCommentJsonUrl, RequestMethod.POST);
             request.add("TID", TID);
             Response<JSONObject> response = NoHttp.startRequestSync(request);
             if (response.isSucceed()) {
-                //System.out.println("请求成功:" + response.toString());
+                System.out.println("请求成功:" + response.toString());
                 // 开始解析JSON字符串
-                JSONObject jsonObject = (JSONObject)response.get();
+                JSONObject jsonObject = response.get();
                 try {
-                    if (jsonObject.has("ComData")) {
-                        JSONArray ComData = jsonObject.getJSONArray("ComData");
-                        String jsonString = ComData.toString();
-                        mAppList = ArrayUtil.getList(jsonString);
+                    if (jsonObject.has("Data")) {
+                        JSONArray ComData = jsonObject.getJSONArray("Data");
+                        Integer len = ComData.length();
+                        if (len > 0) {
+                            String jsonString = ComData.toString();
+                            mAppList = ArrayUtil.getList(jsonString);
+                        }
                     }
                 } catch (JSONException e) {
                     e.printStackTrace();
@@ -160,7 +165,7 @@ public class CommentListActivity extends BaseActivity {
     }
     //
     private void initView(){
-        // step 1. create a MenuCreator
+        // step 1. create more_pic_2_gif_loading MenuCreator
         SwipeMenuCreator creator = new SwipeMenuCreator() {
 
             @Override
@@ -170,11 +175,11 @@ public class CommentListActivity extends BaseActivity {
                         getApplicationContext());
                 // set item background
                 //topItem.setBackground(new ColorDrawable(Color.rgb(0xC9, 0xC9,0xCE)));
-                topItem.setBackground(new ColorDrawable(Color.GRAY));
+                topItem.setBackground(new ColorDrawable(Color.BLUE));
                 // set item width
                 topItem.setWidth(dp2px(90));
                 // set item title
-                topItem.setTitle("默认值");
+                topItem.setTitle("置顶");
                 // set item title fontsize
                 topItem.setTitleSize(18);
                 // set item title font color
@@ -186,8 +191,7 @@ public class CommentListActivity extends BaseActivity {
                 SwipeMenuItem openItem = new SwipeMenuItem(
                         getApplicationContext());
                 // set item background
-                openItem.setBackground(new ColorDrawable(Color.rgb(0xC9, 0xC9,
-                        0xCE)));
+                openItem.setBackground(new ColorDrawable(Color.rgb(0xC9, 0xC9, 0xCE)));
                 // set item width
                 openItem.setWidth(dp2px(90));
                 // set item title
@@ -203,11 +207,10 @@ public class CommentListActivity extends BaseActivity {
                 SwipeMenuItem deleteItem = new SwipeMenuItem(
                         getApplicationContext());
                 // set item background
-                deleteItem.setBackground(new ColorDrawable(Color.rgb(0xF9,
-                        0x3F, 0x25)));
+                deleteItem.setBackground(new ColorDrawable(Color.rgb(0xF9, 0x3F, 0x25)));
                 // set item width
                 deleteItem.setWidth(dp2px(90));
-                // set a icon
+                // set more_pic_2_gif_loading icon
                 deleteItem.setIcon(R.drawable.ic_delete);
                 // add to menu
                 menu.addMenuItem(deleteItem);
@@ -231,7 +234,7 @@ public class CommentListActivity extends BaseActivity {
                     case 1:
                         // edit
                         EditCom(item);
-                        showMessage("编辑item="+item);
+                        //showMessage("编辑item="+item);
                         break;
                     case 2:
                         // delete
@@ -279,7 +282,7 @@ public class CommentListActivity extends BaseActivity {
             @Override
             public boolean onItemLongClick(AdapterView<?> parent, View view,
                                            int position, long id) {
-                Toast.makeText(getApplicationContext(), position + " long click", Toast.LENGTH_SHORT).show();
+                //Toast.makeText(getApplicationContext(), position + " long click", Toast.LENGTH_SHORT).show();
                 return false;
             }
         });
@@ -288,7 +291,7 @@ public class CommentListActivity extends BaseActivity {
     }
     //置顶item
     public void TopCom(Map item){
-        Request<JSONObject> request = NoHttp.createJsonObjectRequest(Constants.SAE_TopCommentUrl, RequestMethod.POST);
+        Request<JSONObject> request = NoHttp.createJsonObjectRequest(SinaUrlConstants.SAE_TopCommentUrl, RequestMethod.POST);
         String RID = StringUtil.Base64Encode(item.get("RID").toString());
         request.add("RID", RID);
         request.add("TID", StringUtil.Base64Encode(TID));
@@ -297,10 +300,10 @@ public class CommentListActivity extends BaseActivity {
             public void onSucceed(int what, Response<JSONObject> response) {
                 System.out.println("请求成功:" + response.toString());
                 // 开始解析JSON字符串
-                JSONObject jsonObject = (JSONObject)response.get();
+                JSONObject jsonObject = response.get();
                 try {
-                    if (jsonObject.has("ComData")) {
-                        JSONArray ComData = jsonObject.getJSONArray("ComData");
+                    if (jsonObject.has("Data")) {
+                        JSONArray ComData = jsonObject.getJSONArray("Data");
                         String jsonString = ComData.toString();
                         mAppList = ArrayUtil.getList(jsonString);
                         mAdapter.setData(mAppList);
@@ -338,16 +341,16 @@ public class CommentListActivity extends BaseActivity {
     }
     //删除item
     public void DelCom(Map item){
-        Request<JSONObject> request = NoHttp.createJsonObjectRequest(Constants.SAE_DelCommentUrl, RequestMethod.POST);
+        Request<JSONObject> request = NoHttp.createJsonObjectRequest(SinaUrlConstants.SAE_DelCommentUrl, RequestMethod.POST);
         String RID = StringUtil.Base64Encode(item.get("RID").toString());
         request.add("RID", RID);
         request.add("TID", StringUtil.Base64Encode(TID));
         CallServer.getRequestInstance().add(this, 0, request, new HttpListener<JSONObject>() {
             @Override
             public void onSucceed(int what, Response<JSONObject> response) {
-                //System.out.println("请求成功:" + response.toString());
+                System.out.println("请求成功:" + response.toString());
                 // 开始解析JSON字符串
-                JSONObject jsonObject = (JSONObject)response.get();
+                JSONObject jsonObject = response.get();
                 try {
                     if (jsonObject.get("err").equals(0)) {
                         showMessage("删除成功！");
@@ -458,8 +461,8 @@ public class CommentListActivity extends BaseActivity {
             TextView tv_name;
 
             public ViewHolder(View view) {
-                tv_score = (TextView) view.findViewById(R.id.tv_score);
-                tv_name = (TextView) view.findViewById(R.id.tv_name);
+                tv_score = view.findViewById(R.id.tv_score);
+                tv_name = view.findViewById(R.id.tv_name);
                 view.setTag(this);
             }
         }

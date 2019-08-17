@@ -1,0 +1,104 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/sa_top_bar_shake"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <include layout="@layout/layout_activity_sa_top_bar_back_title" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="none"
+        tools:ignore="UselessParent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/ll_tc_head"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/app_bg"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <com.zbar.lib.custom_views.imgview.UserFaceImageView
+                    android:id="@+id/imv_tc_img"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:contentDescription="@string/app_img_alt"
+                    android:src="@drawable/ic_launcher"
+                    app:border_color="@color/white"
+                    app:border_width="5dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_app_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll_tc_head"
+                android:background="@color/app_bg"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:paddingBottom="10dp"
+                tools:ignore="UselessLeaf">
+
+                <TextView
+                    android:id="@+id/tv_app_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/corners_green_bg"
+                    android:gravity="center_horizontal"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="5dp"
+                    android:text="@string/app_name"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    android:textStyle="normal|bold"
+                    android:typeface="sans" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/bt_app_list"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/ll_app_name"
+                android:layout_gravity="center"
+                android:background="@color/gray" />
+            <LinearLayout
+                android:id="@+id/ll_list"
+                android:layout_below="@+id/bt_app_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.zbar.lib.CornerListView
+                    android:id="@+id/setting_list"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dip"
+                    android:background="@drawable/app_list_corner_bg"
+                    android:cacheColorHint="#00000000" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>

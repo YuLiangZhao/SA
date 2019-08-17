@@ -16,8 +16,8 @@ import android.widget.FrameLayout;
 
 /**
  * 
- * @author baoyz
- * @date 2014-8-23
+ * =>author baoyz
+ * =>date 2014-8-23
  * 
  */
 public class SwipeMenuLayout extends FrameLayout {
@@ -181,8 +181,8 @@ public class SwipeMenuLayout extends FrameLayout {
 			// Log.i("byz", "downX = " + mDownX + ", moveX = " + event.getX());
 			int dis = (int) (mDownX - event.getX());
 			if (state == STATE_OPEN) {
-				dis += mMenuView.getWidth()*mSwipeDirection;;
-			}
+				dis += mMenuView.getWidth()*mSwipeDirection;
+            }
 			swipe(dis);
 			break;
 		case MotionEvent.ACTION_UP:

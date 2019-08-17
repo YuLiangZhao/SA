@@ -19,8 +19,8 @@ import com.zbar.lib.util.ToastUtil;
 /**
  * <p>Title:TopBarPopWindow</p>
  * <p>Description: 自定义PopupWindow</p>
- * @author syz
- * @date 2016-3-14
+ * =>author syz
+ * =>date 2016-3-14
  */
 public class TopBarPopWindow extends PopupWindow{
     private View conentView;
@@ -105,7 +105,7 @@ public class TopBarPopWindow extends PopupWindow{
     /**
      * 显示popupWindow
      *
-     * @param parent
+     * =>param parent
      */
     public void showPopupWindow(View parent) {
         if (!this.isShowing()) {

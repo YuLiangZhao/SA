@@ -3,8 +3,8 @@ package com.zbar.lib.decode;
 import android.os.Handler;
 import android.os.Message;
 
-import com.zbar.lib.camera_scan.QRScanActivity;
 import com.zbar.lib.R;
+import com.zbar.lib.camera_scan.QRScanActivity;
 import com.zbar.lib.camera_scan.camera.CameraManager;
 
 /**

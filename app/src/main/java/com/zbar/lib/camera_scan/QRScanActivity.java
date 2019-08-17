@@ -24,12 +24,12 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.zbar.lib.R;
+import com.zbar.lib.app_web.WebViewActivity;
 import com.zbar.lib.camera_scan.camera.CameraManager;
 import com.zbar.lib.decode.CaptureActivityHandler;
 import com.zbar.lib.decode.InactivityTimer;
 import com.zbar.lib.util.NetworkUtil;
 import com.zbar.lib.util.ToastUtil;
-import com.zbar.lib.app_web.WebViewActivity;
 
 import java.io.IOException;
 
@@ -106,9 +106,9 @@ public class QRScanActivity extends Activity implements Callback {
         hasSurface = false;
         inactivityTimer = new InactivityTimer(this);
 
-        mContainer = (RelativeLayout) findViewById(R.id.capture_containter);
-        mCropLayout = (RelativeLayout) findViewById(R.id.capture_crop_layout);
-        cbOneByOne = (CheckBox) findViewById(R.id.cb_scan_one_by_one);
+        mContainer = findViewById(R.id.capture_containter);
+        mCropLayout = findViewById(R.id.capture_crop_layout);
+        cbOneByOne = findViewById(R.id.cb_scan_one_by_one);
         sp = this.getSharedPreferences("TcInfo",MODE_PRIVATE);//教师登录信息存储器
         if(sp.getBoolean("AutoScanChecked", false)) {
             //设置默认是记录密码状态
@@ -119,14 +119,14 @@ public class QRScanActivity extends Activity implements Callback {
             public void onClick(View view) {
                 if (cbOneByOne.isChecked()) {
                     System.out.println("连续扫描已选中");
-                    sp.edit().putBoolean("AutoScanChecked", true).commit();
+                    sp.edit().putBoolean("AutoScanChecked", true).apply();
                 }else {
                     System.out.println("连续扫描没有选中");
-                    sp.edit().putBoolean("AutoScanChecked", false).commit();
+                    sp.edit().putBoolean("AutoScanChecked", false).apply();
                 }
             }
         });
-        ImageView mQrLineView = (ImageView) findViewById(R.id.capture_scan_line);
+        ImageView mQrLineView = findViewById(R.id.capture_scan_line);
         ScaleAnimation animation = new ScaleAnimation(1.0f, 1.0f, 0.0f, 1.0f);
         animation.setRepeatCount(-1);
         animation.setRepeatMode(Animation.RESTART);
@@ -138,7 +138,7 @@ public class QRScanActivity extends Activity implements Callback {
     boolean flag = true;
 
     protected void light() {
-        if (flag == true) {
+        if (flag) {
             flag = false;
             // 开闪光灯
             CameraManager.get().openLight();
@@ -154,7 +154,7 @@ public class QRScanActivity extends Activity implements Callback {
     @Override
     protected void onResume() {
         super.onResume();
-        SurfaceView surfaceView = (SurfaceView) findViewById(R.id.capture_preview);
+        SurfaceView surfaceView = findViewById(R.id.capture_preview);
         SurfaceHolder surfaceHolder = surfaceView.getHolder();
         if (hasSurface) {
             initCamera(surfaceHolder);
@@ -191,7 +191,7 @@ public class QRScanActivity extends Activity implements Callback {
         inactivityTimer.onActivity();
         playBeepSoundAndVibrate();
 //		Toast.makeText(getApplicationContext(), result, Toast.LENGTH_SHORT).show();//得到扫描数据
-        maziTextView =(TextView) findViewById(R.id.tips_textView);
+        maziTextView = findViewById(R.id.tips_textView);
         //maziTextView.setText("扫描结果："+result);
         maziTextView.setText("正在识别中，请稍后...");
         //检查网络环境，联网则打开浏览器

@@ -9,9 +9,9 @@ import java.util.Stack;
 /**
  * 应用程序Activity管理类：用于Activity管理和应用程序退出
  *
- * @author kymjs
- * @version 1.0
- * @created 2013-11-24
+ * =>author kymjs
+ * =>version 1.0
+ * =>created 2013-11-24
  */
 
 public class AppManager {
@@ -99,7 +99,7 @@ public class AppManager {
     /**
      * 关闭除了指定activity以外的全部activity 如果cls不存在于栈中，则栈全部清空
      *
-     * @param cls
+     * =>param cls
      */
     public void finishOthersActivity(Class<?> cls) {
         for (BaseActivity activity : activityStack) {

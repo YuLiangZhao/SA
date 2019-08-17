@@ -25,9 +25,9 @@ final class FlashlightManager {
     iHardwareService = getHardwareService();
     setFlashEnabledMethod = getSetFlashEnabledMethod(iHardwareService);
     if (iHardwareService == null) {
-      Log.v(TAG, "This device does supports control of a flashlight");
+      Log.v(TAG, "This device does supports control of animation_list_gif_loading flashlight");
     } else {
-      Log.v(TAG, "This device does not support control of a flashlight");
+      Log.v(TAG, "This device does not support control of animation_list_gif_loading flashlight");
     }
   }
 

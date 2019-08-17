@@ -27,7 +27,7 @@ public class ContactsFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,Bundle savedInstanceState) {
         super.onCreateView(inflater, container, savedInstanceState);
         View view = inflater.inflate(R.layout.layout_activity_sa_fragment_2, container, false);
-        Menu_Grid =(AliPayGridView) view.findViewById(R.id.gv_btn2_menu_grid);//教师菜单九宫格
+        Menu_Grid = view.findViewById(R.id.gv_btn2_menu_grid);//教师菜单九宫格
         Menu_Grid.setAdapter(new Menu2_GridAdapter(this.getContext()));
         Menu_Grid.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override

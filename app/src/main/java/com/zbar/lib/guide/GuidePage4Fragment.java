@@ -25,7 +25,7 @@ public class GuidePage4Fragment extends Fragment {
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
 
-        TextView textView = (TextView) getView().findViewById(R.id.app_go_textView);
+        TextView textView = getView().findViewById(R.id.app_go_textView);
 
         textView.setOnClickListener(new OnClickListener() {
 

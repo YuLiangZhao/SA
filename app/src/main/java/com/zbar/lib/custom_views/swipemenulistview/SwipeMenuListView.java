@@ -10,8 +10,8 @@ import android.widget.ListAdapter;
 import android.widget.ListView;
 
 /**
- * @author baoyz
- * @date 2014-8-18
+ * =>author baoyz
+ * =>date 2014-8-18
  */
 public class SwipeMenuListView extends ListView {
 
@@ -299,17 +299,17 @@ public class SwipeMenuListView extends ListView {
         mOnMenuStateChangeListener = onMenuStateChangeListener;
     }
 
-    public static interface OnMenuItemClickListener {
+    public interface OnMenuItemClickListener {
         boolean onMenuItemClick(int position, SwipeMenu menu, int index);
     }
 
-    public static interface OnSwipeListener {
+    public interface OnSwipeListener {
         void onSwipeStart(int position);
 
         void onSwipeEnd(int position);
     }
 
-    public static interface OnMenuStateChangeListener {
+    public interface OnMenuStateChangeListener {
         void onMenuOpen(int position);
 
         void onMenuClose(int position);
@@ -322,18 +322,15 @@ public class SwipeMenuListView extends ListView {
     /**
      * 判断点击事件是否在某个view内
      *
-     * @param view
-     * @param ev
-     * @return
+     * =>param view
+     * =>param ev
+     * =>return
      */
     public static boolean inRangeOfView(View view, MotionEvent ev) {
         int[] location = new int[2];
         view.getLocationOnScreen(location);
         int x = location[0];
         int y = location[1];
-        if (ev.getRawX() < x || ev.getRawX() > (x + view.getWidth()) || ev.getRawY() < y || ev.getRawY() > (y + view.getHeight())) {
-            return false;
-        }
-        return true;
+        return !(ev.getRawX() < x) && !(ev.getRawX() > (x + view.getWidth())) && !(ev.getRawY() < y) && !(ev.getRawY() > (y + view.getHeight()));
     }
 }

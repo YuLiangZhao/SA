@@ -3,6 +3,7 @@ package com.zbar.lib.app_root;
 import android.app.Activity;
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.view.View;
 import android.view.Window;
 import android.widget.Toast;
@@ -10,9 +11,9 @@ import android.widget.Toast;
 /**
  * 应用程序Activity的基类
  *
- * @author kymjs
- * @version 1.0
- * @created 2013-11-24
+ * =>author kymjs
+ * =>version 1.0
+ * =>created 2013-11-24
  */
 public abstract class BaseActivity extends Activity implements
         View.OnClickListener,View.OnLongClickListener {
@@ -59,10 +60,9 @@ public abstract class BaseActivity extends Activity implements
             requestWindowFeature(Window.FEATURE_NO_TITLE); // 取消标题
         }
         AppManager.getAppManager().addActivity(this);
-
+        //
         initWidget();
     }
-
     @Override
     protected void onStart() {
         super.onStart();
@@ -97,6 +97,10 @@ public abstract class BaseActivity extends Activity implements
         activityState = ACTIVITY_DESTROY;
         AppManager.getAppManager().finishActivity(this);
     }
+    @Override
+    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+    }
     //
     public void showMessage(String msg){
         Toast.makeText(this, msg, Toast.LENGTH_SHORT).show();
@@ -106,8 +110,7 @@ public abstract class BaseActivity extends Activity implements
      * 获取当前Activity（栈顶Activity）
      */
     public BaseActivity getActivity() {
-        BaseActivity activity = AppManager.getAppManager().currentActivity();
-        return activity;
+        return AppManager.getAppManager().currentActivity();
     }
 }
 /*

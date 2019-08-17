@@ -37,7 +37,7 @@ public class EditStudentClassWorkPicActivity extends Activity implements View.On
         super.onCreate(savedInstanceState);
         setContentView(R.layout.layout_activity_edit_student_class_work_pic);
 
-        iv_photo = (TYImageView) findViewById(R.id.iv_photo);
+        iv_photo = findViewById(R.id.iv_photo);
         iv_photo.setMode(TYImageView.ModeEnum.TY);
         iv_photo.setTyStrokeWidth(10);//画笔 粗细1-100
 
@@ -50,7 +50,7 @@ public class EditStudentClassWorkPicActivity extends Activity implements View.On
             e.printStackTrace();
         }
 
-        btn_finish = (TextView) findViewById(R.id.btn_finish);
+        btn_finish = findViewById(R.id.btn_finish);
         btn_finish.setOnClickListener(this);
     }
 

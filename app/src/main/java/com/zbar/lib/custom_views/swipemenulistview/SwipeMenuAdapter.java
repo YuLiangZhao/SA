@@ -8,12 +8,13 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ListAdapter;
 import android.widget.WrapperListAdapter;
+
 import com.zbar.lib.custom_views.swipemenulistview.SwipeMenuView.OnSwipeItemClickListener;
 
 /**
  * 
- * @author baoyz
- * @date 2014-8-24
+ * =>author baoyz
+ * =>date 2014-8-24
  * 
  */
 public class SwipeMenuAdapter implements WrapperListAdapter,

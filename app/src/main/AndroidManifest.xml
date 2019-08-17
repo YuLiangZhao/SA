@@ -1,21 +1,15 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.zbar.lib"
-    android:versionCode="1"
-    android:versionName="1.0">
+    package="com.zbar.lib">
 
-    <uses-sdk
-        android:minSdkVersion="8"
-        android:targetSdkVersion="19"
-        tools:overrideLibrary="com.google.android.gms.appindexing,com.google.android.gms.base,com.google.android.gms"/>
-
+    <uses-sdk tools:overrideLibrary="com.google.android.gms.appindexing,com.google.android.gms.base,com.google.android.gms"/>
     <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.FLASHLIGHT" />
     <uses-permission android:name="android.permission.VIBRATE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" tools:ignore="ProtectedPermissions"/>
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
 
@@ -25,19 +19,31 @@
 
     <application
         android:name=".BaseApplication"
-        android:allowBackup="true"
+        android:allowBackup="false"
+        tools:replace="android:allowBackup"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
+        <!--阿里聚安全建议将allowBackup属性值显示设置为false-->
+
+        <!--android 7.0拍照问题：应用程序将file://Uri 暴露给另一个应用程序时引发的异常。——解决时间：2019年8月12日14:33:02-->
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+        <!--添加xml文件夹，并新建provider_paths.xml文件-->
+
         <activity
             android:name=".guide.GuideMainActivity"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+
         </activity>
         <activity
             android:name=".guide.WelcomeActivity"
@@ -48,23 +54,30 @@
         <activity
             android:name=".app_web.LoginActivity"
             android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity
             android:name=".camera_scan.QRScanActivity"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.Light.NoTitleBar" >
         </activity>
+
+        <!--至少一个activity的intent-filter中添加 android:name="android.intent.action.VIEW 以便允许深入链接其他APP  https://www.jianshu.com/p/93678f8b3421"-->
         <activity
             android:name=".app_web.WebViewActivity"
             android:theme="@android:style/Theme.NoTitleBar">
-
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+            </intent-filter>
         </activity>
 
         <activity android:name=".app_web.UploadTeacherFacePic">
 
         </activity>
-        <activity
-            android:name=".app_web.ShowStudentClassWorkPic">
+        <activity android:name=".app_web.UploadClassWorkPic">
 
         </activity>
         <activity
@@ -93,7 +106,7 @@
         </activity>
         <activity android:name=".app_web.CommentEditActivity" >
         </activity>
-        <activity android:name=".test.pickerview_test.PickerTestActivity" >
+        <activity android:name=".test.pickerview_test.PickerViewTestActivity" >
         </activity>
         <activity android:name=".app_web.WeatherActivity" >
         </activity>
@@ -111,6 +124,10 @@
         </activity>
         <activity
             android:name=".app_web.ScoreShopListActivity"
+            android:theme="@android:style/Theme.NoTitleBar">
+        </activity>
+        <activity
+            android:name=".SettingActivity"
             android:theme="@android:style/Theme.NoTitleBar">
         </activity>
         <!-- ATTENTION: This was auto-generated to add Google Play services to your project for

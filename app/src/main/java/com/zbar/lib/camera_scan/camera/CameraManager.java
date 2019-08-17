@@ -1,13 +1,13 @@
 package com.zbar.lib.camera_scan.camera;
 
-import java.io.IOException;
-
 import android.content.Context;
 import android.graphics.Point;
 import android.hardware.Camera;
 import android.hardware.Camera.Parameters;
 import android.os.Handler;
 import android.view.SurfaceHolder;
+
+import java.io.IOException;
 
 /**
  * 作者: 陈涛(1076559197@qq.com)

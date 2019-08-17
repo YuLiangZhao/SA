@@ -43,15 +43,15 @@ public class MeFragment extends Fragment  implements View.OnClickListener {
         //TODO:123
         //获得实例对象
         sp = getContext().getSharedPreferences("TcInfo",0);//教师登录信息存储器
-        TcImg = (UserFaceImageView) view.findViewById(R.id.imv_tc_img);//教师头像
-        TcName = (TextView) view.findViewById(R.id.tv_tc_name);//教师姓名
-        TcSex = (TextView) view.findViewById(R.id.tv_tc_sex);//教师性别
-        TcXueLi = (TextView) view.findViewById(R.id.tv_tc_xueli);//教师学历
-        TcZhiCheng = (TextView) view.findViewById(R.id.tv_tc_zhicheng);//教师职称
-        llTcMood = (LinearLayout) view.findViewById(R.id.ll_tc_mood);//教师个性签名 行
-        llAbout = (LinearLayout) view.findViewById(R.id.ll_tc_about);//关于 行
-        TcMood = (TextView) view.findViewById(R.id.tv_tc_mood);//教师个性签名
-        TcExit = (TextView) view.findViewById(R.id.tv_app_exit);//退出
+        TcImg = view.findViewById(R.id.imv_tc_img);//教师头像
+        TcName = view.findViewById(R.id.tv_tc_name);//教师姓名
+        TcSex = view.findViewById(R.id.tv_tc_sex);//教师性别
+        TcXueLi = view.findViewById(R.id.tv_tc_xueli);//教师学历
+        TcZhiCheng = view.findViewById(R.id.tv_tc_zhicheng);//教师职称
+        llTcMood = view.findViewById(R.id.ll_tc_mood);//教师个性签名 行
+        llAbout = view.findViewById(R.id.ll_tc_about);//关于 行
+        TcMood = view.findViewById(R.id.tv_tc_mood);//教师个性签名
+        TcExit = view.findViewById(R.id.tv_app_exit);//退出
 
         //TcImg;
         //imageLoader = new ImageLoader(,new LruImageCache());
@@ -107,7 +107,7 @@ public class MeFragment extends Fragment  implements View.OnClickListener {
         CallServer.getRequestInstance().add(getContext(), 0, request, new HttpListener<Bitmap>() {
             @Override
             public void onSucceed(int what, Response<Bitmap> response) {
-                TcImg.setImageBitmap((Bitmap)response.get());
+                TcImg.setImageBitmap(response.get());
             }
 
             @Override

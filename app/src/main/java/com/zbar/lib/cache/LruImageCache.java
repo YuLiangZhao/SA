@@ -2,7 +2,7 @@ package com.zbar.lib.cache;
 
 /**
  * LRU图片缓存
- * @author grumoon
+ * =>author grumoon
  *
 
 public class LruImageCache implements ImageCache{

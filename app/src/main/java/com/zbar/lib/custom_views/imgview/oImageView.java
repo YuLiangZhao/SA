@@ -18,11 +18,10 @@ import android.graphics.drawable.Drawable;
 import android.net.Uri;
 import android.text.TextPaint;
 import android.util.AttributeSet;
-import android.util.FloatMath;
 import android.widget.ImageView;
 
 /**
- * @author Phil
+ * =>author Phil
  *
  */
 public class oImageView extends ImageView {
@@ -145,7 +144,7 @@ public class oImageView extends ImageView {
             mFlagTextPaint.getTextBounds(mFlagText, 0, mFlagText.length(),
                     mFlagTextBounds);
             canvas.drawText(mFlagText, getWidth() / 2,
-                    (3 + FloatMath.cos((float) (Math.PI * 5 / 18)))
+                    (float)(3 + Math.cos( (Math.PI * 5 / 18)))
                             * getHeight() / 4 + mFlagTextBounds.height() / 3,
                     mFlagTextPaint);
         }
@@ -177,7 +176,7 @@ public class oImageView extends ImageView {
     }
 
     /**
-     * @param borderWidth
+     * =>param borderWidth
      *            圆形的边框厚度。
      */
     public void setBorderWidth(int borderWidth) {

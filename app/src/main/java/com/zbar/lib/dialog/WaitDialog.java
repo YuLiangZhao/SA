@@ -21,9 +21,8 @@ public class WaitDialog extends ProgressDialog {
         //STYLE_HORIZONTAL为条形进图条，要在show()函数调用之后再操作。
         setProgressStyle(STYLE_SPINNER);
         //设置进度条显示的内容
-        setMessage("正在请求,请稍候...");
+        setMessage("正在请求网络,请稍候...");
     }
-
     public WaitDialog(Context context, int theme) {
         super(context, theme);
     }

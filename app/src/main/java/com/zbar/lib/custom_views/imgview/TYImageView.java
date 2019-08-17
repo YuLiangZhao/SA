@@ -23,7 +23,7 @@ import java.util.List;
 /**
  * 自定义涂鸦控件，支持多点触控放大缩小、移动
  * 支持涂鸦、橡皮擦、自定义涂鸦颜色
- * @author openXu
+ * =>author openXu
  */
 public class TYImageView extends View {
 	private String TAG = "TYImageView";
@@ -106,11 +106,11 @@ public class TYImageView extends View {
 	 * 编辑模式 
 	 */
 	public enum ModeEnum {
-	    XP, TY;
-	}
+	    XP, TY
+    }
 	/**
 	 * 将待展示的图片设置进来。
-	 * @param bitmap 待展示的Bitmap对象
+	 * =>param bitmap 待展示的Bitmap对象
 	 */
 	public void setImageBitmap(Bitmap bitmap) {
 		currentStatus = STATUS_INIT;
@@ -121,7 +121,7 @@ public class TYImageView extends View {
 	}
 	/**
 	 * 设置涂鸦画笔宽度
-	 * @param paintStrokeWidth
+	 * =>param paintStrokeWidth
 	 */
 	public void setTyStrokeWidth(int paintStrokeWidth){
 		lineStrokeWidth = paintStrokeWidth*1f;
@@ -131,7 +131,7 @@ public class TYImageView extends View {
 	}
 	/**
 	 * 设置橡皮宽度
-	 * @param paintStrokeWidth
+	 * =>param paintStrokeWidth
 	 */
 	public void setXpStrokeWidth(int paintStrokeWidth){
 		xpStrokeWidth = paintStrokeWidth*1f;
@@ -141,7 +141,7 @@ public class TYImageView extends View {
 	}
 	/**
 	 * 设置涂鸦颜色
-	 * @param Color
+	 * =>param Color
 	 */
 	public void setTyColor(int Color){
 		mColor = Color;
@@ -436,7 +436,7 @@ public class TYImageView extends View {
 	
 	/**
 	 * 对图片进行缩放和平移处理。
-	 * @param canvas
+	 * =>param canvas
 	 */
 	private void zoomAndMove(Canvas canvas){
 		matrix.reset();
@@ -484,7 +484,7 @@ public class TYImageView extends View {
 	
 	/**
 	 * 对图片进行初始化操作，包括让图片居中，以及当图片大于屏幕宽高时对图片进行压缩。
-	 * @param canvas
+	 * =>param canvas
 	 */
 	private void initBitmap(Canvas canvas) {
 		if (sourceBitmap != null) {
@@ -543,8 +543,8 @@ public class TYImageView extends View {
 
 	/**
 	 * 计算两个手指之间的距离。
-	 * @param event
-	 * @return 两个手指之间的距离
+	 * =>param event
+	 * =>return 两个手指之间的距离
 	 */
 	private double distanceBetweenFingers(MotionEvent event) {
 		float disX = Math.abs(event.getX(0) - event.getX(1));
@@ -557,7 +557,7 @@ public class TYImageView extends View {
 	private float lastCenterPointY = -1;
 	/**
 	 * 计算两个手指之间中心点的坐标。
-	 * @param event
+	 * =>param event
 	 */
 	private void centerPointBetweenFingers(MotionEvent event) {
 		float xPoint0 = event.getX(0);

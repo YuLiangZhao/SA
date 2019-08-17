@@ -24,7 +24,7 @@ import com.zbar.lib.R;
 
 /**
  *
- * @author cdy
+ * =>author cdy
  * 
  */
 public class RoundImageView extends ImageView
@@ -197,8 +197,8 @@ public class RoundImageView extends ImageView
 //	/**
 //	 * drawable转bitmap
 //	 *
-//	 * @param drawable
-//	 * @return
+//	 * =>param drawable
+//	 * =>return
 //	 */
 //	private Bitmap drawableToBitamp(Drawable drawable)
 //	{

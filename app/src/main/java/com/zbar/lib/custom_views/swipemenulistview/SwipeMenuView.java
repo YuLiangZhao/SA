@@ -12,8 +12,8 @@ import java.util.List;
 
 /**
  * 
- * @author baoyz
- * @date 2014-8-23
+ * =>author baoyz
+ * =>date 2014-8-23
  * 
  */
 public class SwipeMenuView extends LinearLayout implements OnClickListener {
@@ -98,7 +98,7 @@ public class SwipeMenuView extends LinearLayout implements OnClickListener {
 		this.mLayout = mLayout;
 	}
 
-	public static interface OnSwipeItemClickListener {
+	public interface OnSwipeItemClickListener {
 		void onItemClick(SwipeMenuView view, SwipeMenu menu, int index);
 	}
 }

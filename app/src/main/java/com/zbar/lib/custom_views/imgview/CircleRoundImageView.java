@@ -24,7 +24,7 @@ import com.zbar.lib.R;
 /**
  * 圆形ImageView，可设置最多两个宽度不同且颜色不同的圆形边框。
  *
- * @author Alan
+ * =>author Alan
  */
 public class CircleRoundImageView extends ImageView {
     private int mBorderThickness = 0;
@@ -129,7 +129,7 @@ public class CircleRoundImageView extends ImageView {
     /**
      * 获取裁剪后的圆形图片
      *
-     * @param radius
+     * =>param radius
      *            半径
      */
     public Bitmap getCroppedRoundBitmap(Bitmap bmp, int radius) {

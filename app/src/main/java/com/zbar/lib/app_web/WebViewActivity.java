@@ -48,10 +48,10 @@ public class WebViewActivity extends Activity {
         URL = getIntent().getStringExtra("url");
         Auto  = getIntent().getBooleanExtra("auto",false);
 
-        ibTopBack = (ImageButton)  findViewById(R.id.ib_top_back);
-        tvTopTitle = (TextView)  findViewById(R.id.tv_top_title);
-        ibTopClose = (ImageButton)  findViewById(R.id.ib_top_close);
-        webView = (WebView) findViewById(R.id.webView_Main);
+        ibTopBack = findViewById(R.id.ib_top_back);
+        tvTopTitle = findViewById(R.id.tv_top_title);
+        ibTopClose = findViewById(R.id.ib_top_close);
+        webView = findViewById(R.id.webView_Main);
 
         WebSettings webSettings = webView.getSettings();
         webSettings.setJavaScriptEnabled(true);//允许执行JavaScript
@@ -158,7 +158,7 @@ public class WebViewActivity extends Activity {
         MyJsInterface() {
         }
         /**
-         * This is not called on the UI thread. Post a runnable to invoke
+         * This is not called on the UI thread. Post more_pic_2_gif_loading runnable to invoke
          * 这不是呼吁界面线程。发表一个运行调用
          * loadUrl on the UI thread.
          * loadUrl在UI线程。
@@ -193,7 +193,7 @@ public class WebViewActivity extends Activity {
      */
     public Action getIndexApiAction() {
         Thing object = new Thing.Builder()
-                .setName("WebViewActivity Page") // TODO: Define a title for the content shown.
+                .setName("WebViewActivity Page") // TODO: Define more_pic_2_gif_loading title for the content shown.
                 // TODO: Make sure this auto-generated URL is correct.
                 .setUrl(Uri.parse("http://[ENTER-YOUR-URL-HERE]"))
                 .build();

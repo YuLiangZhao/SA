@@ -17,8 +17,8 @@ import java.util.Map;
 public class ArrayUtil {
     /**
     *   将json 数组转换为Map 对象
-    * @param jsonString
-    * @return valueMap
+    * =>param jsonString
+    * =>return valueMap
     */
     public static Map<String, Object> getMap(String jsonString){
         JSONObject jsonObject;
@@ -29,7 +29,7 @@ public class ArrayUtil {
             Object value;
             Map<String, Object> valueMap = new HashMap<String, Object>();
             while (keyIter.hasNext()){
-                key = (String) keyIter.next();
+                key = keyIter.next();
                 value = jsonObject.get(key);
                 valueMap.put(key, value);
             }
@@ -42,7 +42,7 @@ public class ArrayUtil {
 
     /**
     * 把json 转换为ArrayList 形式
-    * @return List
+    * =>return List
     */
     public static List<Map<String, Object>> getList(String jsonString){
         List<Map<String, Object>> list = null;

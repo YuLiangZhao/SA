@@ -26,13 +26,12 @@ import com.yanzhenjie.nohttp.rest.Response;
 import com.zbar.lib.R;
 import com.zbar.lib.SerializableMap;
 import com.zbar.lib.app_root.BaseActivity;
+import com.zbar.lib.constant.SinaUrlConstants;
 import com.zbar.lib.dialog.TipsDialog;
 import com.zbar.lib.nohttp.CallServer;
 import com.zbar.lib.nohttp.HttpListener;
-import com.zbar.lib.util.Constants;
 import com.zbar.lib.util.StringUtil;
 
-import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -56,7 +55,8 @@ public class CommentEditActivity extends BaseActivity {
     private TipsDialog tipsDialog;
     private EditText etMsg;
     private TextWatcher etMsg_Watcher;
-    private TextView tvMsgTips,tvScore;
+    private TextView tvMsgTips;
+    private String iScore = "0";
 
 
     private List<String> scoreAOP,scoreData,scoreMark;
@@ -73,7 +73,7 @@ public class CommentEditActivity extends BaseActivity {
         //获得实例对象
         sp = this.getSharedPreferences("TcInfo",MODE_PRIVATE);//教师登录信息存储器
         TID = sp.getString("TcID","");
-        tvTopTitle = (TextView)  findViewById(R.id.tv_top_title);
+        tvTopTitle = findViewById(R.id.tv_top_title);
         Bundle bundle = getIntent().getExtras();
         if(bundle != null) {
             map = (SerializableMap) bundle.get("map");
@@ -88,64 +88,23 @@ public class CommentEditActivity extends BaseActivity {
             tvTopTitle.setText("添加评语");
         }
 
-        ibTopBack = (ImageButton)  findViewById(R.id.ib_top_back);
+        ibTopBack = findViewById(R.id.ib_top_back);
         ibTopBack.setOnClickListener(this);
 
         TipsDialog tipsDialog = new TipsDialog(getActivity());
-        etMsg = (EditText) findViewById(R.id.et_com_msg);
+        etMsg = findViewById(R.id.et_com_msg);
         etMsg.setText(sMsg);
-        tvMsgTips = (TextView) findViewById(R.id.tv_com_msg_tips);
-        btnSave = (TextView)  findViewById(R.id.tv_top_right_btn);
+        tvMsgTips = findViewById(R.id.tv_com_msg_tips);
+        btnSave = findViewById(R.id.tv_top_right_btn);
         btnSave.setText(R.string.com_btn_submit_text);
         btnSave.setOnClickListener(this);
         btnSave.setEnabled(false);//初始化保存按钮失效
-        tvScore = (TextView) findViewById(R.id.tv_com_score);
-        tvScore.setText(sNum);//默认为0
-        tvScore.setOnClickListener(this);
 
         initWatcher();
         etMsg.addTextChangedListener(etMsg_Watcher);
         etMsg.setFilters(new InputFilter[]{new InputFilter.LengthFilter(Max_Input_Char_Len)});//即限定最大输入字符数为15
-        /*
         //
-        wvAOP = (WheelView) findViewById(R.id.wv_aop);
-        wvAOP.setAdapter(new WheelAdapter() {
-            @Override
-            public int getItemsCount() {
-                return scoreAOP.size();
-            }
-
-            @Override
-            public Object getItem(int index) {
-                return scoreAOP.get(index);
-            }
-
-            @Override
-            public int indexOf(Object o) {
-                return scoreAOP.indexOf(o);
-                //return  0;
-            }
-        });
-        wvAOP.setTextSize(40);
-        wvAOP.setTextColorCenter(Color.RED);//设置选中项的颜色
-        wvAOP.setTextColorOut(Color.DKGRAY);//设置未选中项的颜色
-        wvAOP.setDividerColor(Color.RED);//设置分割线的颜色
-        wvAOP.setLineSpacingMultiplier(0.8f);//设置两横线之间的间隔倍数
-        //wvAOP.setDividerType(WheelView.DividerType.FILL);
-        //wvAOP.setDividerType(WheelView.DividerType.WRAP);
-        //wvAOP.setLabel("分");
-        //wvAOP.setBackgroundColor(Color.BLACK);//滚轮背景颜色 Night mode
-        //wvAOP.setMinimumHeight(100);
-        wvAOP.setOnItemSelectedListener(new OnItemSelectedListener() {
-            @Override
-            public void onItemSelected(int index) {
-                tvTopTitle.setText(scoreAOP.get(index));
-                //tvScore.setText(scoreData.get(index));
-            }
-        });
-        */
-        //
-        wvScore = (WheelView) findViewById(R.id.wv_score);
+        wvScore = findViewById(R.id.wv_score);
         wvScore.setAdapter(new WheelAdapter() {
             @Override
             public int getItemsCount() {
@@ -163,13 +122,14 @@ public class CommentEditActivity extends BaseActivity {
                 //return  0;
             }
         });
-        wvScore.setTextSize(40);
+        wvScore.setTextSize(30);
+        wvScore.setCurrentItem(scoreData.size()/2);//设置默认选中项
         wvScore.setTextColorCenter(Color.RED);//设置选中项的颜色
         wvScore.setTextColorOut(Color.DKGRAY);//设置未选中项的颜色
         wvScore.setDividerColor(Color.RED);//设置分割线的颜色
         wvScore.setLineSpacingMultiplier(0.5f);//设置两横线之间的间隔倍数
         //wvScore.setDividerType(WheelView.DividerType.FILL);
-        //wvScore.setDividerType(WheelView.DividerType.WRAP);
+        wvScore.setDividerType(WheelView.DividerType.WRAP);
         //wvScore.setLabel("分");
         //wvScore.setBackgroundColor(Color.BLACK);//滚轮背景颜色 Night mode
         //wvScore.setMinimumHeight(100);
@@ -177,47 +137,27 @@ public class CommentEditActivity extends BaseActivity {
             @Override
             public void onItemSelected(int index) {
                 //tvTopTitle.setText(scoreData.get(index));
-                tvScore.setText(scoreData.get(index));
+                iScore = scoreData.get(index);
+                String msg = etMsg.getText().toString();
+                if(!StringUtil.isEmpty(msg) && !msg.equals("请输入评语")) {
+                    //保存按钮可用 绿色
+                    btnSave.setEnabled(true);
+                    btnSave.setBackgroundResource(R.drawable.corners_green_bg);
+                }
             }
         });
-        /*
-        //
-        wvMark = (WheelView) findViewById(R.id.wv_mark);
-        wvMark.setAdapter(new WheelAdapter() {
-            @Override
-            public int getItemsCount() {
-                return scoreMark.size();
+    }
+    //评分滚轮数据生成器
+    public  List<String>  initData() {
+        List<String> list = new ArrayList<String>();
+        for (int i = -100; i <= 100; i++) {
+            if(i<=0) {
+                list.add(""+i);
+            }else{
+                list.add("+"+i);
             }
-
-            @Override
-            public Object getItem(int index) {
-                return scoreMark.get(index);
-            }
-
-            @Override
-            public int indexOf(Object o) {
-                return scoreMark.indexOf(o);
-                //return  0;
-            }
-        });
-        wvMark.setTextSize(40);
-        wvMark.setTextColorCenter(Color.RED);//设置选中项的颜色
-        wvMark.setTextColorOut(Color.DKGRAY);//设置未选中项的颜色
-        wvMark.setDividerColor(Color.RED);//设置分割线的颜色
-        wvMark.setLineSpacingMultiplier(0.5f);//设置两横线之间的间隔倍数
-        //wvMark.setDividerType(WheelView.DividerType.FILL);
-        //wvMark.setDividerType(WheelView.DividerType.WRAP);
-        //wvMark.setLabel("分");
-        //wvMark.setBackgroundColor(Color.BLACK);//滚轮背景颜色 Night mode
-        //wvMark.setMinimumHeight(100);
-        wvMark.setOnItemSelectedListener(new OnItemSelectedListener() {
-            @Override
-            public void onItemSelected(int index) {
-                //tvTopTitle.setText(scoreData.get(index));
-                tvScore.setText(scoreMark.get(index));
-            }
-        });
-        */
+        }
+        return list;
     }
     /**
      * 手机号，密码输入控件公用这一个watcher
@@ -231,17 +171,20 @@ public class CommentEditActivity extends BaseActivity {
                 int left = Max_Input_Char_Len - len;//还能输入几个字符
                 Log.i("Left:",s.toString() + " == " + left);
                 if(len == 0){
+                    //保存按钮不可用 红色
                     btnSave.setEnabled(false);
                     btnSave.setBackgroundResource(R.drawable.corners_red_bg);
                 }else {
                     if (left >= 0) {
                         tvMsgTips.setText("你已经输入了" + len + "个字符，还能输入" + left + "个字符。");
+                        //保存按钮可用 绿色
                         btnSave.setEnabled(true);
                         btnSave.setBackgroundResource(R.drawable.corners_green_bg);
                     } else {
                         int over = len - Max_Input_Char_Len;
                         tvMsgTips.setText("你已经输入了" + len + "个字符，多输入" + over + "个字符。");
                         btnSave.setText("太多");
+                        //保存按钮不可用 红色
                         btnSave.setEnabled(false);
                         btnSave.setBackgroundResource(R.drawable.corners_red_bg);
                     }
@@ -252,16 +195,10 @@ public class CommentEditActivity extends BaseActivity {
     @Override
     public void widgetClick(View v) {
         switch (v.getId()) {
-            case R.id.tv_com_score:
-                showMessage("请在下方选择加减分值！");
-                break;
             case R.id.ib_top_back:
                 finish();
                 break;
             case R.id.tv_top_right_btn:
-                String comMsg = etMsg.getText().toString();
-                String comScore = tvScore.getText().toString();
-                showMessage(comMsg + "【"+comScore+"】");
                 //Save Com
                 SaveCom();
                 break;
@@ -272,13 +209,14 @@ public class CommentEditActivity extends BaseActivity {
     //Save Com
     public void SaveCom(){
         String msg = etMsg.getText().toString();
-        String num = tvScore.getText().toString();
+        String num = scoreData.get(wvScore.getCurrentItem());
+        //showMessage(msg + "【"+num+"】");
         if (StringUtil.isEmpty(msg) ) {
             this.showMessage("请输入评语！");
             return;
         }
         if (StringUtil.isEmpty(num) ) {
-            this.showMessage("请输入评分！");
+            this.showMessage("请选择评分！");
             return;
         }
 
@@ -287,7 +225,7 @@ public class CommentEditActivity extends BaseActivity {
         String en_tid = StringUtil.Base64Encode(TID);
         String en_rid = StringUtil.Base64Encode(RID);
         //this.showMessage(RID + "||" + en_rid);
-        Request<JSONObject> request = NoHttp.createJsonObjectRequest(Constants.SAE_SaveCommentUrl, RequestMethod.POST);
+        Request<JSONObject> request = NoHttp.createJsonObjectRequest(SinaUrlConstants.SAE_SaveCommentUrl, RequestMethod.POST);
         request.add("Reason", en_msg);
         request.add("Num", en_num);
         request.add("TID", en_tid);
@@ -296,12 +234,23 @@ public class CommentEditActivity extends BaseActivity {
         CallServer.getRequestInstance().add(this, 0, request, new HttpListener<JSONObject>() {
             @Override
             public void onSucceed(int what, Response<JSONObject> response) {
-                showMessage(response.toString());
+                System.out.println("请求成功:" + response.toString());
+                // showMessage(response.toString());
                 // 开始解析JSON字符串
-                JSONObject jsonObject = (JSONObject)response.get();
+                JSONObject jsonObject = response.get();
                 try {
-                    if (jsonObject.has("ComData")) {
-                        JSONArray ComData = jsonObject.getJSONArray("ComData");
+                    if (jsonObject.has("Data")) {
+                        JSONObject ComData = jsonObject.getJSONObject("Data");
+                        int RID = ComData.getInt("RID");
+                        if(RID > 0){
+                            showMessage("保存评语成功！");
+                        }else{
+                            showMessage("保存评语失败！");
+                        }
+                        finish();
+                    }else{
+                        showMessage("保存评语失败！");
+                        finish();
                     }
                 } catch (JSONException e) {
                     e.printStackTrace();
@@ -310,7 +259,8 @@ public class CommentEditActivity extends BaseActivity {
 
             @Override
             public void onFailed(int what, Response<JSONObject> response) {
-
+                showMessage("保存评语失败！");
+                finish();
             }
         }, true, true);
     }
@@ -319,35 +269,6 @@ public class CommentEditActivity extends BaseActivity {
         return false;
     }
 
-    public  List<String>  initAOP() {
-        List<String> list = new ArrayList<String>();
-        for (int i = 0; i <= 1; i++) {
-            if(i<=0) {
-                list.add("-");
-            }else{
-                list.add("+");
-            }
-        }
-        return list;
-    }
-    public  List<String>  initData() {
-        List<String> list = new ArrayList<String>();
-        for (int i = -10; i <= 10; i++) {
-            if(i<=0) {
-                list.add(""+i);
-            }else{
-                list.add("+"+i);
-            }
-        }
-        return list;
-    }
-    public  List<String>  initMark() {
-        List<String> list = new ArrayList<String>();
-        for (int i = -10; i <= 10; i++) {
-            list.add("分");
-        }
-        return list;
-    }
     @Override
     public boolean dispatchTouchEvent(MotionEvent ev) {
         if(ev.getAction()==MotionEvent.ACTION_DOWN){

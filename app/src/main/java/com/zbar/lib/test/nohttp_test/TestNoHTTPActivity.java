@@ -30,7 +30,7 @@ public class TestNoHTTPActivity extends BaseActivity {
         //获得实例对象
         sp = this.getSharedPreferences("TcInfo",MODE_PRIVATE);//教师登录信息存储器
         //
-        ivFlash = (ImageView) findViewById(R.id.app_Flash_imageView);
+        ivFlash = findViewById(R.id.app_Flash_imageView);
         ivFlash.setOnClickListener(this);
         //
         //requestUserInfo();

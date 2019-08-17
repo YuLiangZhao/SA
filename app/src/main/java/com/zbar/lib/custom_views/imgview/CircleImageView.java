@@ -66,7 +66,7 @@ public class CircleImageView extends ImageView {
   
     /**  
      * 获取裁剪后的圆形图片  
-     * @param radius
+     * =>param radius
      */  
     public Bitmap getCroppedRoundBitmap(Bitmap bmp, int radius) {  
         Bitmap scaledSrcBmp;  
@@ -104,9 +104,9 @@ public class CircleImageView extends ImageView {
     
     /**
      * 截图图片
-     * @param bitmap
+     * =>param bitmap
      * 		图片资源的Bitmap
-     * @return
+     * =>return
      */
     private Bitmap getCenterBitmap(Bitmap bitmap){
     	// 为了防止图片宽高不相等，造成圆形图片变形，因此截取长方形中处于中间位置最大的正方形图片  
