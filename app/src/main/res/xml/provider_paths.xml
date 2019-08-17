@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths>
+    <external-path
+        name="external_files"
+        path="." />
+    <files-path
+        name="sa_images"
+        path="sa/images/" />
+    <files-path
+        name="sa_audios"
+        path="sa/audios/" />
+    <files-path
+        name="sa_videos"
+        path="sa/videos/" />
+</paths>

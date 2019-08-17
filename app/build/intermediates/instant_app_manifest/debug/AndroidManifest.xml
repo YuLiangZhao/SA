@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sinaapp.lzedu.sas"
+    android:targetSandboxVersion="2"
+    android:versionCode="1"
+    android:versionName="1.0.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="29" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.hardware.sensor.accelerometer" />
+
+    <meta-data
+        android:name="android.support.VERSION"
+        android:value="25.3.0" />
+
+    <application
+        android:name="com.zbar.lib.BaseApplication"
+        android:allowBackup="false"
+        android:debuggable="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:testOnly="true"
+        android:theme="@style/AppTheme" >
+
+        <!-- 阿里聚安全建议将allowBackup属性值显示设置为false -->
+
+
+        <!-- android 7.0拍照问题：应用程序将file://Uri 暴露给另一个应用程序时引发的异常。——解决时间：2019年8月12日14:33:02 -->
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.sinaapp.lzedu.sas.provider"
+            android:exported="false"
+            android:grantUriPermissions="true" >
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+        <!-- 添加xml文件夹，并新建provider_paths.xml文件 -->
+
+        <activity
+            android:name="com.zbar.lib.guide.GuideMainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="com.zbar.lib.guide.WelcomeActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="com.zbar.lib.app_web.LoginActivity"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.zbar.lib.camera_scan.QRScanActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+        </activity>
+
+        <!-- 至少一个activity的intent-filter中添加 android:name="android.intent.action.VIEW 以便允许深入链接其他APP  https://www.jianshu.com/p/93678f8b3421" -->
+        <activity
+            android:name="com.zbar.lib.app_web.WebViewActivity"
+            android:theme="@android:style/Theme.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.zbar.lib.app_web.UploadTeacherFacePic" >
+        </activity>
+        <activity android:name="com.zbar.lib.app_web.UploadClassWorkPic" >
+        </activity>
+        <activity
+            android:name="com.zbar.lib.camera_upload_pic.EditStudentClassWorkPicActivity"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="com.zbar.lib.app_main.SA_MainActivity"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.zbar.lib.app_web.ShakeActivity"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity android:name="com.zbar.lib.test.swipemenu_test.SwipeMenuTestMainActivity" >
+        </activity>
+        <activity android:name="com.zbar.lib.test.swipemenu_test.SwipeMenuAppManagerActivity" >
+        </activity>
+        <activity android:name="com.zbar.lib.test.swipemenu_test.SwipeMenuDifferentItemActivity" >
+        </activity>
+        <activity android:name="com.zbar.lib.app_web.CommentListActivity" >
+        </activity>
+        <activity android:name="com.zbar.lib.app_web.CommentEditActivity" >
+        </activity>
+        <activity android:name="com.zbar.lib.test.pickerview_test.PickerViewTestActivity" >
+        </activity>
+        <activity android:name="com.zbar.lib.app_web.WeatherActivity" >
+        </activity>
+        <activity
+            android:name="com.zbar.lib.app_web.CheckHomeWorkActivity"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.zbar.lib.app_tools.AppAboutActivity"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.zbar.lib.app_web.ScoreShopEditActivity"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.zbar.lib.app_web.ScoreShopListActivity"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.zbar.lib.SettingActivity"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <!--
+        ATTENTION: This was auto-generated to add Google Play services to your project for
+        App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
+        -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+            android:exported="false"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <provider
+            android:name="com.google.firebase.provider.FirebaseInitProvider"
+            android:authorities="com.sinaapp.lzedu.sas.firebaseinitprovider"
+            android:exported="false"
+            android:initOrder="100" />
+        <provider
+            android:name="com.android.tools.ir.server.InstantRunContentProvider"
+            android:authorities="com.sinaapp.lzedu.sas.com.android.tools.ir.server.InstantRunContentProvider"
+            android:multiprocess="true" />
+    </application>
+
+</manifest>
